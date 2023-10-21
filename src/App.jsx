@@ -1,13 +1,17 @@
+import About from "./Components/About";
+import Header from "./Components/Header";
+import Playground from "./Components/Playground";
+import Work from "./Components/Work";
 
 function App() {
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <Header/>
+      <Work/>
+      {/* <About/> */}
+      {/* <Playground/> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
