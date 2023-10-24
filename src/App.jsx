@@ -1,5 +1,7 @@
 import About from "./Components/About";
 import Contacth from "./Components/Contacth";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Playground from "./Components/Playground";
@@ -10,13 +12,14 @@ function App() {
   return (
     <>
       <Header/>
-      <Hero/>
-      <Workh/>
-      <Contacth/>
-
+      {/* <Contact/> */}
+      {/* <Hero/> */}
+      {/* <Workh/> */}
+      {/* <Contacth/> */}
+      {/* <Footer/> */}
       {/* <Work/> */}
       {/* <About/> */}
-      {/* <Playground/> */}
+      <Playground/>
     </>
   );
 }
