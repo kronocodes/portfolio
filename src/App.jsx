@@ -14,12 +14,12 @@ function App() {
       <Header/>
       {/* <Contact/> */}
       {/* <Hero/> */}
-      {/* <Workh/> */}
+      <Workh/>
       {/* <Contacth/> */}
-      {/* <Footer/> */}
       {/* <Work/> */}
+      <Footer/>
       {/* <About/> */}
-      <Playground/>
+      {/* <Playground/> */}
     </>
   );
 }
