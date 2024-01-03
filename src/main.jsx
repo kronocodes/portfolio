@@ -4,7 +4,7 @@ import './index.css'
 import About from "./Components/About";
 import Home from './Components/Home'
 import Contact from "./Components/Contact";
-import Playground from "./Components/Playground";
+import Arena from "./Components/Arena";
 import Work from "./Components/Work";
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './Layout.jsx';
@@ -23,8 +23,8 @@ const router=createBrowserRouter([
                 element: <Work/>,
             },
             {
-                path: "playground",
-                element: <Playground/>,
+                path: "arena",
+                element: <Arena/>,
             },
             {
                 path: "about",

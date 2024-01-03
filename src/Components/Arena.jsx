@@ -1,6 +1,6 @@
 import React from "react";
 
-const Playground = () => {
+const Arena = () => {
   return (
     <>
       <div className="flex flex-col items-center">
@@ -26,4 +26,4 @@ const Playground = () => {
   );
 };
 
-export default Playground;
+export default Arena;
