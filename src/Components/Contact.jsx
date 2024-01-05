@@ -6,10 +6,9 @@ import up from '../assets/up.svg'
 const Contact = () => {
   return (
     <>
-    <div className='text-white bg-neutral-900 absolute top-0 z-[-10]'>
-        <div className='text-9xl font-bold'>/CONTACT</div>
+    <div className='absolute top-0 z-[-10]'>
+        <div className='pt-16 pl-8 text-9xl font-bold'>CONTACT</div>
         <div className='text-xl'>Have an idea of something we should work on together?<br></br>Tell me about your project.<br></br>Let’s collaborate and make great stuff..</div>
-        
     </div>
     </>
   )

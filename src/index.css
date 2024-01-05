@@ -2,11 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.gallery {
+img {
+  width: 100%;
+}
+.photo-grid-container {
+  column-count: 4;
+  column-width: 200px;
+  margin: 5vw;
+  
+}
+.photo-grid-item {
+  margin: 0 auto 3vw;
+  max-width: 80vw;
+  width: 100%;
+}
+
+.heroword{
+  position: relative;
+  display: inline-block;
+  transform: translate(0px, 0px);
+  opacity: 1;
+  padding: 0.4vw;
+}
+.home-intro__wrapper {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 30px;
-  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  top: 200px;
+  z-index: 999;
+  bottom: 200px;
+  left: calc(12%);
+  right: calc(12%);
+  width: calc(75%);
+  padding: vw;
 }

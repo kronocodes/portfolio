@@ -1,17 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 770);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  
+  const dropdownRef = useRef(null);
+
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 770);
+      setIsSmallScreen(window.innerWidth <= 600);
     };
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
   }, []);
 
   const toggleDropdown = () => {
@@ -26,13 +41,13 @@ const Header = () => {
     <>
       {isSmallScreen ? (
         <div className="fixed right-8 z-50 my-8">
-          <div className="relative">
-            <button onClick={toggleDropdown} className="flex items-center justify-center w-12 h-12 rounded-full bg-neutral-800 bg-opacity-40 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] text-white">
+          <div className="relative" ref={dropdownRef}>
+            <button onClick={toggleDropdown} className="flex items-center justify-center w-12 h-12 rounded-full bg-neutral-800 bg-opacity-40 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] ">
               <img width="24" height="24" src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" alt="Menu icon"/>
             </button>
             {isDropdownOpen && (
               <div className="absolute top-full right-0 mt-2 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] p-2 rounded-md text-white">
-                <Link to="/" className="block bg-opacity-40 hover:bg-neutral-600 rounded-md py-1 px-2" onClick={closeDropdown}>
+                <Link to="/" className="block hover:bg-neutral-600 rounded-md py-1 px-2" onClick={closeDropdown}>
                   Home
                 </Link>
                 <Link to="/work" className="block hover:bg-neutral-600 rounded-md py-1 px-2" onClick={closeDropdown}>
@@ -53,7 +68,7 @@ const Header = () => {
         </div>
       ) : (
         <div className="relative z-50">
-          <div className="flex fixed left-0 right-0 my-8 mx-auto w-[414px] justify-center bg-neutral-800 bg-opacity-40 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] items-center rounded-full text-white text-sm">
+          <div className="flex fixed left-0 right-0 my-8 mx-auto w-[414px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] items-center rounded-full text-white text-sm">
             <Link to="/" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
               Home
             </Link>
