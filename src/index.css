@@ -7,13 +7,14 @@ img {
 }
 .photo-grid-container {
   column-count: 4;
-  column-width: 200px;
-  margin: 5vw;
+  column-width: 150px;
+  column-gap: 2vmax;
+  margin: 2vmax;
   
 }
 .photo-grid-item {
   margin: 0 auto 3vw;
-  max-width: 80vw;
+  max-width: 70vw;
   width: 100%;
 }
 
