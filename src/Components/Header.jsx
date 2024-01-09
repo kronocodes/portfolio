@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <>
       {isSmallScreen ? (
-        <div className="fixed right-8 z-50 my-8">
+        <div className="fixed right-8 z-50 my-6">
           <div className="relative" ref={dropdownRef}>
             <button onClick={toggleDropdown} className="flex items-center justify-center w-12 h-12 rounded-full bg-neutral-800 bg-opacity-40 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] ">
               <img width="24" height="24" src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" alt="Menu icon"/>
@@ -68,7 +68,7 @@ const Header = () => {
         </div>
       ) : (
         <div className="relative z-50">
-          <div className="flex fixed left-0 right-0 my-8 mx-auto w-[414px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] items-center rounded-full text-white text-sm">
+          <div className="flex fixed left-0 right-0 my-6 mx-auto w-[414px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] items-center rounded-full text-white text-sm">
             <Link to="/" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
               Home
             </Link>

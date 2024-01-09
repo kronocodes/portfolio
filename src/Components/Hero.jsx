@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <div class="home-intro__wrapper" className='h-screen pt-40'>
-          {/* <div className='text-[3.5vw] leading-[4.4vw]'>
+          <div className='text-[3.5vw] leading-[4.4vw]'>
               <div class="heroword">Hello</div>
               <div class="heroword">world!</div>
               <div class="heroword">I'm</div>
@@ -25,7 +25,7 @@ const Hero = () => {
               <div class="heroword">Currently</div> 
               <div class="heroword">building</div>
               <div class="heroword">Project X</div>
-        </div> */}
+        </div>
       </div>
     </>
   )
