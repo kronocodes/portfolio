@@ -4,10 +4,10 @@ import Up from '../assets/up.svg'
 const Footer = () => {
   return (
     <>
-    <div className="bg-neutral-900 text-white px-20">
+    <div className="bg-neutral-900 text-white px-[2vw]">
         <div className="flex justify-center py-16 rounded-t-[30px]">
           <div className="w-1/2 text-xl">
-            <div className="flex max-w-[550px] justify-between pl-1">
+            <div className="flex flex-wrap max-w-[550px] justify-between pl-1">
               <div>Github</div>
               <div>LinkedIn</div>
               <div>Twitter</div>
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-neutral-600 h-[1px]"></div>
-        <div className="flex justify-between py-6 text-sm">
+        <div className="flex justify-between py-6 text-[1vw]">
           <div>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
           <div>© 2023 Abhishek Nandan. All Rights Reserved</div>
         </div>

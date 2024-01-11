@@ -34,7 +34,7 @@ const Workh = () => {
         </div>
       </div>
       ) : (
-      <div className="">
+      <div className="pb-4">
         
         <div class="grid grid-cols-3 gap-3 px-4">
           <div class="">

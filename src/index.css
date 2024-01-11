@@ -46,18 +46,6 @@ img {
   display: inline-block;
   transform: translate(0px, 0px);
   opacity: 1;
-  padding: 0.4vw;
-}
-.home-intro__wrapper {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  background: white;
-  top: 200px;
-  z-index: 999;
-  bottom: 200px;
-  left: calc(12%);
-  right: calc(12%);
-  width: calc(75%);
-  padding: vw;
+  padding-left: 10px;
+  padding-right: 10px;
 }

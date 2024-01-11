@@ -43,10 +43,10 @@ const Header = () => {
         <div className="fixed right-8 z-50 my-6">
           <div className="relative" ref={dropdownRef}>
             <button onClick={toggleDropdown} className="flex items-center justify-center w-12 h-12 rounded-full bg-neutral-800 bg-opacity-40 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] ">
-              <img width="24" height="24" src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" alt="Menu icon"/>
+              <img className="w-7" src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" alt="Menu icon"/>
             </button>
             {isDropdownOpen && (
-              <div className="absolute top-full right-0 mt-2 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] p-2 rounded-md text-white">
+              <div className="absolute w-screen h-screen right-0 mt-2 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] p-2 rounded-md text-white">
                 <Link to="/" className="block hover:bg-neutral-600 rounded-md py-1 px-2" onClick={closeDropdown}>
                   Home
                 </Link>
