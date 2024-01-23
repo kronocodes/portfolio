@@ -23,7 +23,7 @@ const Arena = () => {
         <div className="photo-grid-container">
           <div className="photo-grid-item">
             <img className="" src={Img1} />
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between">
               <div class="year">(2020)</div>
               <div className="">Poster</div>
             </div>

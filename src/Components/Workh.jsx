@@ -15,7 +15,7 @@ const Workh = () => {
     <>
     <div className="flex justify-between px-4 items-center">
         <div className="text-[120px]">Work</div>
-        <button className="flex items-center justify-center w-48 h-24 rounded-full bg-lime-400 bg-opacity-100 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] text-2xl ">
+        <button className="flex items-center justify-center w-48 h-24 rounded-full bg-lime-400 bg-opacity-100 p-[5px] text-2xl ">
               See all <br></br>projects
             </button>
         </div>

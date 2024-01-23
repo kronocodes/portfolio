@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <>
-      <div className='bg-neutral-900 flex items-center justify-center h-[95vh] border border-black m-5 rounded-2xl'>
+      <div className='bg-black flex items-center justify-center h-[95vh] border border-black m-5 rounded-2xl'>
           <div className='text-white text-3xl px-[10vw] leading-[36px] md:text-4xl md:px-[14vw] md:leading-[46px] lg:text-5xl lg:px-[18vw] lg:leading-[56px] xl:text-[46px] xl:px-[16vw] xl:leading-[66px]'>
               <div class="heroword">Hello</div>
               <div class="heroword">world!</div>
