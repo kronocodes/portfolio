@@ -6,25 +6,25 @@ import up from '../assets/up.svg'
 const Contact = () => {
   return (
     <>
-      <div className='flex flex-col gap-y-[6vw] border m-[2vw] p-[2vw]'>
+      <div className='flex flex-col gap-y-[6vw] border-2 border-black m-4 p-4'>
         <div className='text-8xl static w-full' >CONTACT</div>
-        <div className='w-full gap-y-[3vw] ml-auto'>
-          <div className='flex flex-col gap-y-[2vw] mb-[1vw]'>
-            <div>[ NAME ]</div>
-            <input placeholder='Your name'></input>
+        <div className='w-full gap-y-[20px] ml-auto'>
+          <div className='flex flex-col'>
+            <div className='py-2 font-semibold text-xl'>[ NAME ]</div>
+            <input className='p-4' placeholder='Your name'></input>
           </div>
-          <div className='flex flex-col gap-y-[2vw] mb-[1vw]'>
-            <div>[ EMAIL ADDRESS ]</div>
-            <input placeholder='not@fake-email.com'></input>
+          <div className='flex flex-col py-5 '>
+            <div className='py-2 font-semibold text-xl'>[ EMAIL ADDRESS ]</div>
+            <input className='p-4' placeholder='not@fake-email.com'></input>
           </div>
-          <div className='flex flex-col gap-y-[2vw] mb-[1vw]'>
-            <div>[ SUBJECT ]</div>
-            <input placeholder=''></input>
+          <div className='flex flex-col py-5 '>
+            <div className='py-2 font-semibold text-xl'>[ SUBJECT ]</div>
+            <input className='p-4' placeholder=''></input>
           </div>
-          <div className='flex flex-col w-full items-stretch mb-[1vw]'>
-            <div className='flex flex-col gap-y-[2vw]'>
-              <div>[ MESSAGE ]</div>
-              <input placeholder='Example Text'></input>
+          <div className='flex flex-col w-full items-stretch '>
+            <div className='flex flex-col py-5'>
+              <div className='py-2 font-semibold text-xl'>[ MESSAGE ]</div>
+              <input className='p-4 h-36' placeholder='Example Text'></input>
             </div>
             <button className='h-9'>SUBMIT</button>
           </div>

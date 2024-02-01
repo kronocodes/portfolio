@@ -25,35 +25,50 @@ const Header = () => {
   return (
     <>
       {isSmallScreen ? (
-          <div className="fixed">
+          <div className="fixed z-50">
             <button onClick={toggleDropdown} className="fixed right-8 top-10 z-[999] flex items-center justify-center w-12 h-12 rounded-full bg-neutral-800 bg-opacity-40 backdrop-blur-[6px]  p-[5px]">
               <img className="w-6" src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" alt="Menu icon"/>
             </button>
             {isDropdownOpen && (
-              <div className="z-10 fixed left-0 right-0 top-0 bottom-0 flex flex-col bg-white text-black">
-                <div>
-                <Link to="/" className="text-6xl" onClick={closeDropdown}>
-                  Home
+              <div className="fixed left-0 right-0 top-0 bottom-0 flex flex-col items-start justify-center bg-white text-black">
+                <div className="py-5 pl-10 pr-10 hover:bg-black w-full hover:text-white">
+                <Link to="/" className="text-7xl w-full" onClick={closeDropdown}>
+                  <div className="flex justify-between">
+                  <div>HOME</div>
+                  <div>↗</div>
+                  </div>
                 </Link>
                 </div>
-                <div>
-                <Link to="/work" className="text-6xl" onClick={closeDropdown}>
-                  Work
+                <div className="py-5 pl-10 pr-10 hover:bg-black w-full hover:text-white">                
+                <Link to="/work" className="text-7xl w-full" onClick={closeDropdown}>
+                <div className="flex justify-between">
+                  <div>WORK</div>
+                  <div>↗</div>
+                  </div>
                 </Link>
                 </div>
-                <div>
-                <Link to="/about" className="text-6xl" onClick={closeDropdown}>
-                  About
+                <div className="py-5 pl-10 pr-10 hover:bg-black w-full hover:text-white">                
+                <Link to="/about" className="text-7xl w-full" onClick={closeDropdown}>
+                <div className="flex justify-between">
+                  <div>ABOUT</div>
+                  <div>↗</div>
+                  </div>
                 </Link>
                 </div>
-                <div>
-                <Link to="/arena" className="text-6xl" onClick={closeDropdown}>
-                  Arena
+                <div className="py-5 pl-10 pr-10 hover:bg-black w-full hover:text-white">                
+                <Link to="/arena" className="text-7xl w-full" onClick={closeDropdown}>
+                <div className="flex justify-between">
+                  <div>ARENA</div>
+                  <div>↗</div>
+                  </div>
                 </Link>
                 </div>
-                <div>
-                <Link to="/contact" className="text-6xl" onClick={closeDropdown}>
-                  Contact
+                <div className="py-5 pl-10 pr-10 hover:bg-black w-full hover:text-white">                
+                <Link to="/contact" className="text-7xl w-full" onClick={closeDropdown}>
+                <div className="flex justify-between">
+                  <div>CONTACT</div>
+                  <div>↗</div>
+                  </div>
                 </Link>
                 </div>
               </div>

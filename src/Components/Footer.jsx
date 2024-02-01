@@ -21,6 +21,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
+        <div>made with love, peer pressure & react</div>
         <div className="bg-neutral-600 h-[1px]"></div>
         <div className="flex justify-between py-6 text-[1vw]">
           <div>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
