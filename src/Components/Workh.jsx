@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
 
 const Workh = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 600);
+      setIsSmallScreen(window.innerWidth <= 768);
     };
     window.addEventListener("resize", handleResize);
 
@@ -12,10 +12,11 @@ const Workh = () => {
   }, []);
 
   return (
-    <>
+    <div className="flex justify-center bg-black">
+    <div className="max-w-[1300px] text-white">
     <div className="flex justify-between px-4 items-center">
         <div className="text-[120px]">Work</div>
-        <button className="flex items-center justify-center w-48 h-24 rounded-full bg-lime-400 bg-opacity-100 p-[5px] text-2xl ">
+        <button className="flex items-center justify-center w-48 h-24 rounded-full bg-orange-500 bg-opacity-100 p-5 text-2xl ">
               See all <br></br>projects
             </button>
         </div>
@@ -49,7 +50,8 @@ const Workh = () => {
         </div>
       </div>
       )}
-    </>
+    </div>
+    </div>
   );
 };
 
