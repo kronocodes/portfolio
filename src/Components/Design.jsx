@@ -11,9 +11,10 @@ import Img8 from "../assets/img8.png";
 const Design = () => {
   return (
     <>
+    <div className="bg-black text-white">
       <div className="flex flex-col items-center min-h-[80vh]">
-        <div class="myplayground">My Playground</div>
-        <div class="play_sub" /*className="text-center max-w-[60%] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"*/>
+        <div className="flex items-center h-[45vh] md:text-[5.7vw] text-4xl">My Playground</div>
+        <div className="w-1/2 tracking-[-.03em] text-center leading-[110%] text-2xl md:text-[2.083vw]" /*className="text-center max-w-[60%] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"*/>
           Welcome to my playground, my personal collection of random designs,
           explorations, rejected versions or any thing that I could not find a
           place to show...
@@ -84,6 +85,7 @@ const Design = () => {
               <div className="">Poster</div>
             </div>
           </div>
+        </div>
         </div>
     </>
   );

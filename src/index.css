@@ -5,23 +5,7 @@
 img {
   width: 100%;
 }
-.myplayground{
-  display: flex;
-  align-items: center;
-  font-size: 5.7vw;
-  height: 45vh;
-}
 
-
-.play_sub{
-    width: 50%;
-    margin: 0 auto;
-    font-size: 2.083vw;
-    line-height: 110%;
-    letter-spacing: -0.03em;
-    text-align: center;
-    margin-top: -4rem;
-}
 
 .photo-grid-container {
   column-count: 4;
@@ -32,7 +16,7 @@ img {
 }
 
 .photo-grid-item {
-  margin: 0 auto 4vw;
+  margin: 0 auto 6vw;
   max-width: 70vw;
   width: 100%;
 }

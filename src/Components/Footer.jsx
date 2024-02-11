@@ -22,11 +22,11 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div>made with love, peer pressure & react</div>
-        <div className="bg-neutral-600 h-[1px]"></div>
-        <div className="flex justify-between py-6">
-          <div>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
-          <div>© 2023 Abhishek Nandan. All Rights Reserved</div>
+        <div className='text-center text-xl italic py-2'>Made with love, peer pressure & react</div>
+        <div className="bg-neutral-600 h-[0.5px]"></div>
+        <div className="flex justify-between py-4">
+          <div className='text-sm'>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
+          <div>© 2023 Abhishek Nandan.</div>
         </div>
       </div>
     </div>
