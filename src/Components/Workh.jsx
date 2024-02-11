@@ -15,9 +15,9 @@ const Workh = () => {
     <div className="flex justify-center bg-black">
     <div className="max-w-[1300px] text-white">
     <div className="flex justify-between px-4 items-center">
-        <div className="text-[120px]">Work</div>
-        <button className="flex items-center justify-center w-48 h-24 rounded-full bg-orange-500 bg-opacity-100 p-5 text-2xl ">
-              See all <br></br>projects
+        <div className="text-7xl">Work</div>
+        <button className="flex items-center justify-center rounded-full bg-orange-500 bg-opacity-100 p-5 text-xl ">
+              See all projects
             </button>
         </div>
     {isSmallScreen ? (
