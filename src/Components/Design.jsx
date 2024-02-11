@@ -8,7 +8,7 @@ import Img6 from "../assets/img6.png";
 import Img7 from "../assets/img7.png";
 import Img8 from "../assets/img8.png";
 
-const Arena = () => {
+const Design = () => {
   return (
     <>
       <div className="flex flex-col items-center min-h-[80vh]">
@@ -89,4 +89,4 @@ const Arena = () => {
   );
 };
 
-export default Arena;
+export default Design;

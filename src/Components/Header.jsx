@@ -56,9 +56,9 @@ const Header = () => {
                 </Link>
                 </div>
                 <div className="py-5 pl-10 pr-10 hover:bg-black w-full hover:text-white">                
-                <Link to="/arena" className="text-7xl w-full" onClick={closeDropdown}>
+                <Link to="/design" className="text-7xl w-full" onClick={closeDropdown}>
                 <div className="flex justify-between">
-                  <div>ARENA</div>
+                  <div>DESIGN</div>
                   <div>↗</div>
                   </div>
                 </Link>
@@ -86,8 +86,8 @@ const Header = () => {
             <Link to="/about" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
               About
             </Link>
-            <Link to="/arena" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
-              Arena
+            <Link to="/design" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
+              Design
             </Link>
             <Link to="/contact" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
               Contact
