@@ -9,14 +9,14 @@ img {
 
 .photo-grid-container {
   column-count: 4;
-  column-width: 160px;
+  column-width: 170px;
   column-gap: 2vmax;
   margin: 2vmax;
   
 }
 
 .photo-grid-item {
-  margin: 0 auto 6vw;
+  margin: 0 auto 9vw;
   max-width: 70vw;
   width: 100%;
 }

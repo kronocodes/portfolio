@@ -7,6 +7,16 @@ import Img5 from "../assets/img5.png";
 import Img6 from "../assets/img6.png";
 import Img7 from "../assets/img7.png";
 import Img8 from "../assets/img8.png";
+import t1 from "../assets/t1.png"
+import t2 from "../assets/t2.png"
+import t3 from "../assets/t3.jpg"
+import t4 from "../assets/t4.png"
+import t5 from "../assets/t5.png"
+import t6 from "../assets/t6.png"
+import t7 from "../assets/t7.png"
+import t8 from "../assets/t8.jpg"
+import t9 from "../assets/t9.png"
+import t10 from "../assets/t10.png"
 
 const Design = () => {
   return (
@@ -44,14 +54,14 @@ const Design = () => {
             </div>
           </div>
           <div className="photo-grid-item">
-            <img className="" src={Img5}/>
+            <img className="" src={Img4}/>
             <div className="flex justify-between">
               <div className="">(2020)</div>
               <div className="">Poster</div>
             </div>
           </div>
           <div className="photo-grid-item">
-            <img className="" src={Img8}/>
+            <img className="" src={Img5}/>
             <div className="flex justify-between">
               <div className="">(2020)</div>
               <div className="">Poster</div>
@@ -71,6 +81,84 @@ const Design = () => {
               <div className="">Poster</div>
             </div>
           </div>
+          <div className="photo-grid-item">
+            <img className="" src={Img8}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t1}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t2}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t3}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t4}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t5}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t6}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t7}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t8}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t9}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+          <div className="photo-grid-item">
+            <img className="" src={t10}/>
+            <div className="flex justify-between">
+              <div className="">(2020)</div>
+              <div className="">Poster</div>
+            </div>
+          </div>
+
         </div>
         </div>
     </>
