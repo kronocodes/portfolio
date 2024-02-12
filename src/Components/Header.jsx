@@ -77,14 +77,14 @@ const Header = () => {
       ) : (
         <div className="fixed -top-0 z-50">
           <div className="flex fixed left-0 right-0 my-6 mx-auto w-[414px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-[5px] items-center rounded-full text-white text-sm">
-            <Link to="/" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
-              Home
-            </Link>
             <Link to="/work" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
               Work
             </Link>
             <Link to="/about" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
               About
+            </Link>
+            <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
+              <div className="-mt-4 text-5xl opacity-80 font-semibold">AN</div>
             </Link>
             <Link to="/design" className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-2">
               Design

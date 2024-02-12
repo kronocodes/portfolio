@@ -44,13 +44,6 @@ const Design = () => {
             </div>
           </div>
           <div className="photo-grid-item">
-            <img className="" src={Img4} />
-            <div className="flex justify-between">
-              <div className="">(2020)</div>
-              <div className="">Poster</div>
-            </div>
-          </div>
-          <div className="photo-grid-item">
             <img className="" src={Img5}/>
             <div className="flex justify-between">
               <div className="">(2020)</div>
@@ -73,13 +66,6 @@ const Design = () => {
           </div>
           <div className="photo-grid-item">
             <img className="" src={Img7}/>
-            <div className="flex justify-between">
-              <div className="">(2020)</div>
-              <div className="">Poster</div>
-            </div>
-          </div>
-          <div className="photo-grid-item">
-            <img className="" src={Img2}/>
             <div className="flex justify-between">
               <div className="">(2020)</div>
               <div className="">Poster</div>

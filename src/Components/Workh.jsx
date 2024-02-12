@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 const Workh = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
@@ -16,9 +17,11 @@ const Workh = () => {
     <div className="max-w-[1300px] text-white">
     <div className="flex justify-between px-4 py-4 items-center">
         <div className="text-7xl">Work</div>
+        <Link to='/work'>
         <button className="flex items-center justify-center rounded-full bg-orange-500 bg-opacity-100 p-5 text-xl ">
               See all projects
             </button>
+            </Link>
         </div>
     {isSmallScreen ? (
       <div className="px-6">
