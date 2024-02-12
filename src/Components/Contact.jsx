@@ -11,20 +11,20 @@ const Contact = () => {
         <div className='text-7xl w-full text-white' >CONTACT</div>
           <div className='flex flex-col'>
             <div className='py-2 font-semibold text-xl text-white'>[ NAME ]</div>
-            <input className='p-4' placeholder='Your name'></input>
+            <input className='p-3' placeholder='Your name'></input>
           </div>
           <div className='flex flex-col py-5 '>
             <div className='py-2 font-semibold text-xl text-white'>[ EMAIL ADDRESS ]</div>
-            <input className='p-4' placeholder='not@fake-email.com'></input>
+            <input className='p-3' placeholder='not@fake-email.com'></input>
           </div>
           <div className='flex flex-col py-5 '>
             <div className='py-2 font-semibold text-xl text-white'>[ SUBJECT ]</div>
-            <input className='p-4' placeholder=''></input>
+            <input className='p-3' placeholder=''></input>
           </div>
           <div className='flex flex-col w-full items-stretch '>
             <div className='flex flex-col py-5'>
               <div className='py-2 font-semibold text-xl text-white'>[ MESSAGE ]</div>
-              <input className='p-4 h-36 bg-zinc-200' placeholder='Example Text'></input>
+              <input className='p-3 h-36 bg-zinc-200' placeholder='Example Text'></input>
             </div>
             <button className='p-4 bg-orange-500'>SUBMIT</button>
           </div>

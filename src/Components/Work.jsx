@@ -1,20 +1,24 @@
-import React from "react";
-import vid1 from "../assets/1.mp4";
+import React from 'react'
 
 const Work = () => {
   return (
     <>
-      <div className="flex bg-black max-w-[1440px] justify-center">
-        
-          </div>
-      <div className="flex justify-center sticky">
-          <div className="rounded-lg mx-1 h-24 w-32 bg-black"></div>
-          <div className="rounded-lg mx-1 h-24 w-32 bg-red-800"></div>
-          <div className="rounded-lg mx-1 h-24 w-32 bg-amber-400"></div>
-          <div className="rounded-lg mx-1 h-24 w-32 bg-green-700"></div>
-        </div>
+    <div className='bg-black'>
+    <div className='h-[90vh] flex items-center justify-center'>
+      <div className='h-[50vh] bg-white w-[70vw] lg:w-[900px]'></div>
+    </div>
+    <div className='h-[90vh] flex items-center justify-center'>
+      <div className='h-[50vh] bg-white w-[70vw] lg:w-[900px]'></div>
+    </div>
+    <div className='h-[90vh] flex items-center justify-center'>
+      <div className='h-[50vh] bg-white w-[70vw] lg:w-[900px]'></div>
+    </div>
+    <div className='h-[90vh] flex items-center justify-center'>
+      <div className='h-[50vh] bg-white w-[70vw] lg:w-[900px]'></div>
+    </div>
+    </div>
     </>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work

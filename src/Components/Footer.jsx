@@ -6,23 +6,21 @@ const Footer = () => {
     <div className='flex justify-center bg-black text-white'>
 
     <div className="max-w-[1300px] w-full px-4">
-        <div className="flex justify-center py-16 rounded-t-[30px]">
-          <div className="w-1/2 text-xl">
-            <div className="flex flex-wrap max-w-[550px] justify-between pl-1">
+        <div className="py-16 rounded-t-[30px]">
+            <div className="flex flex-wrap gap-x-10 justify-between pl-1 text-xl">
               <div>Github</div>
               <div>LinkedIn</div>
               <div>Twitter</div>
-              <div>Comming Soon</div>
+              <div>Twitter</div>
+              <div className="mt-[20px] md:-mt-2 bg-orange-500 text-black px-2 py-1 rounded-lg">abhisheknandan2013@gmail.com</div>
             </div>
-            <div className="mt-[20px] w-[318px] border border-neutral-600 px-2 py-2 rounded-full">abhisheknandan2013@gmail.com</div>
-          </div>
-          <div className="w-1/2 flex justify-end">
+          {/* <div className="w-1/2 flex justify-end">
             <button className="bg-orange-500 w-24 h-24 rounded-full">
               <img className="p-4" src={Up} />
             </button>
-          </div>
+          </div> */}
         </div>
-        <div className='text-center text-xl italic py-2'>Made with love, peer pressure & react</div>
+        <div className='text-center text-[24px] italic py-2'>Made with love, peer pressure & react</div>
         <div className="bg-neutral-600 h-[0.5px]"></div>
         <div className="flex justify-between py-4">
           <div className='text-sm'>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
