@@ -29,7 +29,7 @@ const project=[
     year: "2023",
     tagline: "YouTube clone built using react fething real time data.",
     src: Youtube,
-    gradientColor: "from-violet-900",
+    gradientColor: "from-red-800",
   },
   {
     id:3,
@@ -40,7 +40,7 @@ const project=[
     year: "2024",
     tagline: "A Showcase of my creations.",
     src: Portfolio,
-    gradientColor: "from-red-900",
+    gradientColor: "from-zinc-700",
   },
   {
     id:4,
@@ -51,7 +51,7 @@ const project=[
     year: "2024",
     tagline: "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
     src: FACT,
-    gradientColor: "from-purple-900",
+    gradientColor: "from-yellow-600",
   },
   {
     id:5,
@@ -71,7 +71,7 @@ const Work = () => {
     <>
     
       <div className="bg-black flex flex-col items-center gap-y-44 text-white">
-        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full pt-36 flex flex-col lg:gap-y-36 gap-y-12 px-6">
+        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full py-36 flex flex-col lg:gap-y-36 gap-y-12 px-6">
         {project.map((project, id) => (
           <div className="border border-zinc-700 rounded-3xl bg-zinc-800 md:p-2 p-2">
           <div className={`rounded-3xl lg:bg-zinc-900 bg-gradient-to-b lg:hover:bg-gradient-to-b ${project.gradientColor} to-black shadow-sm shadow-zinc-600 border-[1px] border-zinc-500`}>
