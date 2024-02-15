@@ -1,64 +1,121 @@
-import React from 'react'
-import Foodle from '../assets/Foodle.png'
-import Youtube from '../assets/Youtube.png'
-import Portfolio from '../assets/Portfolio.png'
-import FACT from '../assets/FACT.png'
-import NMK from '../assets/NMK.png'
-import Referral from '../assets/Referral.png'
+import React from "react";
+import Foodle from "../assets/Foodle.png";
+import Youtube from "../assets/Youtube.png";
+import Portfolio from "../assets/Portfolio.png";
+import FACT from "../assets/FACT.png";
+import NMK from "../assets/NMK.png";
+import Referral from "../assets/Referral.png";
+import Prod from "../assets/prod.png";
+import toolbar from '../assets/toolbar.png'
+
+const project=[
+  {
+    id:1,
+    name: "Food Delivery Web Application",
+    repo: "https://github.com/kronocodes/swiggy",
+    live: "https://notswiggy.vercel.app/",
+    figma: "",
+    year: "2023",
+    tagline: "A food delivery web application fething and showing real time data using swiggy's Api",
+    src: Foodle,
+    gradientColor: "from-blue-900",
+  },
+  {
+    id:2,
+    name: "YouTube Clone",
+    repo: "https://github.com/kronocodes/youtube-clone",
+    live: "https://notyoutube-rust.vercel.app/",
+    figma: "",
+    year: "2023",
+    tagline: "A food delivery web application fething and showing real time data using swiggy's Api",
+    src: Youtube,
+    gradientColor: "from-violet-900",
+  },
+  {
+    id:3,
+    name: "Portfolio",
+    repo: "https://github.com/kronocodes/portfolio",
+    live: "",
+    figma: "",
+    year: "2024",
+    tagline: "A food delivery web application fething and showing real time data using swiggy's Api",
+    src: Portfolio,
+    gradientColor: "from-red-900",
+  },
+  {
+    id:4,
+    name: "College Clubs Portal",
+    repo: "https://github.com/nihar8262/FACTS-N",
+    live: "https://facts-iota.vercel.app/",
+    figma: "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
+    year: "2024",
+    tagline: "A food delivery web application fething and showing real time data using swiggy's Api",
+    src: FACT,
+    gradientColor: "from-purple-900",
+  },
+  {
+    id:5,
+    name: "Nasha Mukti Kendra",
+    repo: "",
+    live: "",
+    figma: "https://www.figma.com/file/BI3iu3zMaEy4lmvYe5SfCr/Nasha-Mukti-Kendra?type=design&t=uqLQxD7daILh7yQu-6",
+    year: "2023",
+    tagline: "A food delivery web application fething and showing real time data using swiggy's Api",
+    src: NMK,
+    gradientColor: "from-green-700",
+  },
+]
 
 const Work = () => {
   return (
     <>
-    <div className='bg-black'>
-
-    <div className='h-[90vh] flex items-center justify-center'>
-      <a href="https://github.com/kronocodes/swiggy">
-      <div className='object-fill bg-white w-[80vw] lg:w-[1000px]'>
-        <img href="https://github.com/kronocodes/swiggy" src={Foodle}></img>
-      </div>
-      </a>
-    </div>
-
-    <div className='h-[90vh] flex items-center justify-center'>
-      <a href='https://github.com/kronocodes/youtube-clone'>
-      <div className='object-fill bg-white w-[80vw] lg:w-[1000px]'>
-        <img src={Youtube}></img>
-      </div>
-      </a>
-    </div>
     
-    <div className='h-[90vh] flex items-center justify-center'>
-    <a>
-      <div className='object-fill border bg-white w-[80vw] lg:w-[1000px]'>
-        <img src={Portfolio}></img>
-      </div>
-      </a>
-    </div>
+      <div className="bg-black flex flex-col items-center gap-y-44 text-white">
+        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full pt-36 flex flex-col lg:gap-y-36 gap-y-12 px-6">
+        {project.map((project, id) => (
+          <div className="border border-zinc-700 rounded-3xl bg-zinc-800 md:p-2 p-2">
+          <div className={`rounded-3xl lg:bg-zinc-900 bg-gradient-to-b lg:hover:bg-gradient-to-b ${project.gradientColor} to-black shadow-sm shadow-zinc-600 border-[1px] border-zinc-500`}>
+          <div className="flex flex-col rounded-3xl justify-center">
+            <div className="flex justify-between items-center pt-8 md:pt-10 px-8">
+              <div className="text-2xl md:text-3xl md:font-semibold font-[500]">
+                {project.name}
+              </div>
 
-    <div className='h-[90vh] flex items-center justify-center'>
-    <a href='https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&node-id=0-1&mode=design&t=zfm2EBaR1xTJIESq-0'>
-      <div className='object-fill bg-white w-[80vw] lg:w-[1000px]'>
-        <img src={FACT}></img>
+              {/* <div className='bg-zinc-600 w-fit h-fit text-center px-1 py-1 mt-1 border-2 border-zinc-600 rounded-md'>Design & Development</div> */}
+            </div>
+            <div className="px-8 md:pt-5 pt-3 pb-5 text-sm md:text-lg text-zinc-300">
+              <span className="text-sm font-bold md:text-xl text-white">{project.year} - </span>{project.tagline}
+            </div>
+            <div className="flex flex-col justify-between px-8">
+            {project.repo !== "" && (
+              <a className="border-b text-center border-zinc-500  py-2 hover:bg-white hover:text-black hover:font-medium" href={project.repo}>
+              <button >Goto GitHub Repo</button>
+              </a>
+            )}
+            {project.live !== "" && (
+              <a className="border-b text-center border-zinc-500  py-2 hover:bg-white hover:text-black hover:font-medium" href={project.live}>
+              <button>View Live Website</button>
+              </a>
+              )}
+            {project.figma !== "" && (
+              <a className="border-b text-center border-zinc-500  py-2 hover:bg-white hover:text-black hover:font-medium" href={project.figma}>
+              <button >View Figma File</button>
+              </a>
+            )}
+            </div>
+              <div className="mx-auto object-fill w-[85%] mt-10 md:mt-16 border border-zinc-600 rounded-lg">
+                <img src={toolbar}></img>
+                <img src={project.src}></img>
+              </div>
+          </div>
+        </div>
+        </div>
+        ))}
+          
+        </div>
       </div>
-      </a>
-    </div>
-    <div className='h-[90vh] flex items-center justify-center'>
-      <a href='https://www.figma.com/file/BI3iu3zMaEy4lmvYe5SfCr/Nasha-Mukti-Kendra?type=design&mode=design&t=zfm2EBaR1xTJIESq-0'>
-      <div className='object-fill bg-white w-[80vw] lg:w-[1000px]'>
-        <img src={NMK}></img>
-      </div>
-      </a>
-    </div>
-    <div className='h-[90vh] flex items-center justify-center'>
-      <a>
-      <div className='object-fill bg-white w-[80vw] lg:w-[1000px]'>
-        <img src={Referral}></img>
-      </div>
-      </a>
-    </div>
-    </div>
     </>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

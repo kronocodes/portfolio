@@ -21,11 +21,11 @@ Demonstrated commitment to continuous learning and excellence through coding com
             <div className='pt-2 -ml-2'><img className='w-14' src="https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg" alt="ar" /></div>
             <div className='flex flex-wrap justify-between py-1'>
             <div className='text-3xl font-semibold'>Web Developer</div>
-            <div className='bg-neutral-700 w-fit h-fit text-center px-3 py-1 mt-1 border-2 border-zinc-600 rounded-md text-sm'>2 Major and 3+ Minor Projects</div>
+            <div className='bg-neutral-700 w-fit h-fit text-center px-3 py-1 mt-1 border-2 border-zinc-600 rounded-md text-sm'>5 Projects</div>
             </div>
-            <div className='pb-9 pt-3 text-zinc-300'>Combining my frontend development skills in HTML, CSS, and JavaScript with my expertise in modern frameworks like React and backend technologies such as Node.js and MySQL, I possess a comprehensive skill set to excel as a web developer.
-My experience in building responsive web designs, implementing smooth animations, and integrating email functionality demonstrates my commitment to crafting dynamic and user-friendly websites.
-Whether it's optimizing website performance, ensuring cross-browser compatibility, or implementing innovative features, I leverage my technical prowess and attention to detail to deliver exceptional web solutions.</div>
+            <div className='pb-9 pt-3 text-zinc-300'>Combining my frontend development skills in HTML, CSS, and JS with my expertise in modern frameworks like React, I possess a comprehensive skill set to excel as a web developer.
+My experience in building responsive web designs, implementing smooth animations demonstrates my commitment to crafting dynamic and user-friendly websites.
+Whether it's optimizing website performance or implementing innovative features, I leverage my technical prowess to deliver exceptional web solutions.</div>
           </div>
           <div class="flex flex-col rounded-xl border-[1px] border-zinc-700 px-4 lg:px-9 ">
             <div className='pt-2 -ml-2'><img className='w-14' src="https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg" alt="ar" /></div>
@@ -44,8 +44,8 @@ Skilled in translating concepts into visually compelling designs that resonate w
             <div className='bg-neutral-700 w-fit h-fit text-center px-3 py-1 mt-1 border-2 border-zinc-600 rounded-md text-sm'>5+ Designs</div>
             </div>
             <div className='pb-9 pt-3 text-zinc-300'>As a creative thinker with proficiency in tools like Figma, Blender, and Adobe Suite, I bring a unique blend of artistic flair and technical expertise to the realm of UI/UX design.
-My portfolio showcases my ability to conceptualize and design visually appealing interfaces while ensuring seamless user experiences, reflecting a deep understanding of user-centric design principles.
-With a keen eye for detail and a passion for creating delightful user interactions, I am adept at transforming complex ideas into intuitive and engaging digital experiences that captivate users.</div>
+My portfolio showcases my ability to conceptualize and design visually appealing interfaces while ensuring seamless user experiences.
+With a keen eye for detail and a passion for creating delightful user interactions.</div>
           </div>
         </div>
       </div>
