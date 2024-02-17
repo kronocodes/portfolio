@@ -71,7 +71,7 @@ const Workh = () => {
           <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full py-10 flex flex-col lg:gap-y-36 gap-y-12 px-6">
           {project.map((project, id) => (
             <div className="border border-zinc-700 rounded-3xl bg-zinc-800 md:p-2 p-2">
-            <div className={`rounded-3xlbg-zinc-900 hover:bg-gradient-to-b ${project.gradientColor} to-black shadow-sm shadow-zinc-600 border-[1px] border-zinc-500`}>
+            <div className={`rounded-3xl bg-zinc-900 hover:bg-gradient-to-b ${project.gradientColor} to-black shadow-sm shadow-zinc-600 border-[1px] border-zinc-500`}>
             <div className="flex flex-col rounded-3xl justify-center">
               <div className="flex justify-between items-center pt-8 md:pt-10 px-8">
                 <div className="text-2xl md:text-3xl md:font-semibold font-[500]">
