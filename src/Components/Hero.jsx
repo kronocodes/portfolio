@@ -5,30 +5,38 @@ const Hero = () => {
   return (
     <>
       <div className='flex items-center justify-center h-[96vh] bg-black z-10'>
-          <div className='text-white px-5 max-w-[1300px] text-[50px] md:text-[70px] md:leading-[86px] xl:text-[90px] xl:leading-[100px]'>
-              <div class="flex flex-wrap justify-between">
-                <div>HELLO</div>
-                <div>THERE!</div>
-              </div>
-              <div class="flex flex-wrap justify-between items-center">
-                <div className=''>I'AM</div>
-                <div class='md:px-3 lg:px-4 xl:h-20 xl:w-44 md:h-16 h-14 w-36'>
-                  <img className='h-full w-full object-cover rounded-full' src={im}></img>
-                </div>
-              </div>
-              <div class="flex flex-wrap justify-between">
-                <div>ABHISHEK</div>
-                <div>NANDAN</div>
-              </div>
-              <div class="flex flex-wrap gap-x-10 justify-between">
-                <div>SOFTWARE</div>
-                <div>DEVELOPER</div>
-              </div>
-              <div class="flex flex-wrap justify-between">
-                <div>AND</div>
-                <div>WEB</div>
-                <div>DESIGNER</div>
-              </div>
+        <div className='bg-zinc-800 w-full h-full mt-8 mx-3 border border-zinc-600 rounded-2xl gradient-box'>
+          <div className=' text-white px-10 max-w-[1220px] mt-[240px] text-[25px] leading-[33px] md:text-[40px] md:leading-[54px] md:px-24  lg:mx-auto lg:text-[45px] lg:leading-[70px]'>
+              <div class="flex flex-wrap gap-x-2 ">
+                <div>Hey</div>
+                <div>there!</div>
+                <div>I'm</div>
+                <div>Abhishek,</div>
+                <div>a Software Developer</div>
+                <div>and</div>
+                <div>a</div>
+                <div>Web</div>
+                <div>User</div>
+                <div>Interface</div>
+                <div>designer</div>
+                <div>based</div>
+                <div>in</div>
+                <div>Patna,</div>
+                <div>India.</div>
+                <div>I</div>
+                <div>am</div>
+                <div>currently</div>
+                <div>an</div>
+                <div>final</div>
+                <div>year</div>
+                <div>student</div>
+                <div>majoring</div>
+                <div>in</div>
+                <div>Computer</div>
+                <div>Science</div>
+                <div>Engineering.</div>
+          </div>
+        </div>
         </div>
       </div>
     </>

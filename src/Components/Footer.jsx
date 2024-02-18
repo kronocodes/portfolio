@@ -20,11 +20,11 @@ const Footer = () => {
             </button>
           </div> */}
         </div>
-        <div className='text-center text-[24px] italic py-2'>Made with love, peer pressure & react</div>
+        <div className='text-center text-[22px] italic pb-10'>Made with love, peer pressure & react</div>
         <div className="bg-neutral-600 h-[0.5px]"></div>
-        <div className="flex justify-between py-4 text-sm italic">
-          <div>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
-          <div>© 2023 ABHISHEK NANDAN.</div>
+        <div className="flex sm:justify-between justify-center  py-4 text-sm">
+          <div className='hidden'>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
+          <div className='text-xs text-center'>© 2024 ABHISHEK NANDAN.</div>
         </div>
       </div>
     </div>

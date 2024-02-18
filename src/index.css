@@ -21,3 +21,25 @@ img {
   max-width: 70vw;
   width: 100%;
 }
+
+.carousel-slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.gradient-box {
+  background: linear-gradient(-45deg, #440330, #000000, #03394d, #1b0346);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
