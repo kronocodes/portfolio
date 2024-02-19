@@ -1,5 +1,6 @@
 import React from 'react'
-import im from '../assets/hero.jpeg'
+// import im from '../assets/hero.jpeg'
+import im from '../assets/hero5.jpg'
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
                 <div>Designer</div>
                 <div>based</div>
                 <div>in</div>
-                <div>New Delhi,</div>
+                <div >New Delhi,</div>
                 <div>India.</div>
                 <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
                   <img className='h-full w-full object-cover rounded-full ' src="https://images.unsplash.com/photo-1585869092291-eae6b0101b52?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
