@@ -56,16 +56,18 @@ const Workh = () => {
   }, []);
 
   return (
-    <div className="flex justify-center bg-black">
+    <div className="flex justify-center bg-black pb-20 ">
       <div className="max-w-[1300px] text-white">
         <div className="flex justify-between px-4 py-4 items-center">
-          <div className="text-7xl">Work</div>
+        <div className='text-white py-5 text-7xl '>Work</div>
+        
           <Link to="/work">
             <button className="flex items-center justify-center rounded-full bg-orange-500 bg-opacity-100 p-5 text-xl ">
               See all projects
             </button>
           </Link>
         </div>
+        <div className="h-[1px] bg-zinc-500 mx-6  md:mb-20"></div>
         {isSmallScreen ? (
           <div className="bg-black flex flex-col items-center gap-y-44 text-white">
           <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full py-10 flex flex-col lg:gap-y-36 gap-y-12 px-6">

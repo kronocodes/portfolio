@@ -26,7 +26,7 @@ const Header = () => {
     <>
       {isSmallScreen ? (
           <div className="fixed z-50">
-            <button onClick={toggleDropdown} className="fixed right-8 top-10 z-[999] flex items-center justify-center w-12 h-12 rounded-full bg-neutral-800 bg-opacity-40 backdrop-blur-[6px]  p-[5px]">
+            <button onClick={toggleDropdown} className="fixed right-8 top-10 z-[999] flex items-center justify-center w-12 h-12 rounded-full bg-neutral-500 bg-opacity-40 backdrop-blur-[6px]  p-[5px]">
               <img className="w-6" src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" alt="Menu icon"/>
             </button>
             {isDropdownOpen && (
