@@ -5,12 +5,8 @@ const Hero = () => {
   return (
     <>
       <div className='flex items-center justify-center h-[96vh] bg-black z-10'>
-        <div className='bg-zinc-800 w-full h-full mt-8 mx-3 border border-zinc-600 rounded-2xl gradient-box relative'>
-          {/* <div className='w-[15%] rounded-2xl opacity-40 absolute bg-gradient-to-l from-transparent to-black left-0 h-full'></div> */}
-          {/* <div className='w-[15%] rounded-2xl opacity-40 absolute bg-gradient-to-l from-black to-transparent right-0 h-full'></div> */}
-          {/* <div className='h-[25%] rounded-2xl opacity-40 absolute bg-gradient-to-t from-transparent to-black top-0 w-full'></div>
-          <div className='h-[25%] rounded-2xl opacity-40 absolute bg-gradient-to-b from-transparent to-black bottom-0 w-full'></div> */}
-          <div className=' text-white px-10 mx-auto max-w-[1220px] mt-[260px] text-[25px] leading-[33px] md:text-[40px] md:leading-[54px] md:px-24  lg:mt-[260px] lg:text-[45px] lg:leading-[70px]'>
+        <div className='bg-zinc-800 w-full h-full mt-8 mx-3 border border-zinc-600 rounded-2xl gradient-box flex justify-center items-center'>
+          <div className=' text-white px-10 mx-auto max-w-[1220px] text-[25px] leading-[33px] md:text-[40px] md:leading-[54px] md:px-24 lg:text-[45px] lg:leading-[70px]'>
               <div class="flex flex-wrap gap-x-2 ">
                 <div>Hello!</div>
                 <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
@@ -19,18 +15,17 @@ const Hero = () => {
                 <div>I'm</div>
                 <div>Abhishek,</div>
                 <div>a Software Developer</div>
-                <div>and</div>
-                <div>a</div>
+                <div>and a</div>
                 <div>Web</div>
                 <div className='italic md:pl-1 font-light'>User</div>
                 <div className='italic pr-2 font-light'>Interface</div>
                 <div>Designer</div>
                 <div>based</div>
                 <div>in</div>
-                <div>Patna,</div>
+                <div>New Delhi,</div>
                 <div>India.</div>
                 <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
-                  <img className='h-full w-full object-cover rounded-full ' src="https://cdn1.tripoto.com/media/filter/tst/img/1820511/TripDocument/1577909575_giant_buddha_1.jpeg.webp"></img>
+                  <img className='h-full w-full object-cover rounded-full ' src="https://images.unsplash.com/photo-1585869092291-eae6b0101b52?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
                 </div>
                 <div>I</div>
                 <div>am</div>
@@ -39,10 +34,13 @@ const Hero = () => {
                 <div>final</div>
                 <div>year</div>
                 <div>student</div>
+                <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
+                  <img className='h-full w-full object-cover rounded-full ' src="https://www.collegebatch.com/static/clg-gallery/aryabhatta-knowledge-university-patna-275733.jpg"></img>
+                </div>
                 <div>majoring</div>
                 <div>in</div>
-                <div>Computer</div>
-                <div>Science</div>
+                <div className='italic font-light'>Computer</div>
+                <div className='italic font-light'>Science</div>
                 <div>Engineering.</div>
           </div>
         </div>
