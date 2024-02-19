@@ -27,7 +27,7 @@ img {
   transition: transform 0.5s ease-in-out;
 }
 .gradient-box {
-  background: linear-gradient(-45deg, #1b0230, #110129, #090240, #07033e);
+  background: linear-gradient(-45deg, #131313, #272727, #212121, #1b1b1b);
   background-size: 400% 400%;
   animation: gradientAnimation 5s ease infinite;
 }
