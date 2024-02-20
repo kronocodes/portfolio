@@ -52,6 +52,8 @@ img {
       box-shadow: 0 0 0 rgba(255, 255, 255, 0.7);
   }
   to {
-      box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.386); /* Adjust glow effect */
+      box-shadow: 0 0 12px 5px rgba(255, 255, 255, 0.386); /* Adjust glow effect */
   }
 }
+
+
