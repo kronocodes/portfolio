@@ -6,23 +6,22 @@ import Youtube from "../assets/Youtube.png";
 import Portfolio from "../assets/Portfolio.png";
 import FACT from "../assets/FACT.png";
 import NMK from "../assets/NMK.png";
+import Services from "./Services";
 
 const About2 = () => {
-  const playlistId = '3cTTZ3jNUasv7OMZHNIrQa';
   const images = [Foodle, Youtube, Portfolio, FACT, NMK];
   return (
     <div className="bg-black flex flex-col items-center gap-y-44 text-white">
-      <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-10 w-full py-36 flex flex-col px-6">
-      <div className="w-full h-72 flex border border-zinc-600 bg-zinc-900 rounded-3xl relative">
-        <div className="absolute font-semibold left-0 text-2xl flex flex-col justify-center items-start pt-10 pl-4">
-          <div>Hi there!</div>
-          <div>This is not my resume</div>
-          <div>Just real talk.</div>
+      <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-10 w-full py-36 flex flex-col px-5">
+        <div className="flex flex-wrap">
+          <div className="w-full text-xl h-72 flex flex-col border border-zinc-600 bg-zinc-900 rounded-3xl">
+            <div className="px-5 pt-5 text-3xl">Hey! I am Abhishek Nandan</div>
+            <div className="px-5 pt-5 text-2xl italic scale-y-110 leading-6">On a journey to explore the intersection of technology, design, and innovation. With a background in Computer Science and a knack for problem-solving, I thrive on turning ideas into reality through code and design. </div>
+          </div>
+          <div className="h-72 min-w-fit aspect-auto flex border border-zinc-600 bg-zinc-900 rounded-3xl">
+            <img className="rounded-3xl" src={Aboutme} style={{ height: "100%", width: "auto" }} />
+          </div>
         </div>
-        <div className="absolute right-0 h-full">
-          <img className="rounded-r-3xl" src={Aboutme} style={{ height: "100%", width: "auto" }} />
-        </div>
-      </div>
         {/* <div>
           <img className="pt-20" src={Aboutme}></img>
         </div> */}
@@ -33,13 +32,18 @@ const About2 = () => {
           </div>
           <div className=" bg-red-600 py-1 px-2 rounded-lg font-semibold text-lg text-center w-28">True Story</div>
         </div>
-        <div className="w-full aspect-[2/3] bg-zinc-600 p-2 border border-zinc-400 rounded-2xl">
+        <div className="w-full max-w-xl aspect-[2/3] bg-zinc-600 p-2 border border-zinc-400 rounded-2xl">
           <Carousel images={images} />
         </div>
-        <div>
-        <iframe className="w-full h-[50vh] border border-zinc-400 rounded-2xl p-2" src="https://open.spotify.com/embed/playlist/0oRActjFDEhtOG8eCteVkC?utm_source=generator&theme=0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
-        />
-        </div>
+
+
+        <div className="border border-zinc-600 p-2 bg rounded-2xl"><Services/></div>
+
+        {/* Spotify playlist */}
+        <div><iframe className="w-full h-[50vh] border border-zinc-400 rounded-2xl p-2" src="https://open.spotify.com/embed/playlist/0oRActjFDEhtOG8eCteVkC?utm_source=generator&theme=0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/></div>
+        
+        <div class="w-3 h-3 rounded-full bg-white glow"></div>
+        
 
         <div className="flex px-4 flex-col">
           <div className="text-[80px]">Skills</div>I focus on all things design

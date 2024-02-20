@@ -30,20 +30,23 @@ const Services = () => {
   ];
 
   return (
-    <div className='bg-black text-white flex justify-center pb-20'>
+    <div className='text-white rounded-xl bg-zinc-900 flex justify-center pb-10'>
       <div className='max-w-[1300px]'>
-        <div className='text-white py-5 text-7xl p-6'>Services</div>
-        <div className="h-[1px] bg-zinc-500 mx-6"></div>
-        <div className="px-5 md:pt-16 pt-8">
+        <div className='flex items-center px-4 pt-4'>
+        <div class="w-3 h-3 rounded-full bg-white glow"></div>
+        <div className='px-6 text-zinc-300'>S E R V I C E S</div>
+        </div>
+        {/* <div className="h-[1px] bg-zinc-500 mx-6"></div> */}
+        <div className="px-3 md:pt-16 pt-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {servicesData.map((service, index) => (
-              <div key={index} className="flex flex-col rounded-xl border-[1px] border-zinc-700 px-4 lg:px-9 ">
+              <div key={index} className="flex flex-col rounded-xl border-[1px] border-zinc-700 bg-black px-4 lg:px-9 ">
                 <div className='pt-2 -ml-2'><img className='w-14' src={service.imageSrc} alt="ar" /></div>
                 <div className='flex flex-wrap justify-between py-1'>
                   <div className='text-3xl font-semibold'>{service.title}</div>
                   <div className='bg-neutral-700 w-fit h-fit text-center px-3 py-1 mt-1 border-2 border-zinc-600 rounded-md text-sm'>{service.badgeText}</div>
                 </div>
-                <div className='pb-14 pt-3 text-zinc-300'>{service.description}</div>
+                <div className='pb-12 pt-3 text-zinc-300'>{service.description}</div>
               </div>
             ))}
           </div>
