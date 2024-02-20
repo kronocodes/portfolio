@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <>
     <Hero/>
-    <Abouth/>
+    {/* <Abouth/>
     <Services/>
     <Workh/>
-    <Contacth/>
+    <Contacth/> */}
     </>
   )
 }

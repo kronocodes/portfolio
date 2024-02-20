@@ -40,13 +40,6 @@ const About2 = () => {
         <iframe className="w-full h-[50vh] border border-zinc-400 rounded-2xl p-2" src="https://open.spotify.com/embed/playlist/0oRActjFDEhtOG8eCteVkC?utm_source=generator&theme=0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
         />
         </div>
-        <div className="flex px-4 flex-col">
-          <div className="text-[80px]">My story</div>
-          <div className="flex flex-col ">
-            I'm passionate about creating beautiful products that empower
-            people.
-          </div>
-        </div>
 
         <div className="flex px-4 flex-col">
           <div className="text-[80px]">Skills</div>I focus on all things design
