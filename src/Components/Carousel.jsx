@@ -20,7 +20,7 @@ const Carousel = ({ images }) => {
       />
       <div className="carousel-slide w-full h-full">
         <div 
-          className="w-full h-full bg-cover bg-no-repeat rounded-3xl" 
+          className="w-full h-full bg-cover bg-no-repeat rounded-xl" 
           style={{backgroundImage: `url(${images[currentSlide]})`}}
         />
       </div>

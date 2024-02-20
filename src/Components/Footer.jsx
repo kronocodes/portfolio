@@ -20,7 +20,9 @@ const Footer = () => {
             </button>
           </div> */}
         </div>
+        <div>
         <div className='text-center text-[22px] italic pb-10'>Made with love, peer pressure & react</div>
+        </div>
         <div className="bg-neutral-600 h-[0.5px]"></div>
         <div className="flex sm:justify-between justify-center  py-4 text-sm">
           <div className='hidden'>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
