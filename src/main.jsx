@@ -14,6 +14,8 @@ import Youtube from "./Components/Work/Youtube"
 import NMK from "./Components/Work/Nmk"
 import FACT from "./Components/Work/FACT"
 import Portfolio from "./Components/Work/Portfolio"
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 
 const router=createBrowserRouter([
@@ -74,5 +76,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <RouterProvider router={router}/>
         {/* <ScrollToTop/> */}
+        <SpeedInsights/>
     </React.StrictMode>
 )
