@@ -17,6 +17,7 @@ import t7 from "../assets/t7.png";
 import t8 from "../assets/t8.jpg";
 import t9 from "../assets/t9.png";
 import t10 from "../assets/t10.png";
+import { LampContainer } from "./ui/lamp.tsx";
 
 const images = [
   { src: Img1, year: "(2020)", type: "Poster" },

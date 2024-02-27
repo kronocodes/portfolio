@@ -8,15 +8,19 @@ import FACT from "../assets/FACT.png";
 import NMK from "../assets/NMK.png";
 import Services from "./Services";
 import Education from "./Education";
+import Leetcode from "./Leetcode";
+import Calendar from "./Calendar";
+import Card from "./Card";
+import Skills from "./Skills";
 
 const About2 = () => {
   const images = [];
   return (
     <div className="bg-black flex flex-col items-center gap-y-44 text-white">
       <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full py-36 flex flex-col">
+    Under Construction
 
-
-        <div className="flex flex-col md:h-[420px] md:flex-row md:gap-x-8 px-4 md:px-0 gap-y-5">
+        {/* <div className="flex flex-col md:h-[420px] md:flex-row md:gap-x-8 px-4 md:px-0 gap-y-5">
           <div className="xl:px-12 md:px-8 px-6 flex flex-col xl:gap-y-6 md:gap-y-2 gap-y-2 pt-7 border border-zinc-600 bg-zinc-900 rounded-3xl">
             <div className="pt-4 md:text-2xl text-xl">Hey! I'm Abhishek Nandan</div>
             <div className="xl:text-5xl md:text-4xl text-3xl font-medium">Passionate to pursue the technology.</div>
@@ -30,6 +34,9 @@ const About2 = () => {
             />
           </div>
         </div>
+
+        <div><Leetcode/></div>
+        {/* <div><Calendar/></div>
 
 
         <div className="flex flex-col justify-center min-w-xl md:max-w-[50%] px-4 md:px-0">
@@ -58,8 +65,10 @@ const About2 = () => {
         <div className="border border-zinc-600 md:p-2 py-2 bg md:rounded-2xl">
           <Services />
         </div>
-
-        {/* Spotify playlist */}
+        <div className="border border-zinc-600 md:p-2 py-2 bg md:rounded-2xl">
+        <Skills/>
+        </div>
+        {/* Spotify playlist 
         <div className="">
           <iframe
             className="w-full h-[44vh] border border-zinc-600 md:rounded-2xl md:p-2 py-2"
@@ -119,7 +128,8 @@ const About2 = () => {
           <div className="text-3xl font-semibold">BECAUSE THERE'S</div>
           <div className="text-3xl font-semibold">MUCH MORE TO LIFE</div>
           <div>Than pushing pixels</div>
-        </div>
+          <Card/>
+        </div> */}
       </div>
     </div>
   );

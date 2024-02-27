@@ -79,7 +79,7 @@ const Header = () => {
             )}
           </div>
       ) : (
-        <div className="fixed z-50">
+        <div className="fixed z-[999]">
           <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
               <div className="fixed mt-8 left-8 text-3xl opacity-80 font-semibold text-white">A N.</div>
             </Link>

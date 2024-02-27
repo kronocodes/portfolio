@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <div className='flex items-center justify-center h-[96vh] bg-black z-10'>
-        <div className='bg-zinc-800 w-full h-full mt-8 mx-3 border border-zinc-600 rounded-2xl gradient-box flex justify-center items-center'>
+        <div className='bg-zinc-800 w-full h-full mt-8 mx-4 border border-zinc-600 rounded-2xl gradient-box flex justify-center items-center'>
           <div className=' text-white px-10 mx-auto max-w-[1220px] text-[25px] leading-[33px] md:text-[40px] md:leading-[54px] md:px-24 lg:text-[45px] lg:leading-[70px]'>
               <div class="flex flex-wrap gap-x-2 ">
                 <div>Hello!</div>
@@ -23,10 +23,10 @@ const Hero = () => {
                 <div>Designer</div>
                 <div>based</div>
                 <div>in</div>
-                <div >New Delhi,</div>
+                <div >Patna,</div>
                 <div>India.</div>
                 <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
-                  <img className='h-full w-full object-cover rounded-full ' src="https://images.unsplash.com/photo-1585869092291-eae6b0101b52?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
+                  <img className='h-full w-full object-cover rounded-full ' src="https://images.pexels.com/photos/9823892/pexels-photo-9823892.jpeg?cs=srgb&dl=pexels-chandan-suman-%F0%9F%87%AE%F0%9F%87%B3-9823892.jpg&fm=jpg"></img>
                 </div>
                 <div>I</div>
                 <div>am</div>
