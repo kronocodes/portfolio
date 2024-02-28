@@ -41,7 +41,9 @@ const Education = () => {
                   <div className='text-sm md:text-base text-zinc-400 pb-2'>{ed.duration}</div>
                   <div className='text-sm md:text-base pb-14 pt-1 text-zinc-400'>{ed.description}</div>
                 </div>
+                
               </div>
+              
             ))}
         </div>
       </div>

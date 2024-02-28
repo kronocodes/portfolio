@@ -16,12 +16,10 @@ const Footer = () => {
     <div className='flex justify-center bg-black text-white'>
       <div className="max-w-[1300px] w-full px-4">
         <div className="py-16 rounded-t-[30px]">
-          <div className="flex flex-wrap gap-x-10 justify-between pl-1 text-xl">
-            <div>
-              <a className="pr-5" href="https://github.com/kronocodes">Github</a>
-              <a className="pl-5" href="https://www.linkedin.com/in/abhisheknandan2013/">LinkedIn</a>
-            </div>
-            <button onClick={handleCopy} className="mt-[20px] md:-mt-2 bg-orange-500 text-black px-2 py-1 rounded-lg">abhisheknandan2013@gmail.com</button>
+          <div className="flex gap-x-10 justify-center pl-1 text-xl">
+              <a className="" href="https://github.com/kronocodes">Github</a>
+              <a className="" href="https://www.linkedin.com/in/abhisheknandan2013/">LinkedIn</a>
+              <button onClick={handleCopy} className="">Email</button>
           </div>
         </div>
         <div>

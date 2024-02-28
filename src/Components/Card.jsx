@@ -1,14 +1,18 @@
 import React, { useEffect } from "react";
-import c from "../assets/mog/3.jpeg"
-import d from "../assets/mog/4.jpg"
-import e from "../assets/mog/5.png"
-import h from "../assets/mog/8.jpeg"
-import j from "../assets/mog/10.png"
-import l from "../assets/mog/12.jpeg"
-import m from "../assets/mog/13.png"
-import o from "../assets/mog/15.jpeg"
-const lifev = [h,e,m,o];
-const lifeh = [c,d,h,j,l];
+import he from "../assets/mog/he.png"
+import a from "../assets/mog/3.jpeg"
+import b from "../assets/mog/5.png"
+import c from "../assets/mog/8.jpeg"
+import d from "../assets/mog/10.png"
+import e from "../assets/mog/12.jpeg"
+import f from "../assets/mog/13.png"
+import h from "../assets/mog/41.jpg"
+import i from "../assets/mog/42.jpg"
+import j from "../assets/mog/43.png"
+import k from "../assets/mog/44.png"
+import l from "../assets/mog/46.png"
+const lifev = [he,b,f,h,i,j,k];
+const lifeh = [a,c,d,e,l];
 const Card = () => {
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
@@ -47,8 +51,18 @@ const Card = () => {
     <div className="scroller" data-direction="right" data-speed="slow">
       <div className="scroller__inner">
       {lifev.map((lifev, id) => (
-        <div className="border border-zinc-700 h-96 w-72 rounded-3xl bg-zinc-800 p-1">
+        <div className="border border-zinc-700 h-72 w-56 rounded-3xl bg-zinc-800 p-1">
           <img className="object-cover w-full h-full rounded-2xl" src={lifev} alt="" />
+        </div>
+      ))}
+      
+        </div>
+    </div>
+    <div className="scroller" data-direction="right" data-speed="">
+      <div className="scroller__inner">
+      {lifeh.map((lifeh, id) => (
+        <div className="border border-zinc-700 h-56 w-72 rounded-3xl bg-zinc-800 p-1">
+          <img className="object-cover w-full h-full rounded-2xl" src={lifeh} alt="" />
         </div>
       ))}
       
@@ -56,9 +70,9 @@ const Card = () => {
     </div>
     <div className="scroller" data-direction="left" data-speed="slow">
       <div className="scroller__inner">
-      {lifeh.map((lifeh, id) => (
-        <div className="border border-zinc-700 h-72 w-96 rounded-3xl bg-zinc-800 p-1">
-          <img className="object-cover w-full h-full rounded-2xl" src={lifeh} alt="" />
+      {lifev.map((lifev, id) => (
+        <div className="border border-zinc-700 h-72 w-56 rounded-3xl bg-zinc-800 p-1">
+          <img className="object-cover w-full h-full rounded-2xl" src={lifev} alt="" />
         </div>
       ))}
       

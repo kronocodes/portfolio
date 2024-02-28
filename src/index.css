@@ -8,8 +8,8 @@ img {
 
 
 .photo-grid-container {
-  column-count: 2;
-  column-width: 400px;
+  column-count: 3;
+  column-width: 380px;
   column-gap: 2vmax;
   padding-left: 20px;
   padding-right: 20px;
@@ -17,8 +17,11 @@ img {
 }
 
 .photo-grid-item {
-  margin: 0 auto 5vw;
-  max-width: 70vw;
+  margin-left: auto;
+  break-inside: avoid;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 65vw;
   width: 100%;
 }
 
@@ -90,17 +93,17 @@ img {
   -webkit-mask: linear-gradient(
     90deg,
     transparent,
-    white 20%,
-    white 80%,
+    white 10%,
+    white 90%,
     transparent
   );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 80s)
+  animation: scroll var(--_animation-duration, 40s)
     var(--_animation-direction, forwards) linear infinite;
 }
 
@@ -124,22 +127,4 @@ img {
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
-}
-
-.tag-list {
-  margin: 0;
-  padding-inline: 0;
-  list-style: none;
-}
-
-.tag-list li {
-  padding: 1rem;
-  background: var(--clr-primary-400);
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
-}
-
-/* for testing purposed to ensure the animation lined up correctly */
-.test {
-  background: red !important;
 }
