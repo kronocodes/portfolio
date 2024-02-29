@@ -68,16 +68,7 @@ const Card = () => {
       
         </div>
     </div>
-    <div className="scroller" data-direction="left" data-speed="slow">
-      <div className="scroller__inner">
-      {lifev.map((lifev, id) => (
-        <div className="border border-zinc-700 h-72 w-56 rounded-3xl bg-zinc-800 p-1">
-          <img className="object-cover w-full h-full rounded-2xl" src={lifev} alt="" />
-        </div>
-      ))}
-      
-        </div>
-    </div>
+    
     </>
   );
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import Foodle from "../assets/Foodle.png";
 import Youtube from "../assets/Youtube.png";
 import Portfolio from "../assets/Portfolio.png";
@@ -7,6 +6,7 @@ import NMK from "../assets/NMK.png";
 import Referral from "../assets/Referral.png";
 import Prod from "../assets/prod.png";
 import toolbar from '../assets/toolbar.png'
+import React, { useState, useEffect } from 'react';
 
 const project=[
   {
@@ -67,6 +67,24 @@ const project=[
 ]
 
 const Work = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    // Initial call to set the initial state
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <>
     
@@ -74,7 +92,7 @@ const Work = () => {
         <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full py-36 flex flex-col lg:gap-y-36 gap-y-12 px-6">
         {project.map((project, id) => (
           <div className="border border-zinc-700 rounded-3xl bg-zinc-800 md:p-2 p-2">
-          <div className={`rounded-3xl lg:bg-zinc-900 bg-gradient-to-b lg:hover:bg-gradient-to-b ${project.gradientColor} to-black shadow-sm shadow-zinc-600 border-[1px] border-zinc-500`}>
+          <div className={`rounded-3xl  shadow-sm border-[1px] border-zinc-500 ${project.gradientColor} ${isSmallScreen ? 'bg-gradient-to-b' : 'bg-zinc-900 md:hover:bg-gradient-to-b'}`}>
           <div className="flex flex-col rounded-3xl justify-center">
             <div className="flex justify-between items-center pt-8 md:pt-10 px-8">
               <div className="text-2xl md:text-3xl md:font-semibold font-[500]">

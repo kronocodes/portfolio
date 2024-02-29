@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Services = () => {
-  // Data for each service
+  
   const servicesData = [
     {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
@@ -28,7 +28,6 @@ const Services = () => {
       badgeText: "5+ Designs"
     }
   ];
-
   return (
     <div className='text-white md:rounded-xl bg-zinc-900 flex justify-center pb-4'>
       <div className='max-w-[1300px]'>

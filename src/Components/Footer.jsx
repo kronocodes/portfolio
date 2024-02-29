@@ -14,8 +14,8 @@ const Footer = () => {
 
   return (
     <div className='flex justify-center bg-black text-white'>
-      <div className="max-w-[1300px] w-full px-4">
-        <div className="py-16 rounded-t-[30px]">
+      <div className="max-w-[1300px] w-full px-4 ">
+        <div className="py-16 rounded-t-[30px] border-t border-zinc-600">
           <div className="flex gap-x-10 justify-center pl-1 text-xl">
               <a className="" href="https://github.com/kronocodes">Github</a>
               <a className="" href="https://www.linkedin.com/in/abhisheknandan2013/">LinkedIn</a>
