@@ -492,7 +492,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-10 mt-4"></div>
-          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
+          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 pb-5">
             <div className="text-2xl md:text-xl font-semibold md:w-[30%] pb-2">
               Others
             </div>

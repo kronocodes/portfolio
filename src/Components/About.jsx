@@ -39,7 +39,7 @@ const About2 = () => {
         {/* <div><Leetcode/></div>
         <div><Calendar/></div> */}
 
-        <Story/>
+        {/* <Story/> */}
 
         {/* <div className="border border-zinc-600 md:p-2 py-2 bg md:rounded-2xl"> */}
           <Education />
@@ -52,7 +52,7 @@ const About2 = () => {
           <Skills />
         {/* </div> */}
         <Spotify/>
-        <div className="text-center py-10">
+        {/* <div className="text-center py-10">
           <div className="md:text-3xl text-2xl font-semibold">
             BECAUSE THERE'S MUCH MORE
           </div>
@@ -60,7 +60,7 @@ const About2 = () => {
             TO LIFE THAN PUSHING PIXELS
           </div>
           <Card />
-        </div>
+        </div> */}
       </div>
     </div>
   );
