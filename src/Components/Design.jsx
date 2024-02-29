@@ -52,7 +52,7 @@ const Design = () => {
           {images.map((image, index) => (
             <div className="photo-grid-item" key={index}>
               <img className="rounded" src={image.src} />
-              <div className="flex justify-between text-xl">
+              <div className="flex justify-between md:text-xl">
                 <div className="">{image.year}</div>
                 <div className="">{image.type}</div>
               </div>
