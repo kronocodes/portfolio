@@ -10,7 +10,7 @@ const Spotify = () => {
             </div>
           </div>
           <iframe
-            className="w-full h-[42vh] "
+            className="w-full h-[360PX] "
             src="https://open.spotify.com/embed/playlist/0oRActjFDEhtOG8eCteVkC?utm_source=generator&theme=0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"

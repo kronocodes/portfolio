@@ -51,16 +51,24 @@ const About2 = () => {
         {/* <div className="border border-zinc-600 md:p-2 py-2 bg md:rounded-2xl"> */}
           <Skills />
         {/* </div> */}
-        <Spotify/>
-        {/* <div className="text-center py-10">
+        <div className="text-center py-10">
           <div className="md:text-3xl text-2xl font-semibold">
-            BECAUSE THERE'S MUCH MORE
+            BECAUSE LIFE IS MUCH MORE
           </div>
-          <div className="md:text-3xl text-2xl font-semibold pb-10">
-            TO LIFE THAN PUSHING PIXELS
+          <div className="md:text-3xl text-2xl font-semibold">
+            THAN PUSHING PIXELS
+          </div>
+        </div>
+        <div className="text-center text-2xl flex gap-x-2 justify-center">It is about
+        <div className="italic">music</div> </div>
+        <Spotify/>
+        <div className="text-center gap-x-2 text-2xl flex justify-center">
+          <div>It is about </div>
+          <div className="line-through ">connections</div>
+          <div className="italic">friends</div>
           </div>
           <Card />
-        </div> */}
+          <div className="text-center text-3xl italic">It is about creating memories</div>
       </div>
     </div>
   );

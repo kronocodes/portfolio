@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <>
       <div className='flex items-center justify-center h-[96vh] bg-black z-10'>
-        <div className='bg-zinc-800 w-full h-full mt-8 mx-4 border border-zinc-600 rounded-2xl gradient-box flex justify-center items-center'>
-          <div className=' text-white px-10 mx-auto max-w-[1220px] text-[25px] leading-[33px] md:text-[40px] md:leading-[54px] md:px-24 lg:text-[45px] lg:leading-[70px]'>
+        <div className='w-full h-full mt-8 mx-4 border border-zinc-600 rounded-2xl gradient-box flex justify-center items-center'>
+          <div className='text-white px-10 mx-auto max-w-[1220px] text-[25px] leading-[33px] md:text-[40px] md:leading-[54px] md:px-24 lg:text-[45px] lg:leading-[70px]'>
               <div class="flex flex-wrap gap-x-2 ">
                 <div>Hello!</div>
                 <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
