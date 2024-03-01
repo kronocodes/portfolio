@@ -22,28 +22,28 @@ const About2 = () => {
   };
   return (
     <div className="bg-black flex flex-col items-center gap-y-44 text-white">
-      <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full py-36 flex flex-col">
+      <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full pt-32 pb-24 flex flex-col">
         <div className="flex flex-col md:flex-row md:gap-x-8 px-6 md:px-0 gap-y-5">
-          <div className="xl:px-12 md:px-8 px-6 flex flex-col xl:gap-y-6 md:gap-y-2 gap-y-2 pt-7 border border-zinc-600 bg-gradient-to-b from-orange-600 to-black rounded-3xl">
-            <div className="pt-4 md:text-2xl text-xl">
+          <div className="xl:px-12 md:px-7 px-6 flex flex-col xl:gap-y-6 md:gap-y-2 gap-y-2 pt-7 border border-zinc-600 bg-gradient-to-b from-zinc-800 to-black rounded-3xl">
+            <div className="md:pt-3 md:text-2xl text-xl">
               Hey! I'm Abhishek Nandan
             </div>
             <div className="xl:text-5xl md:text-4xl text-3xl font-medium">
               Passionate to pursue the technology.
             </div>
-            <div className="xl:w-full pb-10 md:pb-0 md:text-lg text-sm">
+            <div className="xl:w-full pb-10 md:pb-0 md:text-lg text-sm text-zinc-300">
               I enjoy learning new things and try to overcome new challenges
               while analyzing how I improved through them.
             </div>
           </div>
-          <div className="md:min-w-fit md:h-[420px] h-[90vw] flex gap-x-2 md:border border-zinc-600 rounded-3xl">
+          <div className="md:min-w-fit md:h-[410px] h-[90vw] flex gap-x-2 md:border border-zinc-600 rounded-3xl">
             <img
-              className="rounded-3xl aspect-auto border border-zinc-600 bg-gradient-to-b md:from-orange-600 md:to-black to-orange-600 from-black"
+              className="rounded-3xl aspect-auto border border-zinc-600 bg-gradient-to-b from-zinc-800 to-black"
               src={Aboutme}
               style={{ height: "100%", width: "auto" }}
             />
             <div className="mx-auto w-full rounded-3xl bg-zinc-900 border border-zinc-700 md:hidden">
-              <div className="flex flex-col items-center py-2 px-2 gap-y-2 justify-center text-zinc-300 w-full h-full">
+              <div className="flex flex-col items-center py-3 px-3 gap-y-3 justify-center text-zinc-300 w-full h-full">
                 <a
                   className="w-full flex justify-center h-1/4 flex-col items-center rounded-2xl bg-zinc-800 border border-zinc-700"
                   href="https://github.com/kronocodes"
@@ -137,6 +137,7 @@ const About2 = () => {
         <div className="text-center text-3xl italic">
           It is about creating memories
         </div> */}
+        <div className="text-center italic text-2xl font-semibold">Thanks for stopping by!</div>
       </div>
     </div>
   );

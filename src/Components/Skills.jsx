@@ -263,7 +263,7 @@ const Skills = () => {
                     />
                   </svg>
                 </div>
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   NodeJS
                   <svg
                     width="50"
@@ -281,7 +281,7 @@ const Skills = () => {
                       fill="#8CC84B"
                     />
                   </svg>
-                </div>
+                </div> */}
                 <div className="flex flex-col items-center">
                   Redux{" "}
                   <svg
@@ -297,7 +297,7 @@ const Skills = () => {
                     />
                   </svg>
                 </div>
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   NextJs
                   <svg
                     width="50"
@@ -343,9 +343,9 @@ const Skills = () => {
                       </linearGradient>
                     </defs>
                   </svg>
-                </div>
+                </div> */}
 
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   GraphQL
                   <svg
                     width="50"
@@ -361,7 +361,7 @@ const Skills = () => {
                       fill="#E535AB"
                     />
                   </svg>
-                </div>
+                </div> */}
                 
                 <div className="flex flex-col items-center">
                   MongoDB
@@ -498,7 +498,7 @@ const Skills = () => {
             </div>
             <div className="flex md:w-[70%]">
               <div className="flex flex-wrap mt-2 md:mt-0 gap-x-10 gap-y-4 text-sm md:text-base text-zinc-400 pb-2">
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   Auth0
                   <svg
                     width="50"
@@ -512,7 +512,7 @@ const Skills = () => {
                       fill="#EB5424"
                     />
                   </svg>
-                </div>
+                </div> */}
                 <div className="flex flex-col items-center">
                   Git
                   <svg
@@ -528,7 +528,7 @@ const Skills = () => {
                     />
                   </svg>
                 </div>
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   ChatGPT
                   <svg
                     width="50"
@@ -542,7 +542,7 @@ const Skills = () => {
                       fill="#FFFFFF"
                     />
                   </svg>
-                </div>
+                </div> */}
                 <div className="flex flex-col items-center">
                   Postman
                   <svg
