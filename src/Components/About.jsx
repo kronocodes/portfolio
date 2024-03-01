@@ -115,7 +115,7 @@ const About2 = () => {
         {/* <div className="border border-zinc-600 md:p-2 py-2 bg md:rounded-2xl"> */}
         <Skills />
         {/* </div> */}
-        <div className="text-center py-10">
+        {/* <div className="text-center py-10">
           <div className="md:text-3xl text-2xl font-semibold">
             BECAUSE LIFE IS MUCH MORE
           </div>
@@ -136,7 +136,7 @@ const About2 = () => {
         <Card />
         <div className="text-center text-3xl italic">
           It is about creating memories
-        </div>
+        </div> */}
       </div>
     </div>
   );
