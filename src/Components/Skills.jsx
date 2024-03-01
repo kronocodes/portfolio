@@ -10,13 +10,13 @@ const Skills = () => {
             K N O W L E D G E &nbsp; A N D &nbsp; S K I L L S
           </div>
         </div>
-        <div className="px-2 pt-10">
+        <div className="px-2 pt-8">
           <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
             <div className="text-2xl md:text-xl font-semibold md:w-[30%] pb-2">
               Languages
             </div>
             <div className="flex md:w-[70%]">
-              <div className="flex mt-5 md:mt-0 gap-12 text-sm md:text-base text-zinc-400 pb-2">
+              <div className="flex mt-2 md:mt-0 gap-10 text-sm md:text-base text-zinc-400 pb-2">
                 <div className="flex flex-col items-center">
                   C++
                   <svg
@@ -136,7 +136,7 @@ const Skills = () => {
               Web Development
             </div>
             <div className="flex md:w-[70%]">
-              <div className="flex flex-wrap mt-5 md:mt-0 gap-x-12 gap-y-5 text-sm md:text-base text-zinc-400 pb-2">
+              <div className="flex flex-wrap mt-2 md:mt-0 gap-x-10 gap-y-4 text-sm md:text-base text-zinc-400 pb-2">
                 <div className="flex flex-col items-center">
                   HTML
                   <svg
@@ -408,13 +408,13 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-10 mt-4"></div>
+          <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
           <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
             <div className="text-2xl md:text-xl font-semibold md:w-[30%] pb-2">
               Design
             </div>
             <div className="flex md:w-[70%]">
-              <div className="flex mt-5 md:mt-0 gap-12 text-sm md:text-base text-zinc-400 pb-2">
+              <div className="flex mt-2 md:mt-0 gap-x-10 text-sm md:text-base text-zinc-400 pb-2">
                 <div className="flex flex-col items-center">
                   Figma
                   <svg
@@ -491,13 +491,13 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-10 mt-4"></div>
-          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 pb-5">
+          <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
+          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 pb-4">
             <div className="text-2xl md:text-xl font-semibold md:w-[30%] pb-2">
               Others
             </div>
             <div className="flex md:w-[70%]">
-              <div className="flex flex-wrap mt-5 md:mt-0 gap-x-12 gap-y-4 text-sm md:text-base text-zinc-400 pb-2">
+              <div className="flex flex-wrap mt-2 md:mt-0 gap-x-10 gap-y-4 text-sm md:text-base text-zinc-400 pb-2">
                 <div className="flex flex-col items-center">
                   Auth0
                   <svg

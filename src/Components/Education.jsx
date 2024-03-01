@@ -6,7 +6,7 @@ const Education = () => {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "Nalanda College of Engineering",
       sub:"Nalanda, Bihar.",
-      duration: "2020 - 2024 (July)",
+      duration: "2020 - Present",
       description: "Bachelor of Technology in Computer Science Engineering, CGPA - 8.8",
     },
     {

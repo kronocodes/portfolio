@@ -48,7 +48,7 @@ const Header = () => {
         <div className="fixed z-50">
           <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
             <div className="fixed mt-7 left-8 text-3xl opacity-90 font-semibold text-white bg-black">
-              AN.
+              AN
             </div>
           </Link>
           <button
@@ -64,24 +64,24 @@ const Header = () => {
           {isDropdownOpen && (
             <div
               ref={dropdownRef}
-              className="fixed right-8 top-[72px] flex flex-col items gap-y-6 items-start py-6 px-10 rounded-xl transition-all duration-500 text-white border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px]"
+              className="fixed right-8 top-[72px] flex flex-col items items-start rounded-2xl p-2 transition-all duration-500 text-white border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px]"
             >
-              <div className="">
+              <div className="rounded-xl hover:shadow-xl hover:backdrop-blur-[1px] w-full py-3 px-10">
                 <Link to="/work" onClick={closeDropdown}>
                   WORK
                 </Link>
               </div>
-              <div className="">
+              <div className="rounded-xl hover:shadow-xl hover:backdrop-blur-[1px] w-full py-3 px-10">
                 <Link to="/about" onClick={closeDropdown}>
                   ABOUT
                 </Link>
               </div>
-              <div className="">
+              <div className="rounded-xl hover:shadow-xl hover:backdrop-blur-[1px] w-full py-3 px-10">
                 <Link to="/design" onClick={closeDropdown}>
                   DESIGN
                 </Link>
               </div>
-              <div className="">
+              <div className="rounded-xl hover:shadow-xl hover:backdrop-blur-[1px] w-full py-3 px-10">
                 <Link to="/contact" onClick={closeDropdown}>
                   CONTACT
                 </Link>
