@@ -12,10 +12,10 @@ const Skills = () => {
         </div>
         <div className="px-2 pt-8">
           <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
-            <div className="text-2xl md:text-xl font-semibold md:w-[30%] pb-2">
+            <div className="text-2xl md:text-xl font-semibold md:w-[27%] pb-2">
               Languages
             </div>
-            <div className="flex md:w-[70%]">
+            <div className="flex md:w-[73%]">
               <div className="flex mt-2 md:mt-0 gap-10 text-sm md:text-base text-zinc-400 pb-2">
                 <div className="flex flex-col items-center">
                   C++
@@ -132,10 +132,10 @@ const Skills = () => {
           </div>
           <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
           <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
-            <div className="text-2xl md:text-xl font-semibold md:w-[30%] pb-2">
+            <div className="text-2xl md:text-xl font-semibold md:w-[27%] pb-2">
               Web Development
             </div>
-            <div className="flex md:w-[70%]">
+            <div className="flex md:w-[73%]">
               <div className="flex flex-wrap mt-2 md:mt-0 gap-x-10 gap-y-4 text-sm md:text-base text-zinc-400 pb-2">
                 <div className="flex flex-col items-center">
                   HTML
@@ -410,10 +410,10 @@ const Skills = () => {
           </div>
           <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
           <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
-            <div className="text-2xl md:text-xl font-semibold md:w-[30%] pb-2">
+            <div className="text-2xl md:text-xl font-semibold md:w-[27%] pb-2">
               Design
             </div>
-            <div className="flex md:w-[70%]">
+            <div className="flex md:w-[73%]">
               <div className="flex mt-2 md:mt-0 gap-x-10 text-sm md:text-base text-zinc-400 pb-2">
                 <div className="flex flex-col items-center">
                   Figma
@@ -493,10 +493,10 @@ const Skills = () => {
           </div>
           <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
           <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 pb-4">
-            <div className="text-2xl md:text-xl font-semibold md:w-[30%] pb-2">
+            <div className="text-2xl md:text-xl font-semibold md:w-[27%] pb-2">
               Others
             </div>
-            <div className="flex md:w-[70%]">
+            <div className="flex md:w-[73%]">
               <div className="flex flex-wrap mt-2 md:mt-0 gap-x-10 gap-y-4 text-sm md:text-base text-zinc-400 pb-2">
                 {/* <div className="flex flex-col items-center">
                   Auth0
