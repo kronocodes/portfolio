@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
@@ -41,6 +41,9 @@ const Header = () => {
   const closeDropdown = () => {
     setIsDropdownOpen(false);
   };
+
+  const activeLink='bg-neutral-700 w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500'
+  const inactiveLink='hover:bg-neutral-600  w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500'
 
   return (
     <>
@@ -97,31 +100,31 @@ const Header = () => {
               <div>NANDAN</div>
             </div>
           </Link>
-          <div className="flex fixed left-0 right-0 my-5 mx-auto w-[340px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-2 items-center rounded-full text-white">
-            <Link
+          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto w-[360px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-2 items-center rounded-full text-white">
+            <NavLink
               to="/work"
-              className="hover:bg-neutral-600  w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500"
+              className={({isActive})=>(isActive? activeLink : inactiveLink )}
             >
               Work
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/about"
-              className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500"
+              className={({isActive})=>(isActive? activeLink : inactiveLink )}
             >
               About
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/design"
-              className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500"
+              className={({isActive})=>(isActive? activeLink : inactiveLink )}
             >
               Design
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/contact"
-              className="hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500"
+              className={({isActive})=>(isActive? activeLink : inactiveLink )}
             >
               Contact
-            </Link>
+            </NavLink>
           </div>
         </div>
       )}

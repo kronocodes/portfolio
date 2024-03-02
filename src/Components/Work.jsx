@@ -106,17 +106,17 @@ const Work = () => {
             </div>
             <div className="flex flex-col justify-between px-8">
             {project.repo !== "" && (
-              <a className="border-b text-center border-zinc-500  py-2 hover:bg-white hover:text-black hover:font-medium" href={project.repo}>
+              <a className="border-b text-center border-zinc-400 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium" href={project.repo}>
               <button >Goto GitHub Repo</button>
               </a>
             )}
             {project.live !== "" && (
-              <a className="border-b text-center border-zinc-500  py-2 hover:bg-white hover:text-black hover:font-medium" href={project.live}>
+              <a className="border-b text-center border-zinc-400 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium" href={project.live}>
               <button>View Live Website</button>
               </a>
               )}
             {project.figma !== "" && (
-              <a className="border-b text-center border-zinc-500  py-2 hover:bg-white hover:text-black hover:font-medium" href={project.figma}>
+              <a className="border-b text-center border-zinc-400 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium" href={project.figma}>
               <button >View Figma File</button>
               </a>
             )}
