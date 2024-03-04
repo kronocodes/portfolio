@@ -5,8 +5,8 @@ import im from '../assets/hero5.jpg'
 const Hero = () => {
   return (
     <>
-      <div className='flex items-center justify-center h-[96vh] bg-black z-10'>
-        <div className='w-full h-full mt-8 mx-4 border border-zinc-600 rounded-2xl gradient-box flex justify-center items-center'>
+      <div className='flex items-center justify-center h-[98vh] bg-black z-10'>
+        <div className='w-full h-full mt-4 mx-2 border border-zinc-600 rounded-2xl gradient-box flex justify-center items-center'>
           <div className='text-white px-10 mx-auto max-w-[1220px] text-[25px] leading-[33px] md:text-[40px] md:leading-[54px] md:px-24 lg:text-[45px] lg:leading-[70px]'>
               <div class="flex flex-wrap gap-x-2 ">
                 <div>Hello!</div>
