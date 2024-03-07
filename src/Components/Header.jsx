@@ -50,14 +50,16 @@ const Header = () => {
       {isSmallScreen ? (
         <div className="fixed z-50">
           <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
-            <div className="fixed mt-7 left-8 text-3xl opacity-90 font-semibold text-white bg-black">
-              AN
+            <div className="fixed mt-7 left-8 text-3xl opacity-90 font-semibold text-white">
+              <div className="flex flex-col text-sm items-start">
+                <div>ABHISHEK</div>
+                <div className="-mt-1">NANDAN</div>
+              </div>
             </div>
           </Link>
           <button
             onClick={toggleDropdown}
-            className="fixed right-8 top-6 z-[999] flex items-center justify-center w-12 h-12 rounded-full bg-neutral-500 bg-opacity-40 backdrop-blur-[6px]  p-[5px]"
-          >
+            className="fixed right-8 top-6 z-[999] flex items-center justify-center w-12 h-12 rounded-full bg-neutral-500 bg-opacity-40 backdrop-blur-[6px]  p-[5px]">
             <img
               className="w-6"
               src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png"
