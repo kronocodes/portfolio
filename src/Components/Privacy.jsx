@@ -2,14 +2,14 @@ import React from 'react';
 
 const Privacy = () => {
   return (
-    <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-black min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold mb-6">Privacy Policy</h1>
 
         <p className="mb-4">
-          [Your Company Name] is committed to protecting the privacy and security of your personal information.
+          We are committed to protecting the privacy and security of your personal information.
           This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website
-          [Your Website URL] including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the "Site"). 
+          We including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the "Site"). 
           Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
         </p>
 
@@ -54,8 +54,9 @@ const Privacy = () => {
         <p>
           If there are any questions regarding this privacy policy, you may contact us using the information below:
         </p>
-
-        <p className="italic">[Your Contact Information]</p>
+        <br></br>
+        <p className="mb-2"><strong>Email:</strong> abhishekvicky2000@gmail.com</p>
+        <p className="mb-2"><strong>Phone:</strong> +91 8860826438</p>
       </div>
     </div>
   );
