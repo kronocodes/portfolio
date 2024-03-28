@@ -1,18 +1,32 @@
-import React from "react";
-import Aboutme from '../assets/aboutme.jpg'
-import im from '../assets/hero.jpeg'
+import React from 'react'
+import Slider from './Slider'
+// import Aboutme from "../assets/hero.png";
+import Aboutme from "../assets/mog/1.png";
 
 const Abouth = () => {
   return (
-    <div className="flex justify-center bg-black pt-24">
-      <div className=" text-zinc-300 px-6 pb-20 max-w-[1300px]">
-        <div className="text-white py-5 text-7xl pr-4">About</div>
-        <div className="h-[1px] bg-zinc-500"></div>
-        <div className="text-xl md:text-3xl md:leading-[40px] xl:text-4xl xl:leading-[60px] pt-10 px-1">
-        Hello! I'm Abhishek Nandan, a passionate and creative individual on a journey to explore the intersection of technology, design, and innovation. With a background in Computer Science and a knack for problem-solving, I thrive on turning ideas into reality through code and design. My goal is to craft intuitive and engaging digital experiences that leave a lasting impact. When I am not developing or designing, I enjoy riding around the city late night </div>
-      </div>
-    </div >
-  );
-};
+    <div className="flex flex-col md:flex-row md:gap-x-8 px-6 md:px-0 gap-y-5">
+          <div className="xl:px-12 md:px-7 px-6 flex flex-col xl:gap-y-6 md:gap-y-2 gap-y-2 pt-7 border border-zinc-600 bg-gradient-to-b from-zinc-800 to-black rounded-3xl">
+            <div className="md:pt-3 md:text-2xl text-xl">
+              Hey! I'm Abhishek Nandan
+            </div>
+            <div className="xl:text-5xl md:text-4xl text-3xl font-medium">
+              Passionate to pursue the technology.
+            </div>
+            <div className="xl:w-full pb-10 md:pb-0 md:text-lg text-sm text-zinc-300">
+            On a journey to explore the intersection of technology, design and innovation. With a background in Computer Science and a knack for problem-solving, I thrive on turning ideas into reality through code and design. 
+            </div>
+          </div>
+          <div className="md:min-w-fit md:h-[410px] h-[90vw] flex gap-x-2 md:border border-zinc-600 rounded-3xl">
+            <img
+              className="rounded-3xl aspect-auto border border-zinc-600 bg-gradient-to-b from-zinc-800 to-black"
+              src={Aboutme}
+              style={{ height: "100%", width: "auto" }}
+            />
+            <Slider/>
+          </div>
+        </div>
+  )
+}
 
-export default Abouth;
+export default Abouth

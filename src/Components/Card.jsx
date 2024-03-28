@@ -8,10 +8,9 @@ import e from "../assets/mog/12.jpeg"
 import f from "../assets/mog/13.png"
 import h from "../assets/mog/41.jpg"
 import i from "../assets/mog/42.jpg"
-import j from "../assets/mog/43.png"
 import k from "../assets/mog/44.png"
 import l from "../assets/mog/46.png"
-const lifev = [he,b,f,h,i,j,k];
+const lifev = [he,b,f,h,i,k];
 const lifeh = [a,c,d,e,l];
 const Card = () => {
   useEffect(() => {

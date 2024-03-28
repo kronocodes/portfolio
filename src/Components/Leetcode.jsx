@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 
 const Leetcode = () => {
   const [stats, setStats] = useState([]);
-  useEffect(() => {
-    getStats();
-  }, []);
+  const [cal, setCal] = useState({ submissionCalendar: {} });
+  const [totalSubmissions, setTotalSubmissions] = useState(0);
+  
+
 
   const getStats = async () => {
     const data = await fetch(
@@ -13,22 +14,56 @@ const Leetcode = () => {
     );
     const json = await data.json();
     setStats(json);
+    setCal(json);
   };
-  {
-    /* stats.submissionCalendar */
+
+  useEffect(() => {
+    getStats();
+  }, []);
+
+  useEffect(() => {
+    let total = 0;
+    for (const key in cal.submissionCalendar) {
+      total += cal.submissionCalendar[key];
+    }
+    setTotalSubmissions(total);
+  }, [cal]);
+
+  const getBackgroundColor = (submissions) => {
+    if (submissions === 0) return "bg-zinc-600";
+    if (submissions === 1) return "bg-green-800";
+    if (submissions === 2) return "bg-green-600";
+    if (submissions === 3) return "bg-green-500";
+    if (submissions === 4) return "bg-green-400";
+    if (submissions >= 5) return "bg-green-300";
+  };
+  function chunkArray(array, size) {
+    const chunkedArr = [];
+    for (let i = 0; i < array.length; i += size) {
+      chunkedArr.push(array.slice(i, i + size));
+    }
+    return chunkedArr;
   }
+
 
   return (
     <>
-      <div className="flex flex-col items-center gap-y-44 text-white">
-        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full py-36 flex flex-col">
-          <div class="min-w-max max-w-full w-full flex-1">
-            <div class="bg-zinc-800 rounded-lg xl:h-[186px] min-h-[186px] w-full pb-3 pt-4">
-              <div class="px-[13px] font-medium">
+      <div className="flex flex-col items-center text-white">
+        <div className="lg:max-w-[1300px] bg-zinc-900 w-full mx-auto flex flex-col rounded-xl">
+          <div className="flex items-center px-6 pt-5">
+            <div class="w-3 h-3 rounded-full bg-white glow"></div>
+            <div className="px-4 text-sm text-zinc-300">
+              L E E T C O D E &nbsp; S T A T S
+            </div>
+          </div>
+
+          <div class="min-w-max w-full px-3">
+            <div class="rounded-lg min-h-[189px] w-full pb-3 pt-4">
+              <div class="md:px-9 px-3 font-medium text-lg  pt-3">
                 Solved Problems
-                <div class="xl:mx-8 mx-3 flex items-center">
-                  <div class="mr-8 mt-6 flex min-w-[100px] justify-center">
-                    <div class="relative max-h-[100px] max-w-[100px]">
+                <div class="mx-3 flex items-center">
+                  <div class="mr-5 mt-6 flex min-w-[90px] justify-center">
+                    <div class="relative max-h-[100px] max-w-[90px]">
                       <svg
                         class="h-full w-full origin-center -rotate-90 transform"
                         viewBox="0 0 100 100"
@@ -69,7 +104,8 @@ const Leetcode = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="xl:max-w-[228px] flex w-full flex-col space-y-4">
+
+                  <div class="flex w-full flex-col space-y-4">
                     <div class="space-y-2">
                       <div class="flex w-full items-end text-xs">
                         <div class="w-[53px] text-zinc-400">Easy</div>
@@ -146,6 +182,41 @@ const Leetcode = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
+
+          <div className="flex flex-col md:px-9 px-3">
+          <div className="md:pb-4 px-4">
+            <div className="text-lg md:text-xl pb-1">{totalSubmissions} submissions in the past one year</div>
+            <div className="text-sm md:text-lg">Max streak: 366</div>
+          </div>
+          <div className="flex gap-[3px] md:gap-[4px] overflow-x-auto mx-4 mt-4 md:mb-10 mb-8" style={{ scrollbarWidth: "thin", scrollbarColor: "#727272 #18181B" }}>
+            {chunkArray(Object.entries(cal?.submissionCalendar), 7).map(
+              (week, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  {week.map(([timestamp, submissions]) => {
+                    const date = new Date(parseInt(timestamp) * 1000);
+                    const formattedDate = date.toISOString().split("T")[0];
+                    return (
+                      <div key={timestamp} className="text-center">
+                        <div className="text-xs hidden hover:flex">
+                          {formattedDate}
+                        </div>
+                        <div
+                          className={`rounded-sm xl:w-4 xl:h-4 xl:my-[3px] md:w-3 md:h-3 md:my-[2px] w-2 h-2 my-[1px] ${getBackgroundColor(
+                            submissions
+                          )}`}
+                        >
+                          {/* <div className="text-lg">{submissions}</div> */}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )
+            )}
+          </div>
           </div>
         </div>
       </div>
