@@ -23,7 +23,7 @@ const Hero = () => {
                 <div>Designer</div>
                 <div>based</div>
                 <div>in</div>
-                <div >Patna,</div>
+                <div>New Delhi,</div>
                 <div>India.</div>
                 <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
                   <img className='h-full w-full object-cover rounded-full ' src="https://images.pexels.com/photos/9823892/pexels-photo-9823892.jpeg?cs=srgb&dl=pexels-chandan-suman-%F0%9F%87%AE%F0%9F%87%B3-9823892.jpg&fm=jpg"></img>

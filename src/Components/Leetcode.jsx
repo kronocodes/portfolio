@@ -189,7 +189,7 @@ const Leetcode = () => {
           <div className="flex flex-col md:px-9 px-3">
           <div className="md:pb-4 px-4">
             <div className="text-lg md:text-xl pb-1">{totalSubmissions} submissions in the past one year</div>
-            <div className="text-sm md:text-lg">Max streak: 366</div>
+            <div className="text-sm md:text-lg">Max streak: 366 🔥</div>
           </div>
           <div className="flex gap-[3px] md:gap-[4px] overflow-x-auto mx-4 mt-4 md:mb-10 mb-8" style={{ scrollbarWidth: "thin", scrollbarColor: "#727272 #18181B" }}>
             {chunkArray(Object.entries(cal?.submissionCalendar), 7).map(
