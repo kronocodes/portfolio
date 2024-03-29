@@ -39,9 +39,10 @@ const Education = () => {
                 <div className='flex flex-col md:w-[50%]'>
                   <div className='font-semibold text-xl pt-1'>{ed.sub}</div>
                   <div className='text-sm md:text-base text-zinc-400 pb-2'>{ed.duration}</div>
-                  <div className='text-sm md:text-base pb-14 pt-1 text-zinc-400'>{ed.description}</div>
+                  <div className='text-sm md:text-base pt-1 pb-8 text-zinc-400'>{ed.description}</div>
+                <div className="bg-zinc-700 w-full h-[1px] mb-7"></div>
                 </div>
-                
+
               </div>
               
             ))}

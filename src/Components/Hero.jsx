@@ -26,7 +26,7 @@ const Hero = () => {
                 <div>New Delhi,</div>
                 <div>India</div>
                 <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
-                  <img className='h-full w-full object-cover rounded-full ' src="https://images.pexels.com/photos/9823892/pexels-photo-9823892.jpeg?cs=srgb&dl=pexels-chandan-suman-%F0%9F%87%AE%F0%9F%87%B3-9823892.jpg&fm=jpg"></img>
+                  <img className='h-full w-full object-cover rounded-full ' src="https://images.unsplash.com/photo-1616585592371-1515b1e558d2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
                 </div>
                 <div>. I</div>
                 <div>am</div>
