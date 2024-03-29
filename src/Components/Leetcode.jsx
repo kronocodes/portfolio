@@ -49,7 +49,7 @@ const Leetcode = () => {
   return (
     <>
       <div className="flex flex-col items-center text-white">
-        <div className="lg:max-w-[1300px] bg-zinc-900 w-full mx-auto flex flex-col rounded-xl">
+        <div className="lg:max-w-[1300px] bg-zinc-900 w-full mx-auto flex flex-col md:rounded-xl">
           <div className="flex items-center px-6 pt-5">
             <div class="w-3 h-3 rounded-full bg-white glow"></div>
             <div className="px-4 text-sm text-zinc-300">
@@ -62,8 +62,8 @@ const Leetcode = () => {
               <div class="md:px-9 px-3 font-medium text-lg  pt-3">
                 Solved Problems
                 <div class="mx-3 flex items-center">
-                  <div class="mr-5 mt-6 flex min-w-[90px] justify-center">
-                    <div class="relative max-h-[100px] max-w-[90px]">
+                  <div class="mr-5 mt-6 flex min-w-[100px] justify-center">
+                    <div class="relative max-h-[130px] max-w-[130px]">
                       <svg
                         class="h-full w-full origin-center -rotate-90 transform"
                         viewBox="0 0 100 100"
@@ -94,10 +94,10 @@ const Leetcode = () => {
                       </svg>
                       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform cursor-default text-center">
                         <div>
-                          <div class="text-[24px] font-medium text-zinc-100">
+                          <div class="text-3xl font-medium text-zinc-100">
                             {stats.totalSolved}
                           </div>
-                          <div class="whitespace-nowrap text-xs text-zinc-400">
+                          <div class="whitespace-nowrap text-sm text-zinc-400">
                             Solved
                           </div>
                         </div>

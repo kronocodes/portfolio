@@ -74,10 +74,7 @@ const Work = () => {
       setIsSmallScreen(window.innerWidth < 768);
     };
 
-    // Initial call to set the initial state
     handleResize();
-
-    // Event listener for window resize
     window.addEventListener('resize', handleResize);
 
     // Clean up the event listener on component unmount
@@ -91,8 +88,8 @@ const Work = () => {
       <div className="bg-black flex flex-col items-center gap-y-44 text-white">
         <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full py-36 flex flex-col lg:gap-y-36 gap-y-12 px-6">
         {project.map((project, id) => (
-          <div className="border border-zinc-700 rounded-3xl bg-black md:p-2 p-2">
-          <div className={`rounded-2xl border-[1px] border-zinc-500 ${project.gradientColor} ${isSmallScreen ? 'bg-gradient-to-b' : 'bg-black md:hover:bg-gradient-to-b'}`}>
+          <div className="rounded-3xl bg-zinc-800 md:p-2 p-2">
+          <div className={`rounded-2xl border-[1px] border-zinc-600 ${project.gradientColor} ${isSmallScreen ? 'bg-gradient-to-b' : 'bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black'}`}>
           <div className="flex flex-col rounded-3xl justify-center">
             <div className="flex justify-between items-center pt-8 md:pt-10 px-8">
               <div className="text-2xl md:text-3xl md:font-semibold font-[500]">

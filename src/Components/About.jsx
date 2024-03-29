@@ -49,6 +49,7 @@ const About = () => {
         <div className="text-center italic text-2xl font-semibold">Thanks for stopping by!</div>
         <div className="text-center text-2xl font-semibold">Let's connect.</div>
       </div>
+      
       </div>
     </div>
   );
