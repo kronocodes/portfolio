@@ -2,7 +2,6 @@ import React from "react";
 import Img1 from "../assets/img1.png";
 import Img2 from "../assets/img2.png";
 import Img3 from "../assets/img3.png";
-import Img4 from "../assets/img4.png";
 import Img5 from "../assets/img5.png";
 import Img6 from "../assets/img6.png";
 import Img7 from "../assets/img7.png";
@@ -42,7 +41,7 @@ const Design = () => {
   return (
     <div className="bg-black text-white">
       <div className="max-w-[1300px] flex flex-col items-center justify-center mx-auto">
-        <div className="py-[20vh] tracking-[-.03em] w-3/5 text-center leading-[110%] text-2xl md:text-3xl lg:text-[2.083vw]">
+        <div className="py-[21vh] tracking-[-.03em] w-3/5 text-center leading-[120%] text-2xl md:text-3xl lg:text-[2.1vw]">
           Welcome to my playground, my personal collection of random designs,
           explorations, rejected versions or any thing that I could not find a
           place to show...
@@ -51,7 +50,7 @@ const Design = () => {
         <div className="photo-grid-container">
           {images.map((image, index) => (
             <div className="photo-grid-item" key={index}>
-              <img className="rounded" src={image.src} />
+              <img className="rounded" class="gscale" src={image.src} />
               <div className="flex justify-between md:text-xl">
                 <div className="">{image.year}</div>
                 <div className="">{image.type}</div>

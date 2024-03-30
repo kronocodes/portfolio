@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Slider from "./Slider";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
@@ -49,14 +50,14 @@ const Header = () => {
     <>
       {isSmallScreen ? (
         <div className="fixed z-50">
-          <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
+          {/* <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
             <div className="fixed mt-7 left-8 text-3xl opacity-90 font-semibold text-white">
               <div className="flex flex-col text-sm items-start">
                 <div>ABHISHEK</div>
                 <div className="-mt-1">NANDAN</div>
               </div>
             </div>
-          </Link>
+          </Link> */}
           <button
             onClick={toggleDropdown}
             className="fixed right-8 top-6 z-[999] flex items-center justify-center w-12 h-12 rounded-full bg-neutral-500 bg-opacity-40 backdrop-blur-[6px]  p-[5px]">
@@ -69,40 +70,45 @@ const Header = () => {
           {isDropdownOpen && (
             <div
               ref={dropdownRef}
-              className="fixed right-8 top-[72px] flex flex-col items items-start rounded-2xl p-2 transition-all duration-500 text-white border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px]"
+              className="fixed right-8 top-[73px] h-64 w-40 px-[10px] flex flex-col items-center justify-center rounded-2xl transition-all duration-500 text-white border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px]"
             >
-              <div className="rounded-xl hover:shadow-xl hover:backdrop-blur-[1px] w-full py-3 px-10">
+              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full py-3">
+                <Link to="/" onClick={closeDropdown}>
+                  Home
+                </Link>
+              </div>
+              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full py-3">
                 <Link to="/work" onClick={closeDropdown}>
-                  WORK
+                  Work
                 </Link>
               </div>
-              <div className="rounded-xl hover:shadow-xl hover:backdrop-blur-[1px] w-full py-3 px-10">
+              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full py-3">
                 <Link to="/about" onClick={closeDropdown}>
-                  ABOUT
+                  About
                 </Link>
               </div>
-              <div className="rounded-xl hover:shadow-xl hover:backdrop-blur-[1px] w-full py-3 px-10">
+              <div className="rounded-2xl italic text-center hover:backdrop-blur-[1px] w-full py-3">
                 <Link to="/design" onClick={closeDropdown}>
-                  DESIGN
+                  Design
                 </Link>
               </div>
-              <div className="rounded-xl hover:shadow-xl hover:backdrop-blur-[1px] w-full py-3 px-10">
+              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full py-3">
                 <Link to="/contact" onClick={closeDropdown}>
-                  CONTACT
+                  Contact
                 </Link>
               </div>
             </div>
           )}
         </div>
       ) : (
-        <div className="fixed z-[999]">
+        <div className="fixed z-[999] text-white">
           <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
-            <div className="fixed flex flex-col leading-4 items-start mt-6 left-8 text-lg opacity-80 font-semibold text-white">
+            <div className="fixed flex flex-col leading-4 items-start mt-6 left-8 text-lg opacity-80 font-semibold">
               <div>ABHISHEK</div>
               <div>NANDAN</div>
             </div>
           </Link>
-          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto w-[360px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-2 items-center rounded-full text-white">
+          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto w-[360px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-2 items-center rounded-full">
             <NavLink
               to="/work"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}

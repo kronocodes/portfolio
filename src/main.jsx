@@ -42,26 +42,6 @@ const router = createBrowserRouter([
         element: <Work />,
       },
       {
-        path: "work/foodle",
-        element: <Foodle />,
-      },
-      {
-        path: "work/youtube",
-        element: <Youtube />,
-      },
-      {
-        path: "work/portfolio",
-        element: <Portfolio />,
-      },
-      {
-        path: "work/fact",
-        element: <FACT />,
-      },
-      {
-        path: "work/nmk",
-        element: <NMK />,
-      },
-      {
         path: "design",
         element: <Design />,
       },
