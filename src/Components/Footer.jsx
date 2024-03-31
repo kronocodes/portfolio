@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <div className='flex justify-center bg-black text-white'>
-      <div className="max-w-[1300px] md:rounded-t-2xl bg-gradient-to-b from-black to-neutral-800 mt-5 w-full px-4 md:mx-4 ">
+      <div className="md:rounded-t-2xl bg-gradient-to-b from-black to-neutral-800 mt-5 w-full px-4 md:mx-4 ">
         <div className="py-10">
           <div className="flex gap-x-8 md:gap-x-12 justify-center text-xl">
               <a className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl" href="https://github.com/kronocodes">Github</a>
