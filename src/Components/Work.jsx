@@ -3,8 +3,6 @@ import Youtube from "../assets/Youtube.png";
 import Portfolio from "../assets/Portfolio.png";
 import FACT from "../assets/FACT.png";
 import NMK from "../assets/NMK.png";
-import Referral from "../assets/Referral.png";
-import Prod from "../assets/prod.png";
 import toolbar from '../assets/toolbar.png'
 import React, { useState, useEffect } from 'react';
 

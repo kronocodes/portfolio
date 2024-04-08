@@ -40,7 +40,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {servicesData.map((service, index) => (
               
-              <div key={index} className="flex flex-col md:rounded-xl md:hover:translate-x-2 md:hover:translate-y-2 transition duration-200 bg-zinc-950 px-5 lg:px-9 ">
+              <div key={index} className="flex flex-col md:rounded-xl md:hover:translate-x-2 md:hover:translate-y-2 transition duration-200 border-[1px] border-zinc-700 px-5 lg:px-9 ">
                 {/* <div className='h-[1px] w-full md:hidden bg-zinc-700'></div> */}
                 <div className='pt-1 -ml-2'><img className='w-12' src={service.imageSrc} alt="ar" /></div>
                 <div className='flex flex-wrap justify-between py-1'>
