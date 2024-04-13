@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from './Slider'
 // import Aboutme from "../assets/hero.png";
-import Aboutme from "../assets/mog/1.png";
+import Aboutme from "../assets/mog/1.jpg";
 
 const Abouth = () => {
   return (
