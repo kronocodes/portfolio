@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <div className='flex items-center justify-center bg-black z-10'>
         <div className='w-full mt-3 mx-3 h-[97vh] border border-zinc-600 rounded-xl gradient-box flex justify-center items-center'>
-          <div className='text-white px-10 mx-auto max-w-[1220px] text-[25px] leading-[33px] md:text-[40px] md:leading-[54px] md:px-24 lg:text-[45px] lg:leading-[70px]'>
+          <div className='text-white px-10 mx-auto max-w-[1220px] text-[28px] leading-[40px] md:text-[38px] md:leading-[50px] md:px-24 lg:text-[46px] lg:leading-[66px]'>
               <div class="flex flex-wrap gap-x-2 ">
                 <div>Hello!</div>
                 <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
