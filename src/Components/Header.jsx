@@ -103,12 +103,12 @@ const Header = () => {
         </div>
       ) : (
         <div className="fixed z-[999] text-white">
-          <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
+          {/* <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
             <div className="fixed flex flex-col leading-4 items-start mt-6 left-8 text-lg opacity-80 font-semibold">
               <div>ABHISHEK</div>
               <div>NANDAN</div>
             </div>
-          </Link>
+          </Link> */}
           <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto w-[360px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-2 items-center rounded-full">
             <NavLink
               to="/work"
@@ -131,9 +131,9 @@ const Header = () => {
               >Contact
             </NavLink>
           </div>
-              <div className="flex fixed right-0 my-4">
+              {/* <div className="flex fixed right-0 my-4">
                 <ShinyButton/>
-              </div>
+              </div> */}
         </div>
       )}
     </>
