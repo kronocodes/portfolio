@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Slider from "./Slider";
+import ShinyButton from "./button";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
@@ -112,24 +113,27 @@ const Header = () => {
             <NavLink
               to="/work"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}
-            >Work
+              >Work
             </NavLink>
             <NavLink
               to="/about"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}
-            >About
+              >About
             </NavLink>
             <NavLink
               to="/design"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}
-            >Design
+              >Design
             </NavLink>
             <NavLink
               to="/contact"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}
-            >Contact
+              >Contact
             </NavLink>
           </div>
+              <div className="flex fixed right-0 my-4">
+                <ShinyButton/>
+              </div>
         </div>
       )}
     </>

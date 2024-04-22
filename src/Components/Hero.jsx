@@ -1,6 +1,7 @@
 import React from 'react'
 // import im from '../assets/hero.jpeg'
 import im from '../assets/hero5.jpg'
+import her from '../assets/anshu.jpg'
 
 const Hero = () => {
   return (
@@ -43,6 +44,19 @@ const Hero = () => {
                 <div className='italic font-light'>Computer</div>
                 <div className='italic font-light'>Science</div>
                 <div>Engineering.</div>
+                <div>Currently I</div>
+                <div>am</div>
+                <div>dating</div>
+                <div>the</div>
+                <div>prettiest</div>
+                <div>girl</div>
+                <div>I</div>
+                <div>Know</div>
+                <div className='italic font-light'>Anshuli</div>
+                <div className='italic font-light'>Gautam.</div>
+                <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
+                  <img className='h-full w-full object-cover rounded-full ' src={her}></img>
+                </div>
           </div>
         </div>
         </div>
