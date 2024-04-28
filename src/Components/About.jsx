@@ -19,10 +19,11 @@ const About = () => {
 
 
         {/* <Story/> */}
+        <Leetcode/>
         <Education />
         <Services />
         <Skills />
-        <Leetcode/>
+        <Spotify />
         {/* <div className="text-center py-10">
           <div className="md:text-3xl text-2xl font-semibold">
             BECAUSE LIFE IS MUCH MORE
@@ -35,7 +36,6 @@ const About = () => {
           It is about
           <div className="italic">music</div>{" "}
         </div>
-        <Spotify />
         <div className="text-center gap-x-2 text-2xl flex justify-center">
           <div>It is about </div>
           <div className="line-through ">connections</div>
