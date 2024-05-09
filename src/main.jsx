@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import "./font.css";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import Contact from "./Components/Contact";

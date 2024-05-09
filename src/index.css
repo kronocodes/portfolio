@@ -2,17 +2,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./fonts/RoxboroughCF.ttf) format('truetype');
+} */
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: local('PPNeueMontreal'), url(./fonts/PPNeueMontreal-Medium.otf) format('opentype');
+}
+.customfont{
+  font-family: PPNeueMontreal;
+}
+
 .design {
   font-family: "Gloock", serif;
-  /* font-weight: 100; */
+  font-weight: 200;
   font-style: italic;
   letter-spacing: 1px;
 }
-.fontt{
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 img {
   width: 100%;
 }

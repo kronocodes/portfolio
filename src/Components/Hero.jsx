@@ -52,7 +52,7 @@ const Hero = () => {
       <div className='flex items-center justify-center bg-black z-10'>
         <div className='w-full mt-2 mx-2 h-[98vh] border border-zinc-600 rounded-xl gradient-box flex justify-center items-center'>
           <div className='text-zinc-400 px-5 sm:px-10 mx-auto md:px-20 max-w-[1000px] text-[40px] leading-[60px] md:text-[64px] md:leading-[90px] lg:text-[74px] lg:leading-[100px] font-light'>
-              <div class="flex fo flex-wrap gap-x-2 md:gap-x-4 xl:gap-x-6">
+              <div class="flex customfont flex-wrap gap-x-2 md:gap-x-4 xl:gap-x-6">
                 <div>Hey,</div>
                 <div>I'm</div>
                 <div class='lg:h-20 lg:w-32 md:w-24 md:h-16 h-10 w-14 my-auto'>

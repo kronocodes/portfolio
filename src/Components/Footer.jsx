@@ -17,10 +17,19 @@ const Footer = () => {
       <div className="md:rounded-t-2xl bg-gradient-to-b from-black to-neutral-800 mt-5 w-full px-4 md:mx-4 ">
         <div className="py-10">
           <div className="flex gap-x-8 md:gap-x-12 justify-center text-xl">
-              <a className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl" href="https://github.com/kronocodes">Github</a>
-              <a className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl" href="https://www.linkedin.com/in/abhisheknandan2013/">LinkedIn</a>
-              <a className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl" href="https://twitter.com/RakNandan">Twitter</a>
-              <button onClick={handleCopy} className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl">Email</button>
+              <a className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl" href="https://github.com/kronocodes">Github
+              <img className='w-7 hover:flex' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+              </a>
+              <a className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl" href="https://www.linkedin.com/in/abhisheknandan2013/">LinkedIn
+              <img className='w-7 hover:flex' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+              </a>
+              <a className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl" href="https://twitter.com/RakNandan">Twitter
+              <img className='w-7 hover:flex' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+              </a>
+              <button onClick={handleCopy} className="hover:bg-neutral-600 transition-all duration-300 hover:px-5 py-2 rounded-xl">Email
+              <img className='w-7 hover:flex' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+              </button>
+              
           </div>
         </div>
         <div>
