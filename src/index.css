@@ -187,9 +187,9 @@ img {
   --radial-gradient-background: 250, 250, 250;
   --solid-color-background: 15, 15, 15;
   --overlay-color: 255, 255, 255;
-  --purple: rgb(123, 31, 162);
-  --violet: rgb(103, 58, 183);
-  --pink: rgb(244, 143, 177);
+  --purple: rgb(162, 41, 214);
+  --violet: rgb(116, 75, 185);
+  --pink: rgb(248, 170, 196);
 }
 
 .radial-gradient {
@@ -268,7 +268,6 @@ img {
 
 h1 {
   color: white;
-  /* font-family: "Rubik", sans-serif; */
   font-weight: 400;
   text-align: center;
 }
@@ -297,7 +296,7 @@ h1 > .magic > .magic-star > svg {
 }
 
 h1 > .magic > .magic-star > svg > path {
-  fill: var(--violet);
+  fill: var(--pink);
 }
 
 h1 > .magic > .magic-text {
@@ -314,3 +313,8 @@ h1 > .magic > .magic-text {
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
+
+
+
+
+/*Work */
