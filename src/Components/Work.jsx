@@ -45,7 +45,7 @@ const project = [
     id: 4,
     name: "College Clubs Portal",
     repo: "https://github.com/nihar8262/FACTS-N",
-    live: "https://facts-iota.vercel.app/",
+    live: "https://facts-nce.vercel.app/",
     figma:
       "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
     year: "2024",
