@@ -21,6 +21,7 @@ import Tos from "./Components/Tos";
 import Cancellation from "./Components/Cancellation";
 import Support from "./Components/Support";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

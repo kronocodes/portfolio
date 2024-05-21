@@ -5,8 +5,15 @@ const Leetcode = () => {
   const [stats, setStats] = useState([]);
   const [cal, setCal] = useState({ submissionCalendar: {} });
   const [totalSubmissions, setTotalSubmissions] = useState(0);
-  
+  const [daysBetween, setDaysBetween] = useState(0);
 
+  useEffect(() => {
+    const targetDate = new Date('2023-03-14');
+    const today = new Date();
+    const timeDifference = today - targetDate;
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    setDaysBetween(daysDifference);
+  }, []);
 
   const getStats = async () => {
     const data = await fetch(
@@ -189,7 +196,7 @@ const Leetcode = () => {
           <div className="flex flex-col md:px-9 px-3">
           <div className="md:pb-4 px-4">
             <div className="text-lg md:text-xl pb-1">{totalSubmissions} submissions in the past one year</div>
-            <div className="text-sm md:text-lg">Current streak: 368 🔥</div>
+            <div className="text-sm md:text-lg">Current streak: {daysBetween} 🔥</div>
           </div>
           <div className="flex gap-[3px] md:gap-[4px] overflow-x-auto mx-4 mt-4 md:mb-10 mb-8" style={{ scrollbarWidth: "thin", scrollbarColor: "#727272 #18181B" }}>
             {chunkArray(Object.entries(cal?.submissionCalendar), 7).map(

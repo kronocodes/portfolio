@@ -1,21 +1,21 @@
 import React from "react";
-import Img1 from "../assets/img1.png";
-import Img2 from "../assets/img2.png";
-import Img3 from "../assets/img3.png";
-import Img5 from "../assets/img5.png";
-import Img6 from "../assets/img6.png";
-import Img7 from "../assets/img7.png";
-import Img8 from "../assets/img8.png";
-import t1 from "../assets/t1.png";
-import t2 from "../assets/t2.png";
-import t3 from "../assets/t3.jpg";
-import t4 from "../assets/t4.png";
-import t5 from "../assets/t5.png";
-import t6 from "../assets/t6.png";
-import t7 from "../assets/t7.png";
-import t8 from "../assets/t8.jpg";
-import t9 from "../assets/t9.png";
-import t10 from "../assets/t10.png";
+const Img1=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278695/Design/img1_c3dpon.png`;
+const Img2=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278685/Design/img2_wihdqi.png`;
+const Img3=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278686/Design/img3_hmikpr.png`;
+const Img5=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278687/Design/img5_tpbwum.png`;
+const Img6=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278687/Design/img6_ikhb0u.png`;
+const Img7=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278689/Design/img7_piosgz.png`;
+// const Img8=``;
+const t1=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278690/Design/t1_ydqobt.png`;
+const t2=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278690/Design/t2_g09x12.png`;
+const t3=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278690/Design/t3_jmdtlz.jpg`;
+const t4=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278691/Design/t4_i0o7sp.png`;
+const t5=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278692/Design/t5_ydtlty.png`;
+const t6=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278695/Design/t6_vusq2h.png`;
+const t7=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278695/Design/t7_pge5bo.png`;
+const t8=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278695/Design/t8_x06faz.jpg`;
+const t9=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278696/Design/t9_wurghe.png`;
+const t10=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278696/Design/t10_mt93bo.png`;
 
 const images = [
   { src: Img1, year: "(2023)", type: "Poster" },
@@ -27,7 +27,7 @@ const images = [
   { src: t4, year: "(2020)", type: "Thumbnail" },
   { src: Img5, year: "(2022)", type: "Poster" },
   { src: Img6, year: "(2023)", type: "Thumbnail" },
-  { src: Img8, year: "(2023)", type: "Thumbnail" },
+  // { src: Img8, year: "(2023)", type: "Thumbnail" },
   { src: t1, year: "(2019)", type: "Thumbnail" },
   { src: Img7, year: "(2023)", type: "Poster" },
   { src: t2, year: "(2019)", type: "Thumbnail" },

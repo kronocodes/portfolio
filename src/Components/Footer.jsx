@@ -2,6 +2,9 @@ import React from 'react';
 import Up from '../assets/up.svg';
 
 const Footer = () => {
+  const handleLinkClick = (url) => {
+    window.open(url, '_blank');
+  };
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
   };
@@ -17,15 +20,18 @@ const Footer = () => {
       <div className="md:rounded-t-2xl bg-gradient-to-b from-black to-neutral-800 mt-5 w-full px-4 md:mx-4 ">
         <div className="py-10">
           <div className="flex md:gap-x-2 justify-center text-xl">
-              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" href="https://github.com/kronocodes">
+              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" 
+              onClick={() => handleLinkClick('https://github.com/kronocodes')}>
                 <div>Github</div>
                 <img className='opacity-0 pl-2 group-hover:opacity-100 transition-opacity' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
               </div>
-              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" href="https://www.linkedin.com/in/abhisheknandan2013/">
+              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" 
+              onClick={() => handleLinkClick('https://www.linkedin.com/in/abhisheknandan2013/')}>
                 <div>LinkedIn</div>
                 <img className='opacity-0 pl-2 group-hover:opacity-100 transition-opacity' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
               </div>
-              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" href="https://twitter.com/RakNandan">
+              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" 
+              onClick={() => handleLinkClick('https://twitter.com/RakNandan')}>
                 <div>Twitter</div>
                 <img className='opacity-0 pl-2 group-hover:opacity-100 transition-opacity' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
               </div>

@@ -1,11 +1,11 @@
-import Foodle from "../assets/Foodle.png";
-import Youtube from "../assets/Youtube.png";
-import Portfolio from "../assets/Portfolio.png";
-import FACT from "../assets/FACT.png";
-import NMK from "../assets/NMK.png";
 import toolbar from "../assets/toolbar.png";
 import React, { useState, useEffect } from "react";
 
+const Youtube=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278526/work/Youtube_zrbwre.png`;
+const Portfolio=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278523/work/Portfolio_oar7bc.png`;
+const FACT=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278541/work/FACT_lrrhjr.png`;
+const Foodle=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278524/work/Foodle_d6hqto.png`;
+const NMK=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278524/work/NMK_vk0gnv.png`;
 const project = [
   {
     id: 1,
@@ -136,8 +136,8 @@ const Work = () => {
                     )}
                   </div>
                   <div className="mx-auto object-fill group-hover:translate-y-1 translate-y-6 transition-all duration-500 w-[86%] mt-6 md:mt-10 border border-zinc-600 rounded-lg">
-                    <img src={toolbar}></img>
-                    <img src={project.src}></img>
+                    <img src={toolbar}/>
+                    <img src={project.src}/>
                   </div>
                 </div>
               </div>
