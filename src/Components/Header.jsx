@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
+import memoji from "../assets/mog/memoji.png";
 import Slider from "./Slider";
 import ShinyButton from "./button";
 
@@ -51,14 +52,6 @@ const Header = () => {
     <>
       {isSmallScreen ? (
         <div className="fixed z-50">
-          {/* <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
-            <div className="fixed mt-7 left-8 text-3xl opacity-90 font-semibold text-white">
-              <div className="flex flex-col text-sm items-start">
-                <div>ABHISHEK</div>
-                <div className="-mt-1">NANDAN</div>
-              </div>
-            </div>
-          </Link> */}
           <button
             onClick={toggleDropdown}
             className="fixed right-8 top-6 z-[999] flex items-center justify-center w-12 h-12 rounded-full bg-neutral-500 bg-opacity-40 backdrop-blur-[6px]  p-[5px]">
@@ -109,7 +102,7 @@ const Header = () => {
               <div>NANDAN</div>
             </div>
           </Link> */}
-          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto w-[360px] justify-center border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] p-2 items-center rounded-full">
+          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto px-2 py-[2px] w-[400px] justify-between border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] items-center rounded-full">
             <NavLink
               to="/work"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}
@@ -120,6 +113,9 @@ const Header = () => {
               className={({isActive})=>(isActive? activeLink : inactiveLink )}
               >About
             </NavLink>
+            <Link>
+              <img className="w-8 mx-3" src={memoji}/>
+            </Link>
             <NavLink
               to="/design"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}
