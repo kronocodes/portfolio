@@ -4,6 +4,7 @@ import imgportfolio from "../assets/toolbar/portfolio.png";
 import imgnmk from "../assets/toolbar/nmk.png";
 import imgclub from "../assets/toolbar/club.png";
 import imgproxyserver from "../assets/toolbar/proxyserver.png";
+import proxy from "../assets/proxy.png";
 import React, { useState, useEffect } from "react";
 
 const Youtube=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278526/work/Youtube_zrbwre.png`;
@@ -45,7 +46,7 @@ const project = [
     figma: "",
     year: "2024",
     tagline: "A multithreaded proxy server with caching, handling multiple client requests.",
-    src: Portfolio,
+    src: proxy,
     toolbar: imgproxyserver,
     gradientColor: "from-purple-800",
   },
