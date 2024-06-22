@@ -1,4 +1,9 @@
-import toolbar from "../assets/toolbar.png";
+import imgswiggy from "../assets/toolbar/swiggy.png";
+import imgyoutube from "../assets/toolbar/youtube.png";
+import imgportfolio from "../assets/toolbar/portfolio.png";
+import imgnmk from "../assets/toolbar/nmk.png";
+import imgclub from "../assets/toolbar/club.png";
+import imgproxyserver from "../assets/toolbar/proxyserver.png";
 import React, { useState, useEffect } from "react";
 
 const Youtube=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278526/work/Youtube_zrbwre.png`;
@@ -17,6 +22,7 @@ const project = [
     tagline:
       "A food delivery web application fething real time data using swiggy's limited public Api.",
     src: Foodle,
+    toolbar: imgswiggy,
     gradientColor: "from-blue-900",
   },
   {
@@ -28,10 +34,23 @@ const project = [
     year: "2023",
     tagline: "YouTube clone built using react fething real time data.",
     src: Youtube,
+    toolbar: imgyoutube,
     gradientColor: "from-red-800",
   },
   {
     id: 3,
+    name: "Multithreaded Proxy Web Server",
+    repo: "https://github.com/kronocodes/MultiThreadedProxyServerClient",
+    live: "",
+    figma: "",
+    year: "2024",
+    tagline: "A multithreaded proxy server with caching, handling multiple client requests.",
+    src: Portfolio,
+    toolbar: imgproxyserver,
+    gradientColor: "from-purple-800",
+  },
+  {
+    id: 4,
     name: "Portfolio",
     repo: "",
     live: "",
@@ -39,20 +58,8 @@ const project = [
     year: "2024",
     tagline: "A Showcase of my creations.",
     src: Portfolio,
+    toolbar: imgportfolio,
     gradientColor: "from-zinc-700",
-  },
-  {
-    id: 4,
-    name: "College Clubs Portal",
-    repo: "https://github.com/nihar8262/FACTS-N",
-    live: "https://facts-nce.vercel.app/",
-    figma:
-      "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
-    year: "2024",
-    tagline:
-      "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
-    src: FACT,
-    gradientColor: "from-yellow-600",
   },
   {
     id: 5,
@@ -65,7 +72,22 @@ const project = [
     tagline:
       "Smart India Hackathon's project, built an centralized database of all the medical centers in India.",
     src: NMK,
+    toolbar: imgnmk,
     gradientColor: "from-green-700",
+  },
+  {
+    id: 6,
+    name: "College Clubs Portal",
+    repo: "https://github.com/nihar8262/FACTS-N",
+    live: "https://facts-nce.vercel.app/",
+    figma:
+      "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
+    year: "2024",
+    tagline:
+      "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
+    src: FACT,
+    toolbar: imgclub,
+    gradientColor: "from-yellow-500",
   },
 ];
 
@@ -94,7 +116,7 @@ const Work = () => {
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-2"></div>
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[9px]"></div>
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12"></div>
-              <div className={`transition-all duration-500 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-400 ${project.gradientColor} ${ isSmallScreen? "bg-gradient-to-b"  : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"}`}>
+              <div className={`transition-all duration-500 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-400 ${project.gradientColor} ${ isSmallScreen? "bg-gradient-to-b to-black"  : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"}`}>
                 <div className="flex flex-col rounded-3xl justify-center">
                   <div className="flex justify-between items-center pt-8 md:pt-10 px-8">
                     <div className="text-2xl md:font-semibold font-[500]">
@@ -109,7 +131,7 @@ const Work = () => {
                     </span>
                     {project.tagline}
                   </div>
-                  <div className="flex flex-col justify-between px-8">
+                  <div className="flex flex-col justify-between px-8 md:px-14">
                     {project.repo !== "" && (
                       <a
                         className="border-b text-center border-zinc-400 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
@@ -136,7 +158,7 @@ const Work = () => {
                     )}
                   </div>
                   <div className="mx-auto object-fill group-hover:translate-y-1 translate-y-6 transition-all duration-500 w-[86%] mt-6 md:mt-10 border border-zinc-600 rounded-lg">
-                    <img src={toolbar}/>
+                    <img src={project.toolbar}/>
                     <img src={project.src}/>
                   </div>
                 </div>
