@@ -9,17 +9,13 @@ import Work from "./Components/Work";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import Error from "./Components/Error";
-import Foodle from "./Components/Work/Foodle";
-import Youtube from "./Components/Work/Youtube";
-import NMK from "./Components/Work/Nmk";
-import FACT from "./Components/Work/FACT";
-import Portfolio from "./Components/Work/Portfolio";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import ScrollToTop from "./Components/ScrollToTop";
 import Privacy from "./Components/Privacy";
 import Tos from "./Components/Tos";
 import Cancellation from "./Components/Cancellation";
 import Support from "./Components/Support";
+import { Analytics } from "@vercel/analytics/react"
 
 
 const router = createBrowserRouter([
@@ -79,6 +75,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <Analytics/>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
