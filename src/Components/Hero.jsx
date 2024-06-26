@@ -1,5 +1,3 @@
-// import im from '../assets/hero.jpeg'
-// import her from '../assets/anshu.jpg'
 import React from "react";
 import { useEffect } from "react";
 import im from "../assets/hero5.jpg";
@@ -109,34 +107,6 @@ const Hero = () => {
                 ></img>
               </div>
               <div className="text-white">IN.</div>
-              {/* <div>I am</div>
-                <div>currently</div>
-                <div>a</div>
-                <div>final</div>
-                <div>year</div>
-                <div>undergrad.</div>
-                <div>student</div>
-                <div class='xl:h-12 xl:w-24 md:w-16 md:h-10 h-8 w-14 my-auto'>
-                  <img className='h-full w-full object-cover rounded-xl' src="https://cache.careers360.mobi/media/colleges/social-media/media-gallery/3689/2019/4/1/Buliding%20of%20Nalanda%20College%20of%20Engineering%20Chandi_Campus-View.jpg"></img>
-                </div>
-                <div>majoring</div>
-                <div>in</div>
-                <div className='italic font-light'>Computer</div>
-                <div className='italic font-light'>Science</div>
-                <div>Engineering.</div>
-                // <div>Currently I</div>
-                // <div>am</div>
-                // <div>dating</div>
-                // <div>the</div>
-                // <div>prettiest</div>
-                // <div>girl</div>
-                // <div>I</div>
-                // <div>Know</div>
-                // <div className='italic font-light'>Anshuli</div>
-                // <div className='italic font-light'>Gautam.</div>
-                // <div class='xl:h-11 xl:mt-3 xl:w-24 md:w-16 md:h-10 md:mt-2 h-6 w-10 mt-1'>
-                //   <img className='h-full w-full object-cover rounded-full ' src={her}></img>
-                // </div> */}
             </div>
           </div>
         </div>

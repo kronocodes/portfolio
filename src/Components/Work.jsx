@@ -4,14 +4,14 @@ import imgportfolio from "../assets/toolbar/portfolio.png";
 import imgnmk from "../assets/toolbar/nmk.png";
 import imgclub from "../assets/toolbar/club.png";
 import imgproxyserver from "../assets/toolbar/proxyserver.png";
-import proxy from "../assets/proxy.png";
 import React, { useState, useEffect } from "react";
 
-const Youtube=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278526/work/Youtube_zrbwre.png`;
-const Portfolio=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278523/work/Portfolio_oar7bc.png`;
-const FACT=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278541/work/FACT_lrrhjr.png`;
-const Foodle=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278524/work/Foodle_d6hqto.png`;
-const NMK=`https://res.cloudinary.com/dw2fhd58a/image/upload/v1716278524/work/NMK_vk0gnv.png`;
+const Youtube=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Youtube_zrbwre.png`;
+const Portfolio=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Portfolio_oar7bc.png`;
+const FACT=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/FACT_lrrhjr`;
+const Foodle=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Foodle_d6hqto.png`;
+const NMK=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/NMK_vk0gnv.png`;
+const Proxy=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/work/hoba1ggdupq8defq3gt1`;
 const project = [
   {
     id: 1,
@@ -46,7 +46,7 @@ const project = [
     figma: "",
     year: "2024",
     tagline: "A multithreaded proxy server with caching, handling multiple client requests.",
-    src: proxy,
+    src: Proxy,
     toolbar: imgproxyserver,
     gradientColor: "from-purple-800",
   },
@@ -102,8 +102,6 @@ const Work = () => {
 
     handleResize();
     window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
