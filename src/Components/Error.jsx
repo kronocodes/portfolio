@@ -2,7 +2,7 @@ import React from 'react'
 
 const Error = () => {
   return (
-    <div className='h-[68vh] bg-black w-full'>
+    <div className='h-[73vh] bg-black w-full'>
         <div className='text-center text-white'>
             <div className='text-[50vw] md:text-[400px] pt-32 md:pt-0'> 404
             </div>

@@ -11,10 +11,6 @@ import Layout from "./Layout";
 import Error from "./Components/Error";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import ScrollToTop from "./Components/ScrollToTop";
-import Privacy from "./Components/Privacy";
-import Tos from "./Components/Tos";
-import Cancellation from "./Components/Cancellation";
-import Support from "./Components/Support";
 import { Analytics } from "@vercel/analytics/react"
 
 
@@ -40,22 +36,6 @@ const router = createBrowserRouter([
       {
         path: "design",
         element: <Design />,
-      },
-      {
-        path: "privacy-policy",
-        element: <Privacy/>,
-      },
-      {
-        path: "terms-of-service",
-        element: <Tos />,
-      },
-      {
-        path: "cancellation",
-        element: <Cancellation />,
-      },
-      {
-        path: "support",
-        element: <Support />,
       },
       {
         path: "about",

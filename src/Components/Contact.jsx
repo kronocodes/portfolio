@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import ShinyButton from './button';
 
 const Contact = () => {
   const form = useRef();
@@ -46,7 +47,7 @@ const Contact = () => {
               <div className='py-2 font-semibold text-xl text-white'>[ MESSAGE ]</div>
               <textarea name='message' className='p-3 h-36 bg-zinc-200 rounded-xl' placeholder='Example Text' required />
             </div>
-            <button type='submit' value="Send" className='p-4 bg-orange-500 rounded-xl w-[30%] my-4'>SEND</button>
+            <button type='submit' value="Send"><ShinyButton/></button>
             {isEmailSent && <div className="text-white mt-2">Email sent successfully!</div>}
           </div>
         </form>

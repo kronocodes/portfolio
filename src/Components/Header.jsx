@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Slider from "./Slider";
 import ShinyButton from "./button";
 
 const Header = () => {
@@ -43,6 +42,7 @@ const Header = () => {
   const closeDropdown = () => {
     setIsDropdownOpen(false);
   };
+  
 
   const activeLink='bg-neutral-700 w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500'
   const inactiveLink='hover:bg-neutral-600  w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500'
@@ -120,9 +120,6 @@ const Header = () => {
               >Contact
             </NavLink>
           </div>
-              {/* <div className="flex fixed right-0 my-4">
-                <ShinyButton/>
-              </div> */}
         </div>
       )}
     </>

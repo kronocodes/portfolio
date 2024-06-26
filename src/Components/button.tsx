@@ -10,7 +10,7 @@ const ShinyButton = () => {
       transition={{
         repeat: Infinity,
         repeatType: "loop",
-        repeatDelay: 1,
+        repeatDelay: 0.5,
         type: "spring",
         stiffness: 20,
         damping: 15,
@@ -22,10 +22,10 @@ const ShinyButton = () => {
           mass: 0.1,
         },
       }}
-      className="px-6 py-2 rounded-md relative radial-gradient"
+      className="px-12 py-3 rounded-md relative radial-gradient"
     >
-      <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
-        Start now
+      <span className="text-neutral-100 tracking-wide font-medium text-xl h-full w-full block relative linear-mask">
+        Send
       </span>
       <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
     </motion.button>

@@ -1,25 +1,23 @@
 import React from "react";
 import Services from "./Services";
 import Education from "./Education";
+import Experience from "./Experience";
 import Leetcode from "./Leetcode";
-import Card from "./Card";
 import Skills from "./Skills";
-import GitHubCalendar from "react-github-calendar";
 import Spotify from "./Spotify";
-import Story from "./Story";
-import Slider from "./Slider";
 import Abouth from "./Abouth";
 
 const About = () => {
 
   return (
     <div className="bg-black flex flex-col items-center gap-y-44 text-white">
-      <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full pt-32 pb-24 flex flex-col">
+      <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full pt-24 pb-24 flex flex-col">
         <Abouth/>
 
 
         {/* <Story/> */}
         <Leetcode/>
+        <Experience/>
         <Education />
         <Services />
         <Skills />

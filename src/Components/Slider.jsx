@@ -17,7 +17,6 @@ const Slider = () => {
                   className="w-full flex justify-center h-1/4 flex-col items-center rounded-2xl bg-zinc-800 border border-zinc-700"
                   href="https://github.com/kronocodes"
                 >
-                  {/* <div>Github</div> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50px"
@@ -30,7 +29,6 @@ const Slider = () => {
                   className="w-full flex justify-center h-1/4 flex-col items-center rounded-2xl bg-zinc-800 border border-zinc-700"
                   href="https://www.linkedin.com/in/abhisheknandan2013/"
                 >
-                  {/* <div>LinkedIn</div> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50px"
@@ -43,7 +41,6 @@ const Slider = () => {
                   className="w-full flex justify-center h-1/4 flex-col items-center rounded-2xl bg-zinc-800 border border-zinc-700"
                   href="https://twitter.com/RakNandan"
                 >
-                  {/* <div>Twitter</div> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50px"
