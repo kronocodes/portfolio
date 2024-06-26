@@ -1,9 +1,3 @@
-import imgswiggy from "../assets/toolbar/swiggy.png";
-import imgyoutube from "../assets/toolbar/youtube.png";
-import imgportfolio from "../assets/toolbar/portfolio.png";
-import imgnmk from "../assets/toolbar/nmk.png";
-import imgclub from "../assets/toolbar/club.png";
-import imgproxyserver from "../assets/toolbar/proxyserver.png";
 import React, { useState, useEffect } from "react";
 
 const Youtube=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Youtube_zrbwre.png`;
@@ -23,7 +17,7 @@ const project = [
     tagline:
       "A food delivery web application fething real time data using swiggy's limited public Api.",
     src: Foodle,
-    toolbar: imgswiggy,
+    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/bjtcusynfjh7wuxom0iv`,
     gradientColor: "from-blue-900",
   },
   {
@@ -35,7 +29,7 @@ const project = [
     year: "2023",
     tagline: "YouTube clone built using react fething real time data.",
     src: Youtube,
-    toolbar: imgyoutube,
+    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/ggmqe3ooio6qvkuxctqk`,
     gradientColor: "from-red-800",
   },
   {
@@ -47,7 +41,7 @@ const project = [
     year: "2024",
     tagline: "A multithreaded proxy server with caching, handling multiple client requests.",
     src: Proxy,
-    toolbar: imgproxyserver,
+    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/by7huxlpxvg0dpm2uc2n`,
     gradientColor: "from-purple-800",
   },
   {
@@ -59,7 +53,7 @@ const project = [
     year: "2024",
     tagline: "A Showcase of my creations.",
     src: Portfolio,
-    toolbar: imgportfolio,
+    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/jxzri3zmsx1p0yofefco`,
     gradientColor: "from-zinc-700",
   },
   {
@@ -73,7 +67,7 @@ const project = [
     tagline:
       "Smart India Hackathon's project, built an centralized database of all the medical centers in India.",
     src: NMK,
-    toolbar: imgnmk,
+    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/ekxp1nuykykb5npw4irn`,
     gradientColor: "from-green-700",
   },
   {
@@ -87,7 +81,7 @@ const project = [
     tagline:
       "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
     src: FACT,
-    toolbar: imgclub,
+    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/qvnlglbuldb4qi1xswdk`,
     gradientColor: "from-yellow-500",
   },
 ];
