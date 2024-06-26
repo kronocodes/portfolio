@@ -5,7 +5,6 @@ const Img3=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/
 const Img5=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/Design/img5_tpbwum.png`;
 const Img6=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/Design/img6_ikhb0u.png`;
 const Img7=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/Design/img7_piosgz.png`;
-// const Img8=``;
 const t1=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/Design/t1_ydqobt.png`;
 const t2=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/Design/t2_g09x12.png`;
 const t3=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/Design/t3_jmdtlz.jpg`;

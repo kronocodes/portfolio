@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect } from "react";
-import im from "../assets/hero5.jpg";
 
 const Hero = () => {
   useEffect(() => {
@@ -62,7 +61,7 @@ const Hero = () => {
               <div class="lg:h-20 lg:w-32 md:w-24 md:h-16 h-10 w-14 my-auto">
                 <img
                   className="h-full w-full object-cover lg:rounded-[22px] relative z-50 rounded-[10px]"
-                  src={im}
+                  src="https://res.cloudinary.com/dw2fhd58a/image/upload/w_250/q_35/f_auto/v1/About/hero5_uypia5.jpg"
                 ></img>
               </div>
               <div className="text-white relative">Abhishek,</div>
@@ -103,7 +102,7 @@ const Hero = () => {
               <div class="lg:h-20 lg:w-32 md:w-24 md:h-16 h-10 w-14 my-auto">
                 <img
                   className="h-full w-full object-cover lg:rounded-[22px] relative rounded-[10px]"
-                  src="https://www.nativeplanet.com/img/2023/11/patna-skyline-with-spiritual-landmarks_1700197702953-1200x675-20231117104601.jpg?04052024233842"
+                  src="https://res.cloudinary.com/dw2fhd58a/image/upload/w_250/q_35/f_auto/v1/About/patna-skyline-with-spiritual-landmarks_1700197702953-1200x675-20231117104601_aatdil.jpg"
                 ></img>
               </div>
               <div className="text-white">IN.</div>

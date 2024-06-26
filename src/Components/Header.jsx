@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
-import memoji from "../assets/mog/memoji.png";
 import Slider from "./Slider";
 import ShinyButton from "./button";
 
@@ -96,12 +95,6 @@ const Header = () => {
         </div>
       ) : (
         <div className="fixed z-[999] text-white">
-          {/* <Link to="/" className="w-24 h-9 rounded-full text-center pt-2">
-            <div className="fixed flex flex-col leading-4 items-start mt-6 left-8 text-lg opacity-80 font-semibold">
-              <div>ABHISHEK</div>
-              <div>NANDAN</div>
-            </div>
-          </Link> */}
           <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto px-2 py-[2px] w-[400px] justify-between border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] items-center rounded-full">
             <NavLink
               to="/work"
@@ -114,7 +107,7 @@ const Header = () => {
               >About
             </NavLink>
             <Link>
-              <img className="w-8 mx-3" src={memoji}/>
+              <img className="w-8 mx-3" src="https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/About/memoji_udgkhu.png"/>
             </Link>
             <NavLink
               to="/design"
