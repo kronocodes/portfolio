@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import About from "./Components/About";
+import About from "./Components/About/About";
 import Home from "./Components/Home";
 import Contact from "./Components/Contact";
 import Design from "./Components/Design";
 import Work from "./Components/Work";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
-import Error from "./Components/Error";
+import Error from "./Components/Others/Error";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import ScrollToTop from "./Components/ScrollToTop";
+import ScrollToTop from "./Components/Others/ScrollToTop";
 import { Analytics } from "@vercel/analytics/react"
 
 

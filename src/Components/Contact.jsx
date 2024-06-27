@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import ShinyButton from './button';
+import ShinyButton from './Others/button';
 
 const Contact = () => {
   const form = useRef();

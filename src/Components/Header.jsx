@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
-import ShinyButton from "./button";
+import ShinyButton from "./Others/button";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
