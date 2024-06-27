@@ -17,8 +17,8 @@ const Footer = () => {
 
   return (
     <div className='flex justify-center bg-black text-white'>
-      <div className="md:rounded-t-2xl bg-gradient-to-b border border-zinc-600 from-black to-neutral-800 mt-5 w-full px-4 md:mx-4 ">
-      <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[5px]"></div>
+      <div className="md:rounded-t-2xl bg-gradient-to-b border border-zinc-600 from-black to-neutral-800 mt-5 w-full px-4 md:mx-6 max-w-[1200px]">
+      <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12"></div>
         <div className="py-10">
           <div className="flex md:gap-x-2 justify-center text-xl">
               <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" 
