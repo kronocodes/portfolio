@@ -13,8 +13,6 @@ const About = () => {
     <div className="bg-black flex flex-col items-center gap-y-44 text-white">
       <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full pt-24 pb-24 flex flex-col">
         <Abouth/>
-
-
         {/* <Story/> */}
         <Leetcode/>
         <Experience/>
