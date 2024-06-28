@@ -6,7 +6,7 @@ const Services = () => {
     {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "Software Developer",
-      description: "Proficient in C/C++, Java & Python, with a strong grasp of data structures and algorithms. Demonstrated commitment to continuous learning and excellence through coding contest on leetcode and academic achievements.",
+      description: "Proficient in C/C++, Java & Python, with a strong grasp of data structures and algorithms. Demonstrated commitment to continuous learning and excellence through coding contest on leetcode.",
       badgeText: "700+ problems"
     },
     {
@@ -18,7 +18,7 @@ const Services = () => {
     {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "Graphic Designer",
-      description: "Proficient in Adobe Photoshop, Illustrator, and other design tools, with a strong foundation in graphic design principles. Portfolio showcases a diverse range of design projects in design section.",
+      description: "Proficient in Adobe Photoshop, Illustrator, and other design tools, with a strong foundation in graphic design principles. Portfolio showcases a diverse range of design projects.",
       badgeText: "20+ work"
     },
     {
@@ -53,7 +53,7 @@ const Services = () => {
         <div className="md:px-4 px-2 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {servicesData.map((service, index) => (
-              <div key={index} className="flex flex-col md:rounded-xl md:hover:translate-x-2 md:hover:translate-y-2 transition duration-200 md:border-[1px]  border-zinc-700 pl-4 pr-5 lg:px-9">
+              <div key={index} className="flex flex-col md:rounded-xl md:hover:translate-x-2 md:hover:translate-y-2 transition duration-200 md:border-[1px] border-zinc-800 pl-4 pr-5 lg:px-9">
                 <div className='pt-1 -ml-3 md:flex hidden'>
                   <img className='w-12' src={service.imageSrc} alt="service icon" />
                 </div>
