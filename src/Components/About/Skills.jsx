@@ -12,7 +12,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="px-2 pt-8">
-          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
+          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 md:hover:translate-x-4 transition duration-200">
             <div className="text-2xl md:text-xl font-semibold md:w-[27%] pb-2">
               Languages
             </div>
@@ -35,7 +35,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
-          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
+          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 md:hover:translate-x-4 transition duration-200">
             <div className="text-2xl md:text-xl font-semibold md:w-[27%] pb-2">
               Web Development
             </div>
@@ -128,7 +128,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
-          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
+          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 md:hover:translate-x-4 transition duration-200">
             <div className="text-2xl md:text-xl font-semibold md:w-[27%] pb-2">
               Design
             </div>
@@ -150,7 +150,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
-          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 pb-4">
+          <div className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 pb-4 md:hover:translate-x-4 transition duration-200">
             <div className="text-2xl md:text-xl font-semibold md:w-[27%] pb-2">
               Others
             </div>

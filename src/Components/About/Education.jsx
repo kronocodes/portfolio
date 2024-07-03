@@ -34,7 +34,7 @@ const Education = () => {
         </div>
         <div className="px-2 pt-10">
             {edu.map((ed, index) => (
-              <div key={index} className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 ">
+              <div key={index} className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 md:hover:translate-x-4 transition duration-200">
                   <div className='text-2xl md:text-3xl font-semibold md:w-[50%] sm:pb-2 mb-1'>{ed.title}</div>
                 <div className='flex flex-col md:w-[50%]'>
                   <div className='font-semibold text-xl sm:pt-1 pb-2 sm:pb-0'>{ed.sub}</div>

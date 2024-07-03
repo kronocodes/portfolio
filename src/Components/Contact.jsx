@@ -30,7 +30,7 @@ const Contact = () => {
     <div className="flex justify-center bg-black">
       <div className="flex flex-col max-w-[1200px] w-full my-24 xl:px-0 sm:px-6 px-4">
           <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[2px] z-50"></div>
-        <div className="rounded-3xl bg-neutral-900 p-4 border-[2px] border-zinc-600">
+        <div className="rounded-3xl bg-zinc-900 p-4 border-[2px] border-zinc-800">
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -43,7 +43,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="user_name"
-                className="p-3 rounded-xl bg-black border-[1px] border-zinc-700"
+                className="p-3 rounded-xl bg-black border-[1px] border-zinc-800"
                 placeholder="Your name"
                 required
               />
@@ -53,7 +53,7 @@ const Contact = () => {
                 [ EMAIL ADDRESS ]
               </div>
               <input
-                className="p-3 rounded-xl bg-black border-[1px] border-zinc-700"
+                className="p-3 rounded-xl bg-black border-[1px] border-zinc-800"
                 name="user_email"
                 type="email"
                 placeholder="not@fake-email.com"
@@ -65,7 +65,7 @@ const Contact = () => {
                 [ SUBJECT ]
               </div>
               <input
-                className="p-3 rounded-xl bg-black border-[1px] border-zinc-700"
+                className="p-3 rounded-xl bg-black border-[1px] border-zinc-800"
                 name="subject"
                 placeholder="Attention: Important Yeti Sighting Report"
                 required
@@ -78,7 +78,7 @@ const Contact = () => {
                 </div>
                 <textarea
                   name="message"
-                  className="p-3 h-36 bg-black border-[1px] border-zinc-700 rounded-xl"
+                  className="p-3 h-36 bg-black border-[1px] border-zinc-800 rounded-xl"
                   placeholder="Example Text"
                   required
                 />

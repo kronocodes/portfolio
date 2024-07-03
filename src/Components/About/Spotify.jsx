@@ -2,7 +2,7 @@ import React from 'react'
 
 const Spotify = () => {
   return (
-    <div className="bg-neutral-800 border border-zinc-600 md:rounded-2xl">
+    <div className="bg-neutral-800 md:rounded-2xl">
           <div className="flex items-center px-6 pt-5">
             <div class="w-3 h-3 rounded-full bg-white glow z-10"></div>
             <div className="px-4 text-sm text-zinc-300">

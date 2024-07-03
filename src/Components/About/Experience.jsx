@@ -22,7 +22,7 @@ const Experience = () => {
         <div className="px-2 pt-10">
             {edu.map((ed, index) => (
                 <div className='flex flex-col'>
-              <div key={index} className="flex px-4 lg:px-9">
+              <div key={index} className="flex px-4 lg:px-9 md:hover:translate-x-4 transition duration-200">
                 <div className='w-[50%]'>
                   <div className='text-2xl md:text-3xl font-semibold'>{ed.title}</div>
                   <div className='text-lg md:text-xl font-semibold pb-2'>{ed.jobtitle}</div>
