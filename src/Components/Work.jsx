@@ -103,13 +103,12 @@ const Work = () => {
   return (
     <>
       <div className="bg-black flex flex-col items-center gap-y-44 text-white">
-        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full py-36 flex flex-col lg:gap-y-32 gap-y-12 px-6">
+        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full py-36 flex flex-col lg:gap-y-32 gap-y-14 px-5">
           {project.map((project, id) => (
-            <div className="rounded-3xl bg-zinc-800 group p-2">
-              <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-2"></div>
-              <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[9px]"></div>
-              <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12"></div>
-              <div className={`transition-all duration-500 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-400 ${project.gradientColor} ${ isSmallScreen? "bg-gradient-to-b to-black"  : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"}`}>
+            <div className="rounded-3xl bg-zinc-800 group p-[7px]">
+              <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[6.5px]"></div>
+              <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[0.1px]"></div>
+              <div className={`transition-all duration-500 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-500 ${project.gradientColor} ${ isSmallScreen? "bg-gradient-to-b to-black"  : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"}`}>
                 <div className="flex flex-col rounded-3xl justify-center">
                   <div className="flex justify-between items-center pt-8 md:pt-10 px-8">
                     <div className="text-2xl md:font-semibold font-[500]">
@@ -131,6 +130,7 @@ const Work = () => {
                         href={project.repo}
                       >
                         <button>Goto GitHub Repo</button>
+                        
                       </a>
                     )}
                     {project.live !== "" && (
