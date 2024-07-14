@@ -82,7 +82,7 @@ const project = [
       "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
     src: FACT,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/qvnlglbuldb4qi1xswdk`,
-    gradientColor: "from-yellow-500",
+    gradientColor: "from-orange-600",
   },
 ];
 
@@ -103,7 +103,11 @@ const Work = () => {
   return (
     <>
       <div className="bg-black flex flex-col items-center gap-y-44 text-white">
-        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full py-36 flex flex-col lg:gap-y-32 gap-y-14 px-5">
+        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col lg:gap-y-32 gap-y-10 px-5">
+        <div className="flex items-center gap-x-3 pt-20">
+          <div class="w-3 h-3 rounded-full bg-white glow"></div>
+        <div className="text-white text-7xl grad">Work</div>
+        </div>
           {project.map((project, id) => (
             <div className="rounded-3xl bg-zinc-800 group p-[7px]">
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[6.5px]"></div>

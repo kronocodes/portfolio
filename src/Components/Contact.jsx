@@ -27,9 +27,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center bg-black">
-      <div className="flex flex-col max-w-[1200px] w-full my-24 xl:px-0 sm:px-6 px-4">
-          <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[2px] z-50"></div>
+    <div className="flex flex-col justify-center bg-black">
+      <div className="2xl:max-w-[1300px] mx-auto md:px-16 lg:max-w-[1000px] w-full flex flex-col px-5">
+        <div className="flex items-center gap-x-3 pt-24 pb-14">
+          <div class="w-3 h-3 rounded-full bg-white glow"></div>
+          <div className="text-white text-7xl grad">Contact</div>
+        </div>
+        <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[2px] z-50"></div>
         <div className="rounded-3xl bg-zinc-900 p-4 border-[2px] border-zinc-800">
           <form
             ref={form}

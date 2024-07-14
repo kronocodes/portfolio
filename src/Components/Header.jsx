@@ -94,8 +94,8 @@ const Header = () => {
           )}
         </div>
       ) : (
-        <div className="fixed z-[999] text-white">
-          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto px-2 py-[2px] w-[400px] justify-between border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] items-center rounded-full">
+        <div className="fixed z-[999] text-white text-[15px]">
+          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto px-2 py-[2px] w-[400px] justify-between border border-neutral-700 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] items-center rounded-full">
             <NavLink
               to="/work"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}

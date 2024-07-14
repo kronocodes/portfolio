@@ -38,7 +38,7 @@ const Education = () => {
                   <div className='text-2xl md:text-3xl font-semibold md:w-[50%] sm:pb-2 mb-1'>{ed.title}</div>
                 <div className='flex flex-col md:w-[50%]'>
                   <div className='font-semibold text-xl sm:pt-1 pb-2 sm:pb-0'>{ed.sub}</div>
-                  <div className='text-sm md:text-base text-zinc-400 sm:pb-2'>{ed.duration}</div>
+                  {/* <div className='text-sm md:text-base text-zinc-400 sm:pb-2'>{ed.duration}</div> */}
                   <div className='text-sm md:text-base pt-1 pb-6 text-zinc-300'>{ed.description}</div>
                   {ed.title != "Kendriya Vidyalaya" && (
                     <div className="bg-zinc-700 w-full h-[1px] mb-6"></div>
