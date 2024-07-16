@@ -29,9 +29,9 @@ const Contact = () => {
   return (
     <div className="flex flex-col justify-center bg-black">
       <div className="2xl:max-w-[1300px] mx-auto md:px-16 lg:max-w-[1000px] w-full flex flex-col px-5">
-        <div className="flex items-center gap-x-3 pt-24 pb-14">
+        <div className="flex items-center gap-x-3 pt-20 pb-14 md:pt-32 md:pb-10">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
-          <div className="text-white text-7xl grad">Contact</div>
+          <div className="text-white text-7xl md:text-9xl grad">Contact</div>
         </div>
         <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[2px] z-50"></div>
         <div className="rounded-3xl bg-zinc-900 p-4 border-[2px] border-zinc-800 mb-32">
@@ -47,7 +47,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="user_name"
-                className="p-3 rounded-xl bg-black border-[1px] border-zinc-800"
+                className="p-3 rounded-xl bg-black border-[1px] text-zinc-300 border-zinc-800"
                 placeholder="Your name"
                 required
               />
@@ -57,7 +57,7 @@ const Contact = () => {
                 [ EMAIL ADDRESS ]
               </div>
               <input
-                className="p-3 rounded-xl bg-black border-[1px] border-zinc-800"
+                className="p-3 rounded-xl bg-black border-[1px] text-zinc-300 border-zinc-800"
                 name="user_email"
                 type="email"
                 placeholder="not@fake-email.com"
@@ -69,7 +69,7 @@ const Contact = () => {
                 [ SUBJECT ]
               </div>
               <input
-                className="p-3 rounded-xl bg-black border-[1px] border-zinc-800"
+                className="p-3 rounded-xl bg-black border-[1px] text-zinc-300 border-zinc-800"
                 name="subject"
                 placeholder="Attention: Important Yeti Sighting Report"
                 required
@@ -82,12 +82,12 @@ const Contact = () => {
                 </div>
                 <textarea
                   name="message"
-                  className="p-3 h-36 bg-black border-[1px] border-zinc-800 rounded-xl"
+                  className="p-3 h-36 bg-black border-[1px] text-zinc-300 border-zinc-800 rounded-xl"
                   placeholder="Example Text"
                   required
                 />
               </div>
-              <div className="w-[153px] h-[60px] rounded-md absolute translate-y-[216px] fill-none border-[2px] border-zinc-600"></div>
+              <div className="w-[153px] h-[60px] rounded-md absolute translate-y-[216px] fill-none border-[1px] shadow-lg shadow-black border-zinc-600"></div>
               <button type="submit" value="Send">
                 <ShinyButton />
               </button>

@@ -67,7 +67,7 @@ const project = [
     tagline:
       "Smart India Hackathon's project, built an centralized database of all the medical centers in India.",
     src: NMK,
-    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/ekxp1nuykykb5npw4irn`,
+    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/qvnlglbuldb4qi1xswdk`,
     gradientColor: "from-green-700",
   },
   {
@@ -76,12 +76,12 @@ const project = [
     repo: "https://github.com/nihar8262/FACTS-N",
     live: "https://facts-nce.vercel.app/",
     figma:
-      "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
+    "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
     year: "2024",
     tagline:
-      "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
+    "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
     src: FACT,
-    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/qvnlglbuldb4qi1xswdk`,
+    toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/ekxp1nuykykb5npw4irn`,
     gradientColor: "from-orange-600",
   },
 ];
@@ -102,14 +102,14 @@ const Work = () => {
   }, []);
   return (
     <>
-      <div className="bg-black flex flex-col items-center gap-y-44 text-white">
+      <div className="bg-black flex flex-col items-center gap-y-44 pb-20 text-white">
         <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col gap-y-14 px-5">
-        <div className="flex items-center gap-x-3 pt-24">
+        <div className="flex items-center gap-x-3 pt-20 md:pt-32 md:pb-10">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
-        <div className="text-white text-7xl grad">Work</div>
+        <div className="text-white text-7xl md:text-9xl grad">Work</div>
         </div>
           {project.map((project, id) => (
-            <div className="rounded-3xl bg-zinc-800 group p-[7px]">
+            <div className="rounded-3xl bg-zinc-800 group p-[7px] md:mb-14">
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[6.5px]"></div>
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[0.1px]"></div>
               <div className={`transition-all duration-500 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-500 ${project.gradientColor} ${ isSmallScreen? "bg-gradient-to-b to-black"  : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"}`}>
@@ -154,7 +154,7 @@ const Work = () => {
                       </a>
                     )}
                   </div>
-                  <div className="mx-auto object-fill group-hover:translate-y-1 translate-y-6 transition-all duration-500 w-[86%] mt-6 md:mt-10 border border-zinc-600 rounded-lg">
+                  <div className="mx-auto object-fill group-hover:translate-y-1 shadow-xl shadow-black translate-y-6 transition-all duration-500 w-[86%] mt-6 md:mt-10">
                     <img src={project.toolbar}/>
                     <img src={project.src}/>
                   </div>
