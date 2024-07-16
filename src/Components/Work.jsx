@@ -103,8 +103,8 @@ const Work = () => {
   return (
     <>
       <div className="bg-black flex flex-col items-center gap-y-44 text-white">
-        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col lg:gap-y-32 gap-y-10 px-5">
-        <div className="flex items-center gap-x-3 pt-20">
+        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col gap-y-14 px-5">
+        <div className="flex items-center gap-x-3 pt-24">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
         <div className="text-white text-7xl grad">Work</div>
         </div>
@@ -130,7 +130,7 @@ const Work = () => {
                   <div className="flex flex-col justify-between px-8 md:px-14">
                     {project.repo !== "" && (
                       <a
-                        className="border-b text-center border-zinc-400 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className="border-b text-center border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
                         href={project.repo}
                       >
                         <button>Goto GitHub Repo</button>
@@ -139,7 +139,7 @@ const Work = () => {
                     )}
                     {project.live !== "" && (
                       <a
-                        className="border-b text-center border-zinc-400 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className="border-b text-center border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
                         href={project.live}
                       >
                         <button>View Live Website</button>
@@ -147,7 +147,7 @@ const Work = () => {
                     )}
                     {project.figma !== "" && (
                       <a
-                        className="border-b text-center border-zinc-400 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className="border-b text-center border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
                         href={project.figma}
                       >
                         <button>View Figma File</button>

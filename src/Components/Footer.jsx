@@ -16,42 +16,68 @@ const Footer = () => {
   };
 
   return (
-    <div className='flex justify-center bg-black text-white'>
-      <div className="md:rounded-t-2xl bg-gradient-to-b border border-zinc-800 from-black to-neutral-800 mt-5 w-full px-4 md:mx-6 max-w-[1200px]">
-      <div className="h-[1px] bg-gradient-to-r from-black mx-auto via-zinc-400 to-black w-full"></div>
-        <div className="py-10">
-          <div className="flex md:gap-x-2 justify-center text-xl">
-              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" 
+    <div className='flex flex-col justify-center bg-zinc-950 text-white border-t border-zinc-700 w-full'>
+      <div className="flex justify-around xl:justify-between 2xl:max-w-[1300px] mx-auto md:px-16 lg:max-w-[1000px] w-full px-5 py-20">
+        <div className="md:flex md:flex-col text-sm font-medium hidden">
+          <div className='text-[20px] md:text-2xl italic pb-3'>Made with love, peer pressure & React</div>
+          <div className='text-xs text-zinc-300 pb-1'>Designed & Developed by a Human ⟿</div>
+          <div className='text-xs text-zinc-300'>© 2024 Abhishek Nandan. All Rights Reserved.</div>
+        </div>
+        <div className="flex flex-col gap-y-3">
+          <div className='text-[12px] font-semibold tracking-wider text-zinc-400'>NAVIGATION</div>
+              <div className="flex items-center" 
+              onClick={() => handleLinkClick('https://github.com/kronocodes')}>
+                <div>Work</div>
+                <img className='pl-2 w-2 h-2' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+              </div>
+              <div className="flex items-center" 
+              onClick={() => handleLinkClick('https://www.linkedin.com/in/abhisheknandan2013/')}>
+                <div>About</div>
+                <img className='pl-2 w-2 h-2' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+              </div>
+              <div className="flex items-center" 
+              onClick={() => handleLinkClick('https://twitter.com/RakNandan')}>
+                <div>Home</div>
+                <img className='pl-2 w-2 h-2' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+              </div>
+              <div className="flex items-center" 
+              onClick={() => handleLinkClick('https://twitter.com/RakNandan')}>
+                <div>Design</div>
+                <img className='pl-2 w-2 h-2' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+              </div>
+              <div className="flex items-center">
+                <div>Contact</div>
+                {/* <img className='opacity-0 pl-2 group-hover:opacity-100 transition-opacity' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img> */}
+              </div>
+        </div>
+        <div className="flex flex-col gap-y-3">
+          <div className='text-[12px] font-semibold tracking-wider text-zinc-400'>CONTACT</div>
+              <div className="flex items-center" 
               onClick={() => handleLinkClick('https://github.com/kronocodes')}>
                 <div>Github</div>
-                <img className='opacity-0 pl-2 group-hover:opacity-100 transition-opacity' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+                <img className='pl-2 w-2 h-2' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
               </div>
-              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" 
+              <div className="flex items-center" 
               onClick={() => handleLinkClick('https://www.linkedin.com/in/abhisheknandan2013/')}>
                 <div>LinkedIn</div>
-                <img className='opacity-0 pl-2 group-hover:opacity-100 transition-opacity' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+                <img className='pl-2 w-2 h-2' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
               </div>
-              <div className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:pl-4 hover:pr-2 py-2 rounded-xl" 
+              <div className="flex items-center" 
               onClick={() => handleLinkClick('https://twitter.com/RakNandan')}>
                 <div>Twitter</div>
-                <img className='opacity-0 pl-2 group-hover:opacity-100 transition-opacity' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
+                <img className='pl-2 w-2 h-2' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img>
               </div>
-              <button onClick={handleCopy} className="hover:bg-neutral-600 group flex items-center transition-all duration-300 hover:px-4 py-2 rounded-xl">
+              <button onClick={handleCopy} className="flex items-center">
                 <div>Email</div>
                 {/* <img className='opacity-0 pl-2 group-hover:opacity-100 transition-opacity' src='https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/641284285486aaab07feafaa_icon-arrow-project.svg'></img> */}
               </button>
-              
-          </div>
-        </div>
-        <div>
-          <div className='text-center text-[20px] md:text-2xl italic pb-10'>Made with love, peer pressure & react</div>
-        </div>
-        <div className="bg-neutral-600 h-[1px]"></div>
-        <div className="flex md:justify-between justify-center  py-4 text-sm">
-          <div className='hidden md:flex text-xs'>DESIGNED & DEVELOPED BY THAT GUY OVER THERE ⟿</div>
-          <div className='text-xs text-center'>© 2024 ABHISHEK NANDAN.</div>
         </div>
       </div>
+      <div className="flex flex-col items-center pb-10 text-sm font-medium md:hidden">
+          <div className='text-[20px] md:text-2xl italic pb-10'>Made with love, peer pressure & React</div>
+          <div className='text-xs text-zinc-300'>Designed & Developed by a Human.</div>
+          <div className='text-xs text-zinc-300'>© 2024 Abhishek Nandan. All Rights Reserved.</div>
+        </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Education = () => {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "Nalanda College of Engineering",
       sub:"Nalanda, Bihar.",
-      duration: "2020 - Present",
+      duration: "2020 - 2024",
       description: "Bachelor of Technology in Computer Science Engineering",
     },
     {
@@ -37,9 +37,9 @@ const Education = () => {
               <div key={index} className="flex flex-col md:flex-row md:justify-between rounded-xl px-4 lg:px-9 md:hover:translate-x-4 transition duration-200">
                   <div className='text-2xl md:text-3xl font-semibold md:w-[50%] sm:pb-2 mb-1'>{ed.title}</div>
                 <div className='flex flex-col md:w-[50%]'>
-                  <div className='font-semibold text-xl sm:pt-1 pb-2 sm:pb-0'>{ed.sub}</div>
-                  {/* <div className='text-sm md:text-base text-zinc-400 sm:pb-2'>{ed.duration}</div> */}
-                  <div className='text-sm md:text-base pt-1 pb-6 text-zinc-300'>{ed.description}</div>
+                  <div className=' font-semibold text-xl sm:pt-1 pb-2 sm:pb-0'>{ed.description}</div>
+                  <div className='text-sm md:text-base text-zinc-400 sm:pb-2'>{ed.duration}</div>
+                  <div className='text-sm md:text-base pt-1 pb-6 text-zinc-300'>{ed.sub}</div>
                   {ed.title != "Kendriya Vidyalaya" && (
                     <div className="bg-zinc-700 w-full h-[1px] mb-6"></div>
                   )}

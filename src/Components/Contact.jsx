@@ -34,7 +34,7 @@ const Contact = () => {
           <div className="text-white text-7xl grad">Contact</div>
         </div>
         <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[2px] z-50"></div>
-        <div className="rounded-3xl bg-zinc-900 p-4 border-[2px] border-zinc-800">
+        <div className="rounded-3xl bg-zinc-900 p-4 border-[2px] border-zinc-800 mb-32">
           <form
             ref={form}
             onSubmit={sendEmail}

@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="bg-black flex flex-col items-center gap-y-44 text-white">
       <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full pb-24 flex flex-col">
-      <div className="flex items-center gap-x-3 pt-24 px-5">
+      <div className="flex items-center gap-x-3 pt-24 px-5 md:px-0">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
           <div className="text-white text-7xl grad">About</div>
         </div>

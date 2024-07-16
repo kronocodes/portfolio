@@ -40,7 +40,7 @@ const Design = () => {
   return (
     <div className="bg-black text-white">
       <div className="max-w-[1300px] flex flex-col items-center justify-center mx-auto">
-        <div className="py-[21vh] tracking-[-.03em] w-3/5 text-center leading-[120%] text-2xl md:text-3xl lg:text-[2.1vw]">
+        <div className="py-[21vh] tracking-[-.03em] w-3/5 text-center xl:leading-[120%] leading-[120%] text-2xl md:text-3xl lg:text-[2.1vw]">
           Welcome to my playground, my personal collection of random designs,
           explorations, rejected versions or any thing that I could not find a
           place to show...
