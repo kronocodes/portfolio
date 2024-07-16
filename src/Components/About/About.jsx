@@ -12,9 +12,9 @@ const About = () => {
   return (
     <div className="bg-black flex flex-col items-center gap-y-44 text-white">
       <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full pb-24 flex flex-col">
-      <div className="flex items-center gap-x-3 pt-20 px-5 md:px-0 md:pt-32 md:pb-10">
+      <div className="flex items-center gap-x-3 pt-20 px-5 md:px-0 md:pt-28">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
-          <div className="text-white text-7xl md:text-9xl grad">About me</div>
+          <div className="text-white text-7xl md:text-8xl grad">About</div>
         </div>
         <Abouth/>
         {/* <Story/> */}

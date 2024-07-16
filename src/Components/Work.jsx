@@ -104,9 +104,9 @@ const Work = () => {
     <>
       <div className="bg-black flex flex-col items-center gap-y-44 pb-20 text-white">
         <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col gap-y-14 px-5">
-        <div className="flex items-center gap-x-3 pt-20 md:pt-32 md:pb-10">
+        <div className="flex items-center gap-x-3 pt-20 md:pt-28">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
-        <div className="text-white text-7xl md:text-9xl grad">Work</div>
+        <div className="text-white text-7xl md:text-8xl grad">Work</div>
         </div>
           {project.map((project, id) => (
             <div className="rounded-3xl bg-zinc-800 group p-[7px] md:mb-14">

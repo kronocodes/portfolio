@@ -46,7 +46,7 @@ const Design = () => {
           place to show...
         </div>
 
-        <div className="photo-grid-container">
+        <div className="photo-grid-container pb-32">
           {images.map((image, index) => (
             <div className="photo-grid-item" key={index}>
               <img className="rounded" class="gscale" src={image.src} />

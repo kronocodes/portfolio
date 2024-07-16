@@ -44,8 +44,8 @@ const Header = () => {
   };
   
 
-  const activeLink='bg-neutral-700 w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500'
-  const inactiveLink='hover:bg-neutral-600  w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500'
+  const activeLink='bg-neutral-600 border-zinc-700 bg-opacity-60 backdrop-blur-[5px] w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500'
+  const inactiveLink='hover:bg-neutral-600 w-20 h-9 rounded-full text-center pt-[6px] transition-all duration-500'
 
   return (
     <>
@@ -63,29 +63,29 @@ const Header = () => {
           {isDropdownOpen && (
             <div
               ref={dropdownRef}
-              className="fixed right-8 top-[73px] h-64 w-40 px-[10px] flex flex-col items-center justify-center rounded-2xl transition-all duration-500 text-white border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px]"
+              className="fixed right-8 top-[73px] z-50 h-64 w-40 px-[10px] flex flex-col items-center justify-center rounded-2xl transition-all duration-500 text-white border border-neutral-600 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px]"
             >
-              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full py-3">
+              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] hover:bg-neutral-800 w-full py-3">
                 <Link to="/" onClick={closeDropdown}>
                   Home
                 </Link>
               </div>
-              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full py-3">
+              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] hover:bg-neutral-800 w-full py-3">
                 <Link to="/work" onClick={closeDropdown}>
                   Work
                 </Link>
               </div>
-              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full py-3">
+              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] hover:bg-neutral-800 w-full py-3">
                 <Link to="/about" onClick={closeDropdown}>
                   About
                 </Link>
               </div>
-              <div className="rounded-2xl italic text-center hover:backdrop-blur-[1px] w-full py-3">
+              <div className="rounded-2xl italic text-center hover:backdrop-blur-[1px] w-full hover:bg-neutral-800 py-3">
                 <Link to="/design" onClick={closeDropdown}>
                   Design
                 </Link>
               </div>
-              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full py-3">
+              <div className="rounded-2xl font-semibold text-center hover:backdrop-blur-[1px] w-full hover:bg-neutral-800 py-3">
                 <Link to="/contact" onClick={closeDropdown}>
                   Contact
                 </Link>
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       ) : (
         <div className="fixed z-[999] text-white text-[15px]">
-          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto px-2 py-[2px] w-[400px] justify-between border border-neutral-700 bg-neutral-800 bg-opacity-50 backdrop-blur-[6px] hover:bg-neutral-[750] items-center rounded-full">
+          <div className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto px-2 py-[2px] w-[400px] justify-between border border-neutral-700 bg-neutral-800 bg-opacity-40 backdrop-blur-[6px] items-center rounded-full">
             <NavLink
               to="/work"
               className={({isActive})=>(isActive? activeLink : inactiveLink )}
