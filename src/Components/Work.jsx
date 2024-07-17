@@ -102,14 +102,15 @@ const Work = () => {
   }, []);
   return (
     <>
-      <div className="bg-black flex flex-col items-center gap-y-44 pb-20 text-white">
-        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col gap-y-14 px-5">
-        <div className="flex items-center gap-x-3 pt-20 md:pt-28">
+      <div className="bg-black flex flex-col items-center pb-20 text-white">
+        <div class="w-full h-1/2 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
+        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col px-5">
+        <div className="flex items-center gap-x-3 pt-20 md:pt-28 z-40">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
-        <div className="text-white text-7xl md:text-8xl grad">Work</div>
+        <div className="text-white text-7xl md:text-8xl grad mb-14">Work</div>
         </div>
           {project.map((project, id) => (
-            <div className="rounded-3xl bg-zinc-800 group p-[7px] md:mb-14">
+            <div className="rounded-3xl bg-zinc-800 group p-[7px] md:mb-28 mb-16 z-40">
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[6.5px]"></div>
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[0.1px]"></div>
               <div className={`transition-all duration-500 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-500 ${project.gradientColor} ${ isSmallScreen? "bg-gradient-to-b to-black"  : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"}`}>
@@ -121,33 +122,33 @@ const Work = () => {
 
                     {/* <div className='bg-zinc-600 w-fit h-fit text-center px-1 py-1 mt-1 border-2 border-zinc-600 rounded-md'>Design & Development</div> */}
                   </div>
-                  <div className="px-8 md:pt-5 pt-3 pb-5 text-sm md:text-lg text-zinc-300">
+                  <div className="px-8 md:pt-5 pt-3 pb-5 text-sm md:text-lg text-zinc-300 group-hover:text-white">
                     <span className="text-white">
                       {project.year} -{" "}
                     </span>
                     {project.tagline}
                   </div>
-                  <div className="flex flex-col justify-between px-8 md:px-14">
+                  <div className="flex flex-col justify-between">
                     {project.repo !== "" && (
                       <a
-                        className="border-b text-center border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className="border-b group-hover:border-zinc-300 text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
                         href={project.repo}
                       >
-                        <button>Goto GitHub Repo</button>
+                        <button>GitHub Repo</button>
                         
                       </a>
                     )}
                     {project.live !== "" && (
                       <a
-                        className="border-b text-center border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className="border-b group-hover:border-zinc-300 text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
                         href={project.live}
                       >
-                        <button>View Live Website</button>
+                        <button>Visit Website</button>
                       </a>
                     )}
                     {project.figma !== "" && (
                       <a
-                        className="border-b text-center border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className="border-b group-hover:border-zinc-300 text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
                         href={project.figma}
                       >
                         <button>View Figma File</button>

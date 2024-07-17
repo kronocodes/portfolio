@@ -11,8 +11,9 @@ const About = () => {
 
   return (
     <div className="bg-black flex flex-col items-center gap-y-44 text-white">
+      <div class="w-full h-1/2 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
       <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] gap-y-14 w-full pb-24 flex flex-col">
-      <div className="flex items-center gap-x-3 pt-20 px-5 md:px-0 md:pt-28">
+      <div className="flex items-center gap-x-3 pt-20 px-5 md:px-0 md:pt-28 z-10">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
           <div className="text-white text-7xl md:text-8xl grad">About</div>
         </div>

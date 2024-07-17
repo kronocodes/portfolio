@@ -4,7 +4,7 @@ const Aboutme=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/
 
 const Abouth = () => {
   return (
-    <div className="flex flex-col md:flex-row md:gap-x-8 px-6 md:px-0 gap-y-5">
+    <div className="flex flex-col md:flex-row md:gap-x-8 px-6 md:px-0 gap-y-5 z-10">
           <div className="xl:px-12 md:px-7 px-6 flex flex-col xl:gap-y-6 md:gap-y-2 gap-y-2 pt-7 border border-zinc-600 bg-gradient-to-b from-zinc-800 to-black rounded-3xl">
             <div className="md:pt-3 md:text-2xl text-xl">
               Hey! I'm Abhishek Nandan
