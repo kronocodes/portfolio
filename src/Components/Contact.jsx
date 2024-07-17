@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col justify-center bg-black">
-            <div class="w-full h-1/2 top-0 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
+      <div class="w-full h-1/2 top-0 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
       <div className="2xl:max-w-[1300px] mx-auto md:px-16 lg:max-w-[1000px] w-full flex flex-col px-5 z-10">
         <div className="flex items-center gap-x-3 pt-20 md:pt-28 pb-14">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>

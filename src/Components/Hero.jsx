@@ -50,14 +50,15 @@ const Hero = () => {
   return (
     <>
       <div className="flex items-center justify-center bg-black z-10">
-        <div className="w-full h-[98vh] gradient-box flex justify-center items-center">
-          <div className="text-zinc-400 px-4 sm:px-10 mx-auto md:px-20 max-w-[1000px] text-[40px] leading-[54px] md:text-[64px] md:leading-[84px] lg:text-[74px] lg:leading-[100px]">
-            <div class="flex customfont flex-wrap gap-x-2 md:gap-x-4 xl:gap-x-6">
+      <div class="w-full h-1/2 top-0 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
+        <div className="w-full h-[98vh] gradient-box flex flex-col justify-center items-center z-10">
+          <div className="text-zinc-400 px-5 sm:px-10 mx-auto md:px-20 max-w-[1000px] text-[40px] leading-[54px] md:text-[64px] md:leading-[80px] lg:text-[74px] lg:leading-[90px] select-none">
+            <div class="flex items-center justify-center customfont flex-wrap gap-x-2 md:gap-x-4 xl:gap-x-6">
               <div className="relative">Hey,</div>
               <div>I'm</div>
               <div class="lg:h-20 lg:w-32 md:w-24 md:h-16 h-10 w-14 my-auto lg:rounded-[23px] relative z-50 rounded-[11px]">
                 <img
-                  className="h-full w-full object-cover lg:rounded-[22px] relative z-50 rounded-[10px]"
+                  className="h-full w-full object-cover lg:rounded-[22px] relative z-50 rounded-[10px] rotate-3"
                   src="https://res.cloudinary.com/dw2fhd58a/image/upload/w_500/q_100/f_auto/v1/About/hero5_uypia5.jpg"
                 ></img>
               </div>
@@ -65,7 +66,8 @@ const Hero = () => {
               <div className="sm:hidden flex">a</div>
               <div className="flex flex-wrap gap-x-2 md:gap-x-4 xl:gap-x-6">
                 <div className="hidden sm:flex">a</div>
-                <div className="text-white relative">software developer</div>
+                <div className="text-white relative">software</div>
+                <div className="text-white relative">developer</div>
               </div>
               <div>and</div>
               <div>a</div>
@@ -92,14 +94,22 @@ const Hero = () => {
               </h1>
               <div>based</div>
               <div>in</div>
-              <div className="text-white relative">Patna,</div>
+              <div className="text-white relative">Bangalore,</div>
               <div class="lg:h-20 lg:w-32 md:w-24 md:h-16 h-10 w-14 my-auto">
                 <img
-                  className="h-full w-full object-cover lg:rounded-[22px] relative rounded-[10px]"
-                  src="https://res.cloudinary.com/dw2fhd58a/image/upload/w_250/q_35/f_auto/v1/About/patna-skyline-with-spiritual-landmarks_1700197702953-1200x675-20231117104601_aatdil.jpg"
+                  className="h-full w-full object-cover lg:rounded-[22px] relative rounded-[10px] -rotate-3"
+                  src="https://res.cloudinary.com/dw2fhd58a/image/upload/w_500/q_100/f_auto/v1/About/vtz7r9uc347anrntrmu3.jpg"
                 ></img>
               </div>
               <div className="text-white">IN.</div>
+            </div>
+          </div>
+          <div className="mt-10 flex items-center gap-x-2 bg-zinc-900 hover:bg-zinc-800 md:px-5 px-3 md:py-3 py-2 rounded-full md:border-2 border transition-all duration-1000 md:shadow-[0_0px_40px_0px_rgba(0,0,0,0.3)] shadow-[0_0px_30px_0px_rgba(0,0,0,0.1)] md:shadow-purple-800 shadow-purple-900 border-purple-600 z-50">
+            <div className="md:w-8 w-6 md:h-3 h-2 bg-green-500 border rounded-md border-green-800 flex items-center ">
+              <div className="md:w-4 md:h-4 w-3 h-3 rounded-full bg-white border md:translate-x-4 translate-x-3 shadow-2xl border-green-800"></div>
+            </div>
+            <div className="md:text-base text-sm text-white md:opacity-70 opacity-100 md:hover:opacity-100 transition-all duration-200 select-none">
+              Open for opportunities
             </div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-const Youtube=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Youtube_zrbwre.png`;
-const Portfolio=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Portfolio_oar7bc.png`;
-const FACT=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/FACT_lrrhjr`;
-const Foodle=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Foodle_d6hqto.png`;
-const NMK=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/NMK_vk0gnv.png`;
-const Proxy=`https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/work/hoba1ggdupq8defq3gt1`;
+const Youtube = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Youtube_zrbwre.png`;
+const Portfolio = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Portfolio_oar7bc.png`;
+const FACT = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/FACT_lrrhjr`;
+const Foodle = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Foodle_d6hqto.png`;
+const NMK = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/NMK_vk0gnv.png`;
+const Proxy = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto:/v1/work/hoba1ggdupq8defq3gt1`;
 const project = [
   {
     id: 1,
@@ -39,7 +39,8 @@ const project = [
     live: "",
     figma: "",
     year: "2024",
-    tagline: "A multithreaded proxy server with caching, handling multiple client requests.",
+    tagline:
+      "A multithreaded proxy server with caching, handling multiple client requests.",
     src: Proxy,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/by7huxlpxvg0dpm2uc2n`,
     gradientColor: "from-purple-800",
@@ -76,10 +77,10 @@ const project = [
     repo: "https://github.com/nihar8262/FACTS-N",
     live: "https://facts-nce.vercel.app/",
     figma:
-    "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
+      "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
     year: "2024",
     tagline:
-    "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
+      "A portal for all the societies and clubs in our college to use and keep the members posted on the plans and upcomming events",
     src: FACT,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/ekxp1nuykykb5npw4irn`,
     gradientColor: "from-orange-600",
@@ -104,28 +105,32 @@ const Work = () => {
     <>
       <div className="bg-black flex flex-col items-center pb-20 text-white">
         <div class="w-full h-1/2 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
-        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col px-5">
-        <div className="flex items-center gap-x-3 pt-20 md:pt-28 z-40">
+        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col px-5 z-10">
+          <div className="flex items-center gap-x-3 pt-20 md:pt-28 pb-14">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
-        <div className="text-white text-7xl md:text-8xl grad mb-14">Work</div>
+          <div className="text-white text-7xl md:text-8xl grad">Work</div>
         </div>
           {project.map((project, id) => (
             <div className="rounded-3xl bg-zinc-800 group p-[7px] md:mb-28 mb-16 z-40">
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[6.5px]"></div>
               <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[0.1px]"></div>
-              <div className={`transition-all duration-500 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-500 ${project.gradientColor} ${ isSmallScreen? "bg-gradient-to-b to-black"  : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"}`}>
+              <div
+                className={`transition-all duration-700 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-500 ${
+                  project.gradientColor
+                } ${
+                  isSmallScreen
+                    ? "bg-gradient-to-b to-black"
+                    : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"
+                }`}
+              >
                 <div className="flex flex-col rounded-3xl justify-center">
                   <div className="flex justify-between items-center pt-8 md:pt-10 px-8">
                     <div className="text-2xl md:font-semibold font-[500]">
                       {project.name}
                     </div>
-
-                    {/* <div className='bg-zinc-600 w-fit h-fit text-center px-1 py-1 mt-1 border-2 border-zinc-600 rounded-md'>Design & Development</div> */}
                   </div>
                   <div className="px-8 md:pt-5 pt-3 pb-5 text-sm md:text-lg text-zinc-300 group-hover:text-white">
-                    <span className="text-white">
-                      {project.year} -{" "}
-                    </span>
+                    <span className="text-white">{project.year} - </span>
                     {project.tagline}
                   </div>
                   <div className="flex flex-col justify-between">
@@ -135,7 +140,6 @@ const Work = () => {
                         href={project.repo}
                       >
                         <button>GitHub Repo</button>
-                        
                       </a>
                     )}
                     {project.live !== "" && (
@@ -156,8 +160,8 @@ const Work = () => {
                     )}
                   </div>
                   <div className="mx-auto object-fill group-hover:translate-y-1 shadow-xl shadow-black translate-y-6 transition-all duration-500 w-[86%] mt-6 md:mt-10">
-                    <img src={project.toolbar}/>
-                    <img src={project.src}/>
+                    <img src={project.toolbar} />
+                    <img src={project.src} />
                   </div>
                 </div>
               </div>
