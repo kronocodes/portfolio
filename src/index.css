@@ -29,11 +29,33 @@
   font-weight: 200;
   font-style: italic;
   letter-spacing: 1px;
+  background: -webkit-linear-gradient(#ffffff,#ffffff, #a8a8a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 2px rgb(255, 255, 255),
+               0 0 10px rgba(255, 255, 255, 0.73);
+}
+.grader {
+  font-family: "Gloock", serif;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 1px;
+  background: -webkit-linear-gradient(#00ff08,#15ff00, #40ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 
+  0 0 2px rgb(51, 255, 0),
+               0 0 10px rgb(15, 179, 0);
+               
+}
+
+
+.gradhero {
   background: -webkit-linear-gradient(#ffffff,#ffffff, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 2px rgb(255, 255, 255),
-               0 0 10px rgba(255, 255, 255, 0.6);
+  0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 img {

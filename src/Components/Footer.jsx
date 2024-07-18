@@ -1,11 +1,21 @@
 import React from "react";
 import goto from "../assets/goto.svg";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Footer = () => {
   const handleLinkClick = (url) => {
     window.open(url, "_blank");
   };
+
+  const [currentTime, setCurrentTime] = useState(new Date());
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
   };
@@ -15,6 +25,15 @@ const Footer = () => {
     copyToClipboard(email);
     alert("Email copied to clipboard: " + email);
   };
+  const formatTimeInIndia = (date) => {
+    return new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Kolkata",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
+    }).format(date);
+  };
 
   return (
     <div className="flex flex-col justify-center bg-zinc-950 text-white border-t border-zinc-700 w-full">
@@ -24,6 +43,7 @@ const Footer = () => {
             Made with love, peer pressure & React
           </div>
           <div className="flex flex-col justify-end">
+          <div className="text-zinc-300 pb-4">Locale time in Blr : {formatTimeInIndia(currentTime)}</div>
             <div className="text-xs text-zinc-300">
               Designed & Developed by a Human.
             </div>
@@ -79,6 +99,7 @@ const Footer = () => {
         <div className="text-[20px] md:text-2xl italic pb-10">
           Made with love, peer pressure & React
         </div>
+        <div className="text-white pb-4">Locale time in Bangalore : {formatTimeInIndia(currentTime)}</div>
         <div className="text-xs text-zinc-300">
           Designed & Developed by a Human.
         </div>

@@ -15,12 +15,12 @@ const Services = () => {
       description: "Combining my frontend development skills in HTML, CSS, and JS with my expertise in modern frameworks like React, I possess a comprehensive skill set to excel as a web developer.",
       badgeText: "5+ Projects"
     },
-    {
-      imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
-      title: "Graphic Designer",
-      description: "Proficient in Adobe Photoshop, Illustrator, and other design tools, with a strong foundation in graphic design principles. Portfolio showcases a diverse range of design projects.",
-      badgeText: "20+ work"
-    },
+    // {
+    //   imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
+    //   title: "Graphic Designer",
+    //   description: "Proficient in Adobe Photoshop, Illustrator, and other design tools, with a strong foundation in graphic design principles. Portfolio showcases a diverse range of design projects.",
+    //   badgeText: "20+ work"
+    // },
     {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "UI/UX Designer",
@@ -53,10 +53,11 @@ const Services = () => {
         <div className="md:px-4 px-2 pt-8">
           <div className="flex flex-col gap-6">
             {servicesData.map((service, index) => (
-              <div key={index} className="flex flex-col md:rounded-xl md:hover:translate-x-2 transition duration-200 pl-4 pr-5 lg:px-9">
-                <div className='flex'>
-                  <img className='w-12 md:flex hidden -ml-3' src={service.imageSrc} alt="service icon" />
+              <div key={index} className="flex flex-col md:rounded-xl group md:hover:translate-x-2 transition duration-200 pl-4 pr-5 lg:px-9">
+                <div className='flex items-center'>
+                  <img className='w-12 md:flex hidden -ml-3 group-hover:rotate-45 transition-all duration-300' src={service.imageSrc} alt="service icon" />
                   <div className='md:text-3xl text-2xl font-semibold md:py-1 pt-4 md:pl-1'>{service.title}</div>
+                  {/* <div className='text-sm bg-zinc-700 border-zinc-800 shadow-black shadow-inner px-3 py-2 rounded-full'>{service.badgeText}</div> */}
                 </div>
                 <div className={`md:pb-8 pb-2 pt-3 text-zinc-300 ${visibleDescriptionIndex === index ? 'max-h-none' : 'max-h-10 overflow-hidden relative md:max-h-none md:overflow-visible'}`}>
                   {service.description}
