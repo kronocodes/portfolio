@@ -15,7 +15,7 @@ const Abouth = () => {
               <div>developer</div>
               <div>&</div>
               <div className='flex'>design
-              <div className='grader xl:text-[42px] md:text-[34px] xl:mt-1 text-[28px]'>er.</div>
+              <div className='grader xl:text-[42px] md:text-[34px] xl:mt-1 mt-[-1px] text-[30px]'>er.</div>
             </div>
             </div>
             <div className="md:pb-0 md:text-base 2xl:text-lg pb-10 text-[15px] text-zinc-300 xl:pr-4">
