@@ -20,7 +20,7 @@ const Abouth = () => {
             </div>
             <div className="md:pb-0 md:text-base 2xl:text-lg pb-10 text-[15px] text-zinc-300 xl:pr-4">
             With a background in Computer Science and a knack for problem-solving, I thrive on turning ideas into reality through code and design.
-            I specialise in web design and front end development. Previously I have worked at an AI startup as an developer Intern.
+            I specialise in web design and front end development. Previously I have worked at an AI startup as a developer Intern.
             </div>
             <div className="2xl:text-lg md:text-base hidden lg:flex mt-[-10px] text-zinc-300 xl:pr-4">
             In my downtime, I enjoy exploring the city, cooking food or cheering for Hamilton.
