@@ -97,7 +97,7 @@ const Hero = () => {
               <div className="text-white relative gradhero">Bangalore,</div>
               <div class="lg:h-20 lg:w-32 md:w-24 md:h-16 h-10 w-14 my-auto">
                 <img
-                  className="h-full w-full object-cover lg:rounded-[22px] relative rounded-[10px] -rotate-3"
+                  className="h-full w-full object-cover lg:rounded-[22px] relative rounded-[10px] -rotate-3 hover:rotate-0 transition-all duration-300"
                   src="https://res.cloudinary.com/dw2fhd58a/image/upload/w_500/q_100/f_auto/v1/About/vtz7r9uc347anrntrmu3.jpg"
                 ></img>
               </div>

@@ -26,27 +26,27 @@ const About = () => {
         <Services />
         <Skills />
         <Spotify />
-        <div className="text-center py-10">
+        {/* <div className="text-center py-10">
           <div className="md:text-3xl text-2xl font-semibold">
             BECAUSE LIFE IS MUCH MORE
           </div>
           <div className="md:text-3xl text-2xl font-semibold">
             THAN PUSHING PIXELS
           </div>
-        </div>
+        </div> */}
         {/* <div className="text-center text-2xl flex gap-x-2 justify-center">
           It is about
           <div className="italic">music</div>{" "}
         </div> */}
-        <div className="text-center gap-x-2 text-2xl flex justify-center">
+        {/* <div className="text-center gap-x-2 text-2xl flex justify-center">
           <div>It is about </div>
           <div className="line-through ">connections</div>
           <div className="italic">friends</div>
-        </div>
+        </div> */}
         {/* <div className="text-center text-3xl italic">
         It is about creating memories
         </div> */}
-        <Card />
+        {/* <Card /> */}
         <div className="z-10">
         <div className="text-center italic text-2xl font-semibold">Thanks for stopping by!</div>
         <div className="text-center text-2xl font-semibold">Let's connect.</div>
