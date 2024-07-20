@@ -12,6 +12,7 @@ import Error from "./Components/Others/Error";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import ScrollToTop from "./Components/Others/ScrollToTop";
 import { Analytics } from "@vercel/analytics/react"
+import CustomCursor from "./CustomCursor";
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       <>
         <Layout />
         <ScrollToTop />
+        <CustomCursor />
         <SpeedInsights />
       </>
     ),

@@ -16,6 +16,19 @@
   font-family: PPNeueMontreal;
 }
 
+.custom-cursor {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.5s ease;
+  animation: pulse 1s infinite alternate;
+}
+
 .design {
   font-family: "Gloock", serif;
   font-weight: 200;
@@ -25,7 +38,9 @@
 :root{
   background-color: #000000;
 }
-
+body {
+  cursor: none;
+}
 .grad {
   font-family: "Gloock", serif;
   font-weight: 200;
