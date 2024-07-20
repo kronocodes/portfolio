@@ -22,7 +22,9 @@
   font-style: italic;
   letter-spacing: 1px;
 }
-
+:root{
+  background-color: #000000;
+}
 
 .grad {
   font-family: "Gloock", serif;

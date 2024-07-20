@@ -6,7 +6,9 @@ const Leetcode = () => {
   const [cal, setCal] = useState({ submissionCalendar: {} });
   const [totalSubmissions, setTotalSubmissions] = useState(0);
   const [daysBetween, setDaysBetween] = useState(0);
-
+  const handleLinkClick = (url) => {
+    window.open(url, "_blank");
+  };
   useEffect(() => {
     const targetDate = new Date('2023-03-14');
     const today = new Date();
@@ -57,18 +59,19 @@ const Leetcode = () => {
     <>
       <div className="flex flex-col items-center text-white">
         <div className="lg:max-w-[1300px] bg-zinc-900 w-full mx-auto flex flex-col md:rounded-xl">
-          <div className="flex items-center px-6 pt-5">
+          <div className="flex items-center px-5 pt-5">
             <div class="w-3 h-3 rounded-full bg-white glow"></div>
             <div className="px-4 text-sm text-zinc-300">
               L E E T C O D E &nbsp; S T A T S
             </div>
           </div>
 
-          <div class="min-w-max w-full px-3">
-            <div class="rounded-lg min-h-[189px] w-full pb-3 pt-4">
-              <div class="md:px-9 px-3 font-medium text-lg  pt-3">
+          <div class="min-w-max w-full px-2 flex">
+            <div class="rounded-lg min-h-[189px] w-full pb-3 pt-4 flex">
+              <div class="md:px-9 px-3 font-medium text-lg w-full pt-3">
                 Solved Problems
-                <div class="mx-3 flex items-center">
+                <div 
+                  onClick={() => handleLinkClick("https://leetcode.com/kronocodes")}class="mx-3 flex items-center">
                   <div class="mr-5 mt-6 flex min-w-[100px] justify-center">
                     <div class="relative max-h-[130px] max-w-[130px]">
                       <svg
@@ -188,17 +191,30 @@ const Leetcode = () => {
                   </div>
                 </div>
               </div>
+            <div class="pt-3 hidden md:flex md:flex-col pr-9">
+              <div className="font-medium text-lg mb-1 pl-4">Contest Stats</div>
+              <div 
+              onClick={() => handleLinkClick("https://leetcode.com/kronocodes2")}
+              className="w-[210px] xl:w-[260px] px-4 justify-center flex flex-col gap-y-[8px] py-3 mt-4 text-zinc-400 text-sm font-semibold bg-zinc-800 shadow-zinc-950 shadow-md border-2 border-zinc-700 rounded-xl">
+                <div className="flex xl:text-[15px] leading-tight justify-between">CURRENT LEVEL :<div className="text-white font-bold">KNIGHT</div></div>
+                <div className="flex xl:text-[15px] leading-tight justify-between">MAX RATING : <div className="text-white font-bold">1954</div></div>
+                <div className="flex xl:text-[15px] leading-tight justify-between">NO OF CONTEST : <div className="text-white font-bold">17</div></div>
+                <div className="flex xl:text-[15px] leading-tight justify-between">TOP RANK : <div className="text-white font-bold">411</div></div>
+              </div>
+            </div>
             </div>
           </div>
 
           <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
 
-          <div className="flex flex-col md:px-9 px-3">
-          <div className="md:pb-4 px-4">
+          <div className="flex flex-col md:px-8 px-3">
+          <div className="md:pb-4 px-3">
             <div className="text-lg md:text-xl pb-1">{totalSubmissions} submissions in the past one year</div>
             <div className="text-sm md:text-lg">Current streak: {daysBetween} 🔥</div>
           </div>
-          <div className="flex gap-[3px] md:gap-[4px] overflow-x-auto mx-4 mt-4 md:mb-10 mb-8" style={{ scrollbarWidth: "thin", scrollbarColor: "#727272 #18181B" }}>
+          <div
+           onClick={() => handleLinkClick("https://leetcode.com/kronocodes")}
+           className="flex gap-[3px] md:gap-[4px] overflow-x-auto mx-3 mt-4 md:mb-10 mb-8" style={{ scrollbarWidth: "thin", scrollbarColor: "#727272 #18181B" }}>
             {chunkArray(Object.entries(cal?.submissionCalendar), 7).map(
               (week, index) => (
                 <div key={index} className="flex flex-col items-center">

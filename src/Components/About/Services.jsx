@@ -44,7 +44,7 @@ const Services = () => {
   };
 
   return (
-    <div className='text-white md:rounded-xl bg-zinc-900 flex justify-center pb-6'>
+    <div className='text-white md:rounded-xl bg-zinc-900 flex justify-center pb-8'>
       <div className='max-w-[1300px]'>
         <div className='flex items-center px-6 pt-5'>
           <div className="w-3 h-3 rounded-full bg-white glow"></div>
@@ -56,17 +56,16 @@ const Services = () => {
               <div key={index} className="flex flex-col md:rounded-xl group md:hover:translate-x-2 transition duration-200 pl-4 pr-5 lg:px-9">
                 <div className='flex items-center'>
                   <img className='w-12 md:flex hidden -ml-3 group-hover:rotate-45 transition-all duration-300' src={service.imageSrc} alt="service icon" />
-                  <div className='md:text-3xl text-2xl font-semibold md:py-1 pt-4 md:pl-1'>{service.title}</div>
-                  {/* <div className='text-sm bg-zinc-700 border-zinc-800 shadow-black shadow-inner px-3 py-2 rounded-full'>{service.badgeText}</div> */}
+                  <div className='md:text-3xl text-2xl font-semibold md:py-1 md:pl-1'>{service.title}</div>
                 </div>
-                <div className={`md:pb-8 pb-2 pt-3 text-zinc-300 ${visibleDescriptionIndex === index ? 'max-h-none' : 'max-h-10 overflow-hidden relative md:max-h-none md:overflow-visible'}`}>
+                <div className={`md:pb-8 pb-1 pt-2 text-zinc-300 ${visibleDescriptionIndex === index ? 'max-h-none' : 'max-h-0 overflow-hidden relative md:max-h-none md:overflow-visible'}`}>
                   {service.description}
                   {visibleDescriptionIndex !== index && (
-                    <div className="absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-zinc-900 to-transparent md:hidden"></div>
+                    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-zinc-900 to-transparent md:hidden"></div>
                   )}
                 </div>
                 <button 
-                  className='text-zinc-300 mx-auto text-sm py-1 hover:underline md:hidden'
+                  className='text-zinc-300 mx-auto text-sm hover:underline md:hidden'
                   onClick={() => toggleDescription(index)}
                 >
                   {visibleDescriptionIndex === index ? 
