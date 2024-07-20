@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col justify-end">
           <div className="text-white pb-4 flex gap-x-1 items-center">Locale time in Bangalore
-          <div className="flex h-3 w-3 gap-y-[2.4px] mt-[4px] justify-center flex-col">
+          <div className="flex h-3 w-3 gap-y-[2.4px] mt-[3px] mb-[2px] justify-center flex-col">
             <div className="w-full h-[2px] bg-orange-600"></div>
             <div className="w-full h-[2px] bg-white"></div>
             <div className="w-full h-[2px] bg-green-600"></div>
@@ -107,7 +107,7 @@ const Footer = () => {
           Made with love, peer pressure & React
         </div>
         <div className="text-white pb-4 flex gap-x-1 items-center">Locale time in Bangalore
-          <div className="flex h-3 w-3 gap-y-[2.4px] mt-[4px] justify-center flex-col">
+          <div className="flex h-3 w-3 gap-y-[2.4px] mt-[3px] mb-[2px] justify-center flex-col">
             <div className="w-full h-[2px] bg-orange-600"></div>
             <div className="w-full h-[2px] bg-white"></div>
             <div className="w-full h-[2px] bg-green-600"></div>
