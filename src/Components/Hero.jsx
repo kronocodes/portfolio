@@ -1,7 +1,7 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 const Hero = () => {
+
   useEffect(() => {
     const magic = document.querySelector(".magic");
     if (magic) {
@@ -67,7 +67,7 @@ const Hero = () => {
               <div className="flex flex-wrap gap-x-2 md:gap-x-4 xl:gap-x-6">
                 <div className="hidden sm:flex">a</div>
                 <div className="text-white relative gradhero">software</div>
-                <div className="text-white relative gradhero">developer</div>
+                <div data-value="developer" className="text-white relative gradhero">developer</div>
               </div>
               <div>and</div>
               <div>a</div>
@@ -102,6 +102,7 @@ const Hero = () => {
                 ></img>
               </div>
               <div className="text-white">IN.</div>
+              
             </div>
           </div>
           <div className="mt-10 flex items-center gap-x-2 bg-zinc-900 hover:bg-zinc-800 md:px-5 px-3 md:py-3 py-2 rounded-full md:border-2 border transition-all duration-1000 md:shadow-[0_0px_40px_0px_rgba(0,0,0,0.3)] shadow-[0_0px_30px_0px_rgba(0,0,0,0.1)] md:shadow-purple-800 shadow-purple-900 border-purple-600 z-50">

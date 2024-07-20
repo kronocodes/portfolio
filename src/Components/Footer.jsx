@@ -43,7 +43,14 @@ const Footer = () => {
             Made with love, peer pressure & React
           </div>
           <div className="flex flex-col justify-end">
-          <div className="text-zinc-300 pb-4">Locale time in Blr : {formatTimeInIndia(currentTime)}</div>
+          <div className="text-white pb-4 flex gap-x-1 items-center">Locale time in Bangalore
+          <div className="flex h-3 w-3 gap-y-[2.4px] mt-[4px] justify-center flex-col">
+            <div className="w-full h-[2px] bg-orange-600"></div>
+            <div className="w-full h-[2px] bg-white"></div>
+            <div className="w-full h-[2px] bg-green-600"></div>
+          </div>
+          <div>: {formatTimeInIndia(currentTime)}</div>
+          </div>
             <div className="text-xs text-zinc-300">
               Designed & Developed by a Human.
             </div>
@@ -53,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-y-4">
-          <div className="text-[12px] pb-5 font-semibold tracking-wider text-zinc-400">
+          <div className="text-[12px] pb-4 font-semibold tracking-wider text-zinc-400">
             NAVIGATION
           </div>
           <Link to="/">Home</Link>
@@ -63,7 +70,7 @@ const Footer = () => {
           <Link to="/contact">Contact</Link>
         </div>
         <div className="flex flex-col gap-y-4">
-          <div className="text-[12px] pb-5 font-semibold tracking-wider text-zinc-400">
+          <div className="text-[12px] pb-4 font-semibold tracking-wider text-zinc-400">
             CONTACT
           </div>
           <div
@@ -99,7 +106,14 @@ const Footer = () => {
         <div className="text-[20px] md:text-2xl italic pb-10">
           Made with love, peer pressure & React
         </div>
-        <div className="text-white pb-4">Locale time in Bangalore : {formatTimeInIndia(currentTime)}</div>
+        <div className="text-white pb-4 flex gap-x-1 items-center">Locale time in Bangalore
+          <div className="flex h-3 w-3 gap-y-[2.4px] mt-[4px] justify-center flex-col">
+            <div className="w-full h-[2px] bg-orange-600"></div>
+            <div className="w-full h-[2px] bg-white"></div>
+            <div className="w-full h-[2px] bg-green-600"></div>
+          </div>
+          <div>: {formatTimeInIndia(currentTime)}</div>
+          </div>
         <div className="text-xs text-zinc-300">
           Designed & Developed by a Human.
         </div>
