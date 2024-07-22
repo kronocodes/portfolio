@@ -17,18 +17,18 @@ const Skills = () => {
               Languages
             </div>
             <div className="flex md:w-[73%]">
-              <div className="flex mt-2 md:mt-0 gap-10 text-sm md:text-base text-zinc-400 pb-2">
-                <div className="flex flex-col items-center">
+              <div className="flex mt-2 md:mt-0 gap-10 text-sm text-zinc-400 pb-2">
+                <div className="flex flex-col items-center gap-y-1">
                   C++
-                  <StackIcon className="w-12 h-12" name="c++" />
+                  <StackIcon className="w-10 h-10" name="c++" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   JAVA
-                  <StackIcon className="w-12 h-12" name="java" />
+                  <StackIcon className="w-10 h-10" name="java" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   Python
-                  <StackIcon className="w-12 h-12" name="python" />
+                  <StackIcon className="w-10 h-10" name="python" />
                 </div>
               </div>
               <div className="text-sm md:text-base pb-14 pt-1 text-zinc-400"></div>
@@ -40,40 +40,40 @@ const Skills = () => {
               Web Development
             </div>
             <div className="flex md:w-[73%]">
-              <div className="flex flex-wrap mt-2 md:mt-0 gap-x-10 gap-y-4 text-sm md:text-base text-zinc-400 pb-2">
-                <div className="flex flex-col items-center">
+              <div className="flex flex-wrap mt-2 md:mt-0 gap-x-8 gap-y-4 text-sm text-zinc-400 pb-2">
+                <div className="flex flex-col items-center gap-y-1">
                   HTML
-                  <StackIcon className="w-12 h-12" name="html5" />
+                  <StackIcon className="w-10 h-10" name="html5" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   CSS
-                  <StackIcon className="w-12 h-12" name="css3" />
+                  <StackIcon className="w-10 h-10" name="css3" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   JavaScript
-                  <StackIcon className="w-12 h-12" name="js" />
+                  <StackIcon className="w-10 h-10" name="js" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   Tailwind
-                  <StackIcon className="w-12 h-12" name="tailwindcss" />
+                  <StackIcon className="w-10 h-10" name="tailwindcss" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   React
-                  <StackIcon className="w-12 h-12" name="reactjs" />
+                  <StackIcon className="w-10 h-10" name="reactjs" />
                 </div>
-                <div className="flex flex-col items-center">
-                  Redux{" "}
-                  <StackIcon className="w-12 h-12" name="redux" />
+                <div className="flex flex-col items-center gap-y-1">
+                  Redux
+                  <StackIcon className="w-10 h-10" name="redux" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   Router
-                  <StackIcon className="w-12 h-12" name="reactrouter" />
+                  <StackIcon className="w-10 h-10" name="reactrouter" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   NextJs
                   <svg
-                    width="50"
-                    height="50"
+                    width="40"
+                    height="40"
                     viewBox="0 0 100 100"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -116,13 +116,13 @@ const Skills = () => {
                     </defs>
                   </svg>
                 </div>   
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   NodeJS
-                  <StackIcon className="w-12 h-12" name="nodejs" />
+                  <StackIcon className="w-10 h-10" name="nodejs" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   MongoDB
-                  <StackIcon className="w-12 h-12" name="mongodb" />
+                  <StackIcon className="w-10 h-10" name="mongodb" />
                 </div>
               </div>
             </div>
@@ -133,18 +133,18 @@ const Skills = () => {
               Design
             </div>
             <div className="flex md:w-[73%]">
-              <div className="flex mt-2 md:mt-0 gap-x-10 text-sm md:text-base text-zinc-400 pb-2">
-                <div className="flex flex-col items-center">
+              <div className="flex mt-2 md:mt-0 gap-x-8 text-sm text-zinc-400 pb-2">
+                <div className="flex flex-col items-center gap-y-1">
                   Figma
-                  <StackIcon className="w-12 h-12" name="figma" />
+                  <StackIcon className="w-10 h-10" name="figma" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   Photoshop
-                  <StackIcon className="w-12 h-12" name="ps" />
+                  <StackIcon className="w-10 h-10" name="ps" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   Framer
-                  <StackIcon className="w-12 h-12" name="framer" />
+                  <StackIcon className="w-10 h-10" name="framer" />
                 </div>
               </div>
             </div>
@@ -155,25 +155,25 @@ const Skills = () => {
               Others
             </div>
             <div className="flex md:w-[73%]">
-              <div className="flex flex-wrap mt-2 md:mt-0 gap-x-10 gap-y-4 text-sm md:text-base text-zinc-400 pb-2">
-                <div className="flex flex-col items-center">
+              <div className="flex flex-wrap mt-2 md:mt-0 gap-x-8 gap-y-4 text-sm text-zinc-400 pb-2">
+                <div className="flex flex-col items-center gap-y-1">
                   Git
-                  <StackIcon className="w-12 h-12" name="git" />
+                  <StackIcon className="w-10 h-10" name="git" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   Postman
-                  <StackIcon className="w-12 h-12" name="postman" />
+                  <StackIcon className="w-10 h-10" name="postman" />
                 </div>
                
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   VSCode
-                  <StackIcon className="w-12 h-12" name="vscode" />
+                  <StackIcon className="w-10 h-10" name="vscode" />
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center gap-y-1">
                   Github
                   <svg
-                    width="50"
-                    height="50"
+                    width="40"
+                    height="40"
                     viewBox="0 0 100 100"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
