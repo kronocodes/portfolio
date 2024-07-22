@@ -1,12 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import MillionLint from '@million/lint';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
+const _plugins = [react()];
+_plugins.unshift(MillionLint.vite())
 export default defineConfig({
-  server:{
+  server: {
     watch: {
-      usePolling: true,
-    },
+      usePolling: true
+    }
   },
-  plugins: [react()],
-})
+  plugins: _plugins
+});

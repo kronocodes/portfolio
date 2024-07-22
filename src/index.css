@@ -38,9 +38,7 @@
 :root{
   background-color: #000000;
 }
-body {
-  cursor: none;
-}
+
 .grad {
   font-family: "Gloock", serif;
   font-weight: 200;

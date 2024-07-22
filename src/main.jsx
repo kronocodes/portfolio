@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       <>
         <Layout />
         <ScrollToTop />
-        <CustomCursor />
+        {/* <CustomCursor /> */}
         <SpeedInsights />
       </>
     ),

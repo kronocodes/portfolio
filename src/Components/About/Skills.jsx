@@ -62,12 +62,12 @@ const Skills = () => {
                   <StackIcon className="w-12 h-12" name="reactjs" />
                 </div>
                 <div className="flex flex-col items-center">
-                  NodeJS
-                  <StackIcon className="w-12 h-12" name="nodejs" />
-                </div>
-                <div className="flex flex-col items-center">
                   Redux{" "}
                   <StackIcon className="w-12 h-12" name="redux" />
+                </div>
+                <div className="flex flex-col items-center">
+                  Router
+                  <StackIcon className="w-12 h-12" name="reactrouter" />
                 </div>
                 <div className="flex flex-col items-center">
                   NextJs
@@ -117,12 +117,12 @@ const Skills = () => {
                   </svg>
                 </div>   
                 <div className="flex flex-col items-center">
-                  MongoDB
-                  <StackIcon className="w-12 h-12" name="mongodb" />
+                  NodeJS
+                  <StackIcon className="w-12 h-12" name="nodejs" />
                 </div>
                 <div className="flex flex-col items-center">
-                  React Router
-                  <StackIcon className="w-12 h-12" name="reactrouter" />
+                  MongoDB
+                  <StackIcon className="w-12 h-12" name="mongodb" />
                 </div>
               </div>
             </div>

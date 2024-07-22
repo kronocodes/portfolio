@@ -8,7 +8,7 @@ const Experience = () => {
       jobtitle:"Intern",
       location:"Remote",
       duration: "June 2024 - Present",
-      description: "As an developer intern I contribute in the development of AI Chatbots for clients in various domains.",
+      description: "Designed and built 15+ chatbots across multiple platforms, integrated with 10+ services to automate workflows, and improved chatbot accuracy to 94%.",
     },
   ];
 
