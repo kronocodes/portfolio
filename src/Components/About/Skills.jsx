@@ -115,7 +115,11 @@ const Skills = () => {
                       </linearGradient>
                     </defs>
                   </svg>
-                </div>   
+                </div> 
+                <div className="flex flex-col items-center gap-y-1">
+                  TypeScript
+                  <StackIcon className="w-10 h-10" name="typescript" />
+                </div> 
                 <div className="flex flex-col items-center gap-y-1">
                   NodeJS
                   <StackIcon className="w-10 h-10" name="nodejs" />
