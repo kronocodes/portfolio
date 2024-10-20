@@ -4,10 +4,18 @@ const Experience = () => {
   const edu = [
     {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
+      title: "Deloitte USI",
+      jobtitle:"Analyst",
+      location:"Bengaluru",
+      duration: "Aug 2024 - Present",
+      description: "Part of an internal products development team, working as a frontend developer.",
+    },
+    {
+      imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "Streebo Inc.",
       jobtitle:"Intern",
       location:"Remote",
-      duration: "June 2024 - Present",
+      duration: "Jun 2024 - Aug 2024",
       description: "Designed and built 15+ chatbots across multiple platforms, integrated with 10+ services to automate workflows, and improved chatbot accuracy to 94%.",
     },
   ];
