@@ -10,11 +10,12 @@ const Leetcode = () => {
     window.open(url, "_blank");
   };
   useEffect(() => {
-    const targetDate = new Date('2023-03-14');
+    const targetDate = new Date("2023-03-14");
     const today = new Date();
     const timeDifference = today - targetDate;
     const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     setDaysBetween(daysDifference);
+    getStats();
   }, []);
 
   const getStats = async () => {
@@ -25,10 +26,6 @@ const Leetcode = () => {
     setStats(json);
     setCal(json);
   };
-
-  useEffect(() => {
-    getStats();
-  }, []);
 
   useEffect(() => {
     let total = 0;
@@ -54,7 +51,6 @@ const Leetcode = () => {
     return chunkedArr;
   }
 
-
   return (
     <>
       <div className="flex flex-col items-center text-white">
@@ -66,12 +62,16 @@ const Leetcode = () => {
             </div>
           </div>
 
-          <div class="min-w-max w-full px-2 flex">
+          <div class="min-w-max w-full px-2 pb-3 flex">
             <div class="rounded-lg min-h-[189px] w-full pb-3 pt-4 flex">
               <div class="md:px-9 px-3 font-medium text-lg w-full pt-3">
                 Solved Problems
-                <div 
-                  onClick={() => handleLinkClick("https://leetcode.com/kronocodes")}class="mx-3 flex items-center">
+                <div
+                  onClick={() =>
+                    handleLinkClick("https://leetcode.com/kronocodes")
+                  }
+                  class="mx-3 flex items-center"
+                >
                   <div class="mr-5 mt-6 flex min-w-[100px] justify-center">
                     <div class="relative max-h-[130px] max-w-[130px]">
                       <svg
@@ -191,56 +191,81 @@ const Leetcode = () => {
                   </div>
                 </div>
               </div>
-            <div class="pt-3 hidden md:flex md:flex-col pr-9">
-              <div className="font-medium text-lg mb-1 pl-4">Contest Stats</div>
-              <div 
-              onClick={() => handleLinkClick("https://leetcode.com/kronocodes2")}
-              className="w-[210px] xl:w-[260px] px-4 justify-center flex flex-col gap-y-[8px] py-3 mt-4 text-zinc-400 text-sm font-semibold bg-zinc-800 shadow-zinc-950 shadow-md border-2 border-zinc-700 rounded-xl">
-                <div className="flex xl:text-[15px] leading-tight justify-between">CURRENT LEVEL :<div className="text-white font-bold">KNIGHT</div></div>
-                <div className="flex xl:text-[15px] leading-tight justify-between">MAX RATING : <div className="text-white font-bold">1954</div></div>
-                <div className="flex xl:text-[15px] leading-tight justify-between">NO OF CONTEST : <div className="text-white font-bold">17</div></div>
-                <div className="flex xl:text-[15px] leading-tight justify-between">TOP RANK : <div className="text-white font-bold">411</div></div>
+              <div class="pt-3 hidden md:flex md:flex-col pr-9">
+                <div className="font-medium text-lg mb-1 pl-4">
+                  Contest Stats
+                </div>
+                <div
+                  onClick={() =>
+                    handleLinkClick("https://leetcode.com/kronocodes2")
+                  }
+                  className="w-[210px] xl:w-[260px] px-4 justify-center flex flex-col gap-y-[8px] py-3 mt-4 text-zinc-400 text-sm font-semibold bg-zinc-800 shadow-zinc-950 shadow-md border-2 border-zinc-700 rounded-xl"
+                >
+                  <div className="flex xl:text-[15px] leading-tight justify-between">
+                    CURRENT LEVEL :
+                    <div className="text-white font-bold">KNIGHT</div>
+                  </div>
+                  <div className="flex xl:text-[15px] leading-tight justify-between">
+                    MAX RATING :{" "}
+                    <div className="text-white font-bold">1954</div>
+                  </div>
+                  <div className="flex xl:text-[15px] leading-tight justify-between">
+                    NO OF CONTEST :{" "}
+                    <div className="text-white font-bold">17</div>
+                  </div>
+                  <div className="flex xl:text-[15px] leading-tight justify-between">
+                    TOP RANK : <div className="text-white font-bold">411</div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+
+          {/* <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div> */}
+
+          {/* <div className="flex flex-col md:px-8 px-3">
+            {/* <div className="md:pb-4 px-3">
+              <div className="text-lg md:text-xl pb-1">
+                {totalSubmissions} submissions in the past one year
+              </div>
+              <div className="text-sm md:text-lg">
+                Current streak: {daysBetween} 🔥
+              </div>
             </div>
-          </div>
-
-          <div className="bg-zinc-700 w-[95%] h-[1px] mx-auto mb-6 mt-4"></div>
-
-          <div className="flex flex-col md:px-8 px-3">
-          <div className="md:pb-4 px-3">
-            <div className="text-lg md:text-xl pb-1">{totalSubmissions} submissions in the past one year</div>
-            <div className="text-sm md:text-lg">Current streak: {daysBetween} 🔥</div>
-          </div>
-          <div
-           onClick={() => handleLinkClick("https://leetcode.com/kronocodes")}
-           className="flex gap-[3px] md:gap-[4px] overflow-x-auto mx-3 mt-4 md:mb-10 mb-8" style={{ scrollbarWidth: "thin", scrollbarColor: "#727272 #18181B" }}>
-            {chunkArray(Object.entries(cal?.submissionCalendar), 7).map(
-              (week, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  {week.map(([timestamp, submissions]) => {
-                    const date = new Date(parseInt(timestamp) * 1000);
-                    const formattedDate = date.toISOString().split("T")[0];
-                    return (
-                      <div key={timestamp} className="text-center">
-                        <div className="text-xs hidden hover:flex">
-                          {formattedDate}
+            <div
+              onClick={() => handleLinkClick("https://leetcode.com/kronocodes")}
+              className="flex gap-[3px] md:gap-[4px] overflow-x-auto mx-3 mt-4 md:mb-10 mb-8"
+              style={{
+                scrollbarWidth: "thin",
+                scrollbarColor: "#727272 #18181B",
+              }}
+            >
+              {chunkArray(Object.entries(cal?.submissionCalendar), 7).map(
+                (week, index) => (
+                  <div key={index} className="flex flex-col items-center">
+                    {week.map(([timestamp, submissions]) => {
+                      const date = new Date(parseInt(timestamp) * 1000);
+                      const formattedDate = date.toISOString().split("T")[0];
+                      return (
+                        <div key={timestamp} className="text-center">
+                          <div className="text-xs hidden hover:flex">
+                            {formattedDate}
+                          </div>
+                          <div
+                            className={`rounded-sm xl:w-4 xl:h-4 xl:my-[3px] md:w-3 md:h-3 md:my-[2px] w-2 h-2 my-[1px] ${getBackgroundColor(
+                              submissions
+                            )}`}
+                          >
+                            <div className="text-lg">{submissions}</div>}
+                          </div>
                         </div>
-                        <div
-                          className={`rounded-sm xl:w-4 xl:h-4 xl:my-[3px] md:w-3 md:h-3 md:my-[2px] w-2 h-2 my-[1px] ${getBackgroundColor(
-                            submissions
-                          )}`}
-                        >
-                          {/* <div className="text-lg">{submissions}</div> */}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              )
-            )}
-          </div>
-          </div>
+                      );
+                    })}
+                  </div>
+                )
+              )}
+            </div>
+          </div> */}
         </div>
       </div>
     </>

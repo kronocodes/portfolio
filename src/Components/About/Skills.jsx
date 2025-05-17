@@ -69,7 +69,7 @@ const Skills = () => {
                   Router
                   <StackIcon className="w-10 h-10" name="reactrouter" />
                 </div>
-                <div className="flex flex-col items-center gap-y-1">
+                {/* <div className="flex flex-col items-center gap-y-1">
                   NextJs
                   <svg
                     width="40"
@@ -115,19 +115,19 @@ const Skills = () => {
                       </linearGradient>
                     </defs>
                   </svg>
-                </div> 
+                </div>  */}
                 <div className="flex flex-col items-center gap-y-1">
                   TypeScript
                   <StackIcon className="w-10 h-10" name="typescript" />
                 </div> 
-                <div className="flex flex-col items-center gap-y-1">
+                {/* <div className="flex flex-col items-center gap-y-1">
                   NodeJS
                   <StackIcon className="w-10 h-10" name="nodejs" />
                 </div>
                 <div className="flex flex-col items-center gap-y-1">
                   MongoDB
                   <StackIcon className="w-10 h-10" name="mongodb" />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

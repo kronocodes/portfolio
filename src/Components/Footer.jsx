@@ -40,7 +40,7 @@ const Footer = () => {
       <div className="flex justify-around xl:justify-between 2xl:max-w-[1300px] mx-auto md:px-16 lg:max-w-[1000px] w-full px-5 py-20">
         <div className="md:flex md:flex-col text-sm font-medium hidden">
           <div className="text-[20px] md:text-2xl italic pb-10 h-full">
-            Made with love, peer pressure & React
+            Made with love, naps & React
           </div>
           <div className="flex flex-col justify-end">
           <div className="text-white pb-4 flex gap-x-1 items-center">Locale time in Bangalore
@@ -73,13 +73,13 @@ const Footer = () => {
           <div className="text-[12px] pb-4 font-semibold tracking-wider text-zinc-400">
             CONTACT
           </div>
-          <div
+          <button
             className="flex justify-between"
             onClick={() => handleLinkClick("https://github.com/kronocodes")}
           >
             <div>Github</div>
             <img className="pl-2 w-6" src={goto}></img>{" "}
-          </div>
+          </button>
           <div
             className="flex justify-between"
             onClick={() =>
@@ -104,7 +104,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center pb-10 text-sm font-medium md:hidden">
         <div className="text-[20px] md:text-2xl italic pb-10">
-          Made with love, peer pressure & React
+          Made with love, naps & React
         </div>
         <div className="text-white pb-4 flex gap-x-1 items-center">Locale time in Bangalore
           <div className="flex h-3 w-3 gap-y-[2.4px] mt-[3px] mb-[2px] justify-center flex-col">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Youtube = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Youtube_zrbwre.png`;
-const Portfolio = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Portfolio_oar7bc.png`;
+const Portfolio = `https://res.cloudinary.com/dw2fhd58a/image/upload/v1745617319/Screenshot_2025-04-25_at_11.40.09_PM_gplcuk.png`;
 const FACT = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/FACT_lrrhjr`;
 const Foodle = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Foodle_d6hqto.png`;
 const NMK = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/NMK_vk0gnv.png`;
@@ -74,8 +74,8 @@ const project = [
   {
     id: 6,
     name: "College Clubs Portal",
-    repo: "https://github.com/nihar8262/FACTS-N",
-    live: "https://facts-nce.vercel.app/",
+    repo: "",
+    live: "",
     figma:
       "https://www.figma.com/file/zKRavYnWGsSuKWOelcCnwz/Untitled?type=design&t=uqLQxD7daILh7yQu-6",
     year: "2024",
