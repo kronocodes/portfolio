@@ -23,7 +23,7 @@ const Abouth = () => {
             </div>
             <div className='flex flex-wrap gap-x-4 gap-y-3 sm:hidden lg:flex lg:pt-3 pt-3'>
               <a target="_blank" href="https://www.instagram.com/rakeshnandann/" className='border border-zinc-700 w-[120px] rounded-md flex items-center gap-4 py-2 text-sm px-4 text-zinc-300'><div class="w-1 h-1 rounded-full bg-pink-500 glow"></div>Instagram</a>
-              <a target="_blank" href="https://twitter.com/RakNandan" className='border border-zinc-700 w-[120px] rounded-md flex items-center gap-4 py-2 text-sm px-4 text-zinc-300'><div class="w-1 h-1 rounded-full glow"></div>Twitter</a>
+              <a target="_blank" href="https://twitter.com/kronocodes" className='border border-zinc-700 w-[120px] rounded-md flex items-center gap-4 py-2 text-sm px-4 text-zinc-300'><div class="w-1 h-1 rounded-full glow"></div>Twitter</a>
               <a target="_blank" href="https://www.linkedin.com/in/abhisheknandan2013/" className='border border-zinc-700 w-[120px] rounded-md flex items-center gap-4 py-2 text-sm px-4 text-zinc-300'><div class="w-1 h-1 rounded-full bg-blue-500 glow"></div>LinkedIn</a>
               <a target="_blank" href="https://github.com/kronocodes" className='border border-zinc-700 w-[120px] rounded-md flex items-center gap-4 py-2 text-sm px-4 text-zinc-300'><div class="w-1 h-1 rounded-full bg-purple-500 glow"></div>Github</a>
             </div>
