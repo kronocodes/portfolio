@@ -29,20 +29,20 @@ const Contact = () => {
   return (
     <div className="flex flex-col justify-center bg-black">
       <div class="w-full h-1/2 top-0 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
-      <div className="2xl:max-w-[1300px] mx-auto md:px-16 lg:max-w-[1000px] w-full flex flex-col px-5 z-10">
+      <div className="max-w-[1100px] mx-auto md:px-16 w-full flex flex-col px-5 z-10">
         <div className="flex items-center gap-x-3 pt-20 md:pt-28 pb-14">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
           <div className="text-white text-7xl md:text-8xl grad">Contact</div>
         </div>
         <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[2px] z-40"></div>
-        <div className="rounded-3xl bg-zinc-900 p-4 border-[2px] border-zinc-800 mb-32">
+        <div className="rounded-3xl bg-zinc-900 px-4 py-2 border-[2px] border-zinc-800 mb-32">
           <form
             ref={form}
             onSubmit={sendEmail}
             className="w-full mx-auto pt-10"
           >
             <div className="flex flex-col">
-              <div className="py-2 font-semibold text-lg text-white">
+              <div className="py-1 font-semibold text-lg text-white opacity-80">
                 [ NAME ]
               </div>
               <input
@@ -54,7 +54,7 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col py-2">
-              <div className="py-2 font-semibold text-lg text-white">
+              <div className="py-2 font-semibold text-lg text-white opacity-80">
                 [ EMAIL ADDRESS ]
               </div>
               <input
@@ -66,7 +66,7 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col py-2">
-              <div className="py-2 font-semibold text-lg text-white">
+              <div className="py-2 font-semibold text-lg text-white opacity-80">
                 [ SUBJECT ]
               </div>
               <input
@@ -78,7 +78,7 @@ const Contact = () => {
             </div>
             <div className="flex flex-col w-full items-center pb-6">
               <div className="flex flex-col w-full pb-8">
-                <div className="py-2 font-semibold text-lg text-white">
+                <div className="py-2 font-semibold text-lg text-white opacity-80">
                   [ MESSAGE ]
                 </div>
                 <textarea
@@ -88,7 +88,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div className="w-[153px] h-[60px] rounded-md absolute translate-y-[216px] fill-none border-[1px] shadow-lg shadow-black border-zinc-600"></div>
+              <div className="w-[153px] h-[60px] -mt-[60px] rounded-md translate-y-[56px] fill-none border-[1px] shadow-lg shadow-black border-zinc-600"></div>
               <button type="submit" value="Send">
                 <ShinyButton />
               </button>

@@ -6,21 +6,21 @@ const Education = () => {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "Nalanda College of Engineering",
       sub:"Nalanda, Bihar.",
-      duration: "2020 - 2024",
+      duration: "(2024 graduate)",
       description: "Bachelor of Technology in Computer Science Engineering",
     },
     {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "Laxman Public School",
       sub:"Hauz Khas, New Delhi.",
-      duration: "2016 - 2018",
+      duration: "",
       description: "Class XI-XII - Science stream (PCM).",
     },
     {
       imageSrc: "https://assets-global.website-files.com/6547600aa272d0cc570e8feb/654f6f6decb3359349b05046_View-all.svg",
       title: "Kendriya Vidyalaya",
       sub:"Morigaon, Assam.",
-      duration: "2006 - 2016",
+      duration: "",
       description: "Class I-X",
     }
   ];

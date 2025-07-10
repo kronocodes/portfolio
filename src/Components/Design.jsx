@@ -40,7 +40,7 @@ const Design = () => {
   return (
     <div className="bg-black text-white">
             <div class="w-full h-1/2 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
-      <div className="max-w-[1300px] flex flex-col items-center justify-center mx-auto z-10">
+      <div className="max-w-[1100px] md:px-12 flex flex-col items-center justify-center mx-auto z-10">
         <div className="py-[21vh] tracking-[-.03em] w-3/5 text-center xl:leading-[120%] leading-[120%] text-2xl md:text-3xl lg:text-[2.1vw] z-10">
           Welcome to my playground, my personal collection of random designs,
           explorations, rejected versions or any thing that I could not find a

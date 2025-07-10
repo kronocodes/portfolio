@@ -37,7 +37,7 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col justify-center bg-zinc-950 text-white border-t border-zinc-700 w-full">
-      <div className="flex justify-around xl:justify-between 2xl:max-w-[1300px] mx-auto md:px-16 lg:max-w-[1000px] w-full px-5 py-20">
+      <div className="flex justify-around xl:justify-between max-w-[1100px] mx-auto md:px-16 w-full px-5 py-20">
         <div className="md:flex md:flex-col text-sm font-medium hidden">
           <div className="text-[20px] md:text-2xl italic pb-10 h-full">
             Made with love, naps & React

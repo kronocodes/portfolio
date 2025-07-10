@@ -105,7 +105,7 @@ const Work = () => {
     <>
       <div className="bg-black flex flex-col items-center pb-20 text-white">
         <div class="w-full h-1/2 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
-        <div className="2xl:max-w-[1300px] md:px-16 lg:max-w-[1000px] w-full flex flex-col px-5 z-10">
+        <div className="max-w-[1100px] md:px-16 w-full flex flex-col px-5 z-10">
           <div className="flex items-center gap-x-3 pt-20 md:pt-28 pb-14">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
           <div className="text-white text-7xl md:text-8xl grad">Work</div>
