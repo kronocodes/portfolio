@@ -40,7 +40,7 @@ const Abouth = () => {
     <div className="z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
 
       {/* Left — text */}
-      <div className="flex flex-col justify-between gap-8">
+      <div className="flex flex-col justify-between gap-8 px-4">
 
         <div className="flex flex-col gap-5">
           <span className="text-zinc-500 text-xs tracking-[0.25em] uppercase font-medium">

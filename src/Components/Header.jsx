@@ -100,9 +100,9 @@ const Header = () => {
           <ThemeToggle extraClass="top-6 right-[5.5rem]" />
           <button
             onClick={toggleDropdown}
-            className="fixed right-8 top-6 z-[999] flex items-center justify-center w-12 h-12 rounded-full bg-neutral-500 bg-opacity-40 backdrop-blur-[6px] p-[5px]">
+            className="fixed right-8 top-6 z-[999] flex items-center justify-center w-9 h-9 rounded-full bg-neutral-500 bg-opacity-40 backdrop-blur-[6px] p-[5px]">
             <img
-              className="w-6"
+              className="w-4"
               src={isLight
                 ? "https://img.icons8.com/ios/50/111111/menu--v1.png"
                 : "https://img.icons8.com/ios/50/FFFFFF/menu--v1.png"}
