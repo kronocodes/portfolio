@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useTheme } from "../ThemeContext";
+
 
 const Youtube = `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/work/Youtube_zrbwre.png`;
 const Portfolio = `https://res.cloudinary.com/dw2fhd58a/image/upload/v1745617319/Screenshot_2025-04-25_at_11.40.09_PM_gplcuk.png`;
@@ -19,6 +21,7 @@ const project = [
     src: Foodle,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/bjtcusynfjh7wuxom0iv`,
     gradientColor: "from-blue-900",
+    gradientColorLight: "from-blue-700",
   },
   {
     id: 2,
@@ -31,6 +34,7 @@ const project = [
     src: Youtube,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/ggmqe3ooio6qvkuxctqk`,
     gradientColor: "from-red-800",
+    gradientColorLight: "from-red-600",
   },
   {
     id: 3,
@@ -44,6 +48,7 @@ const project = [
     src: Proxy,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/by7huxlpxvg0dpm2uc2n`,
     gradientColor: "from-purple-800",
+    gradientColorLight: "from-purple-600",
   },
   {
     id: 4,
@@ -56,6 +61,7 @@ const project = [
     src: Portfolio,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/jxzri3zmsx1p0yofefco`,
     gradientColor: "from-zinc-700",
+    gradientColorLight: "from-zinc-500",
   },
   {
     id: 5,
@@ -70,6 +76,7 @@ const project = [
     src: NMK,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/qvnlglbuldb4qi1xswdk`,
     gradientColor: "from-green-700",
+    gradientColorLight: "from-green-600",
   },
   {
     id: 6,
@@ -84,10 +91,12 @@ const project = [
     src: FACT,
     toolbar: `https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/Toolbar/ekxp1nuykykb5npw4irn`,
     gradientColor: "from-orange-600",
+    gradientColorLight: "from-orange-500",
   },
 ];
 
 const Work = () => {
+  const { isLight } = useTheme();
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -103,24 +112,24 @@ const Work = () => {
   }, []);
   return (
     <>
-      <div className="bg-black flex flex-col items-center pb-20 text-white">
-        <div class="w-full h-1/2 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
+      <div className={`flex flex-col items-center pb-20 ${isLight ? "bg-white text-black" : "bg-black text-white"}`}>
+        <div className={`w-full h-full top-0 left-0 absolute bg-[radial-gradient(ellipse_160%_120%_at_50%_50%,_var(--tw-gradient-stops))] ${isLight ? "from-[#e0e0e0] via-white to-white" : "from-[#2B2B2B] via-black to-black"}`}></div>
         <div className="max-w-[1100px] md:px-16 w-full flex flex-col px-5 z-10">
           <div className="flex items-center gap-x-3 pt-20 md:pt-28 pb-14">
-          <div class="w-3 h-3 rounded-full bg-white glow"></div>
-          <div className="text-white text-7xl md:text-8xl grad">Work</div>
+          <div className={`w-3 h-3 rounded-full glow ${isLight ? "bg-black" : "bg-white"}`}></div>
+          <div className="text-7xl md:text-8xl grad">Work</div>
         </div>
           {project.map((project, id) => (
-            <div className="rounded-3xl bg-zinc-800 group p-[7px] md:mb-28 mb-16 z-40">
-              <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 -translate-y-[6.5px]"></div>
-              <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[0.1px]"></div>
+            <div className={`rounded-3xl group p-[7px] md:mb-28 mb-16 z-40 ${isLight ? "bg-zinc-200" : "bg-zinc-800"}`}>
+              <div className={`h-[1px] bg-gradient-to-r mx-auto w-11/12 -translate-y-[6.5px] ${isLight ? "from-zinc-200 via-zinc-600 to-zinc-200" : "from-zinc-800 via-white to-zinc-800"}`}></div>
+              <div className={`h-[1px] bg-gradient-to-r mx-auto w-11/12 translate-y-[0.1px] ${isLight ? "from-zinc-200 via-zinc-600 to-zinc-200" : "from-zinc-800 via-white to-zinc-800"}`}></div>
               <div
                 className={`transition-all duration-700 rounded-2xl overflow-hidden border-[1px] border-zinc-600 group-hover:border-zinc-500 ${
-                  project.gradientColor
+                  isLight ? project.gradientColorLight : project.gradientColor
                 } ${
                   isSmallScreen
-                    ? "bg-gradient-to-b to-black"
-                    : "bg-zinc-900 md:hover:bg-gradient-to-b hover:to-black"
+                    ? `bg-gradient-to-b ${isLight ? "to-white" : "to-black"}`
+                    : `${isLight ? "bg-zinc-100" : "bg-zinc-900"} md:hover:bg-gradient-to-b ${isLight ? "hover:to-white" : "hover:to-black"}`
                 }`}
               >
                 <div className="flex flex-col rounded-3xl justify-center">
@@ -129,14 +138,14 @@ const Work = () => {
                       {project.name}
                     </div>
                   </div>
-                  <div className="px-8 md:pt-5 pt-3 pb-5 text-sm md:text-lg text-zinc-300 group-hover:text-white">
-                    <span className="text-white">{project.year} - </span>
-                    {project.tagline}
+                  <div className={`px-8 md:pt-5 pt-3 pb-5 text-sm md:text-lg`}>
+                    <span className={isLight ? "text-black" : "text-white"}>{project.year} - </span>
+                    <span className={isLight ? "text-black" : "text-white"}>{project.tagline}</span>
                   </div>
                   <div className="flex flex-col justify-between">
                     {project.repo !== "" && (
                       <a
-                        className="border-b group-hover:border-zinc-300 text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className={`border-b text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:font-medium ${isLight ? "group-hover:border-zinc-400 hover:bg-black hover:text-white" : "group-hover:border-zinc-300 hover:bg-white hover:text-black"}`}
                         href={project.repo}
                       >
                         <button>GitHub Repo</button>
@@ -144,7 +153,7 @@ const Work = () => {
                     )}
                     {project.live !== "" && (
                       <a
-                        className="border-b group-hover:border-zinc-300 text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className={`border-b text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:font-medium ${isLight ? "group-hover:border-zinc-400 hover:bg-black hover:text-white" : "group-hover:border-zinc-300 hover:bg-white hover:text-black"}`}
                         href={project.live}
                       >
                         <button>Visit Website</button>
@@ -152,7 +161,7 @@ const Work = () => {
                     )}
                     {project.figma !== "" && (
                       <a
-                        className="border-b group-hover:border-zinc-300 text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:bg-white hover:text-black hover:font-medium"
+                        className={`border-b text-center w-[86%] mx-auto border-zinc-600 hover:rounded-lg py-2 hover:font-medium ${isLight ? "group-hover:border-zinc-400 hover:bg-black hover:text-white" : "group-hover:border-zinc-300 hover:bg-white hover:text-black"}`}
                         href={project.figma}
                       >
                         <button>View Figma File</button>
@@ -168,6 +177,7 @@ const Work = () => {
             </div>
           ))}
         </div>
+
       </div>
     </>
   );

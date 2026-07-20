@@ -36,7 +36,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center bg-zinc-950 text-white border-t border-zinc-700 w-full">
+    <div className="flex flex-col z-10 justify-center bg-zinc-950 text-white border-t border-zinc-700 w-full">
       <div className="flex justify-around xl:justify-between max-w-[1100px] mx-auto md:px-16 w-full px-5 py-20">
         <div className="md:flex md:flex-col text-sm font-medium hidden">
           <div className="text-[20px] md:text-2xl italic pb-10 h-full">
@@ -66,39 +66,37 @@ const Footer = () => {
           <Link to="/">Home</Link>
           <Link to="/work">Work</Link>
           <Link to="/about">About</Link>
-          <Link to="/design">Design</Link>
-          <Link to="/contact">Contact</Link>
         </div>
         <div className="flex flex-col gap-y-4">
           <div className="text-[12px] pb-4 font-semibold tracking-wider text-zinc-400">
             CONTACT
           </div>
           <button
-            className="flex justify-between"
+            className="flex justify-between cursor-pointer"
             onClick={() => handleLinkClick("https://github.com/kronocodes")}
           >
             <div>Github</div>
-            <img className="pl-2 w-6" src={goto}></img>{" "}
+            <img className="pl-2 w-6 goto-arrow" src={goto}></img>{" "}
           </button>
           <div
-            className="flex justify-between"
+            className="flex justify-between cursor-pointer"
             onClick={() =>
               handleLinkClick("https://www.linkedin.com/in/abhisheknandan2013/")
             }
           >
             <div>LinkedIn</div>
-            <img className="pl-2 w-6" src={goto}></img>{" "}
+            <img className="pl-2 w-6 goto-arrow" src={goto}></img>{" "}
           </div>
           <div
-            className="flex justify-between"
-            onClick={() => handleLinkClick("https://twitter.com/RakNandan")}
+            className="flex justify-between cursor-pointer"
+            onClick={() => handleLinkClick("https://twitter.com/kronocodes")}
           >
             <div>Twitter</div>
-            <img className="pl-2 w-6" src={goto}></img>{" "}
+            <img className="pl-2 w-6 goto-arrow" src={goto}></img>{" "}
           </div>
-          <button onClick={handleCopy} className="flex justify-between">
+          <button onClick={handleCopy} className="flex justify-between cursor-pointer">
             <div>Email</div>
-            <img className="pl-2 w-6" src={goto}></img>
+            <img className="pl-2 w-6 goto-arrow" src={goto}></img>
           </button>
         </div>
       </div>

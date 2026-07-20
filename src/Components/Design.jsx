@@ -38,8 +38,8 @@ const images = [
 
 const Design = () => {
   return (
-    <div className="bg-black text-white">
-            <div class="w-full h-1/2 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
+    <div className="bg-black flex flex-col items-center text-white">
+      <div className="w-full h-full top-0 left-0 absolute bg-[radial-gradient(ellipse_160%_140%_at_50%_50%,_var(--tw-gradient-stops))] from-[#2B2B2B] via-black to-black"></div>
       <div className="max-w-[1100px] md:px-12 flex flex-col items-center justify-center mx-auto z-10">
         <div className="py-[21vh] tracking-[-.03em] w-3/5 text-center xl:leading-[120%] leading-[120%] text-2xl md:text-3xl lg:text-[2.1vw] z-10">
           Welcome to my playground, my personal collection of random designs,

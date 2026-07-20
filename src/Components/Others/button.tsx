@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { useTheme } from "../../ThemeContext";
 
 const ShinyButton = () => {
+  const { isLight } = useTheme();
+
   return (
     <motion.button
       initial={{ "--x": "100%", scale: 1 }}
@@ -22,9 +25,10 @@ const ShinyButton = () => {
           mass: 0.1,
         },
       }}
-      className="px-12 py-3 rounded-md relative radial-gradient"
+      className="px-12 py-3 rounded-md relative radial-gradient flex items-center justify-center"
+      style={{ background: isLight ? 'white' : 'black', border: isLight ? '1px solid #e4e4e7' : 'none' }}
     >
-      <span className="text-neutral-100 tracking-wide font-medium text-xl h-full w-full block relative linear-mask">
+      <span className={`tracking-wide font-medium text-xl h-full w-full block relative linear-mask ${isLight ? "text-neutral-800" : "text-neutral-100"}`}>
         Send
       </span>
       <span className="block absolute inset-0 rounded-md p-px linear-overlay" />

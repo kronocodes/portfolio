@@ -1,7 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { useTheme } from "../../ThemeContext";
 
 const Leetcode = () => {
+  const { isLight } = useTheme();
   const [stats, setStats] = useState([]);
   const [cal, setCal] = useState({ submissionCalendar: {} });
   const [totalSubmissions, setTotalSubmissions] = useState(0);
@@ -50,22 +52,23 @@ const Leetcode = () => {
     }
     return chunkedArr;
   }
-
+  console.log(isLight)
   return (
     <>
-      <div className="flex flex-col items-center text-white">
-        <div className="lg:max-w-[1300px] bg-zinc-900 w-full mx-auto flex flex-col md:rounded-xl">
+      <div className={`flex flex-col items-center ${isLight ? "text-black" : "text-white"}`}>
+        <div className={`lg:max-w-[1300px] w-full mx-auto flex flex-col md:rounded-2xl ${isLight ? "bg-white border border-zinc-200" : "bg-zinc-900"}`}>
           <div className="flex items-center px-5 pt-5">
-            <div class="w-3 h-3 rounded-full bg-white glow"></div>
-            <div className="px-4 text-sm text-zinc-300">
+            <div className={`w-3 h-3 rounded-full glow ${isLight ? "bg-black" : "bg-white"}`}></div>
+            <div className={`px-4 text-sm ${isLight ? "text-white" : "text-zinc-300"}`}>
               L E E T C O D E &nbsp; S T A T S
             </div>
           </div>
 
           <div class="min-w-max w-full px-2 pb-3 flex">
             <div class="rounded-lg min-h-[189px] w-full pb-3 pt-4 flex">
-              <div class="md:px-9 px-3 font-medium text-lg w-full pt-3">
-                Solved Problems
+              <div className={`md:px-9 px-3 font-medium text-sm tracking-widest w-full pt-3`}>
+                <p className={`${isLight ? "text-zinc-400" : "text-zinc-500"}`}>SOLVED PROBLEMS</p>
+                
                 <div
                   onClick={() =>
                     handleLinkClick("https://leetcode.com/kronocodes")
@@ -86,7 +89,7 @@ const Leetcode = () => {
                           stroke-width="3"
                           stroke-linecap="round"
                           stroke="currentColor"
-                          class="text-zinc-700 w-[100px]"
+                          className={`w-[100px] ${isLight ? "text-zinc-600" : "text-zinc-700"}`}
                         ></circle>
                         <circle
                           fill="none"
@@ -104,10 +107,10 @@ const Leetcode = () => {
                       </svg>
                       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform cursor-default text-center">
                         <div>
-                          <div class="text-3xl font-medium text-zinc-100">
+                          <div className={`text-3xl font-medium ${isLight ? "text-zinc-900" : "text-zinc-100"}`}>
                             {stats.totalSolved}
                           </div>
-                          <div class="whitespace-nowrap text-sm text-zinc-400">
+                          <div className={`whitespace-nowrap text-sm ${isLight ? "text-zinc-500" : "text-zinc-400"}`}>
                             Solved
                           </div>
                         </div>
@@ -118,18 +121,18 @@ const Leetcode = () => {
                   <div class="flex w-full flex-col space-y-4">
                     <div class="space-y-2">
                       <div class="flex w-full items-end text-xs">
-                        <div class="w-[53px] text-zinc-400">Easy</div>
+                        <div className={`w-[53px] ${isLight ? "text-zinc-500" : "text-zinc-400"}`}>Easy</div>
                         <div class="flex flex-1 items-center">
                           <span class="mr-[5px] text-base font-medium leading-[20px]">
                             {stats.easySolved}
                           </span>
-                          <span class="text-xs font-medium text-zinc-400">
+                          <span className={`text-xs font-medium ${isLight ? "text-zinc-500" : "text-zinc-400"}`}>
                             /{stats.totalEasy}
                           </span>
                         </div>
                       </div>
                       <div class="relative h-2 w-full overflow-hidden rounded-full max-w-none">
-                        <div class="absolute h-full w-full bg-green-900"></div>
+                        <div className={`absolute h-full w-full ${isLight ? "bg-green-200" : "bg-green-900"}`}></div>
                         <div
                           style={{
                             width: `${
@@ -142,18 +145,18 @@ const Leetcode = () => {
                     </div>
                     <div class="space-y-2">
                       <div class="flex w-full items-end text-xs">
-                        <div class="w-[53px] text-zinc-400">Medium</div>
+                        <div className={`w-[53px] ${isLight ? "text-zinc-500" : "text-zinc-400"}`}>Medium</div>
                         <div class="flex flex-1 items-center">
                           <span class="mr-[5px] text-base font-medium leading-[20px]">
                             {stats.mediumSolved}
                           </span>
-                          <span class="text-xs font-medium text-zinc-400">
+                          <span className={`text-xs font-medium ${isLight ? "text-zinc-500" : "text-zinc-400"}`}>
                             /{stats.totalMedium}
                           </span>
                         </div>
                       </div>
                       <div class="relative h-2 w-full overflow-hidden rounded-full max-w-none">
-                        <div class="absolute h-full w-full bg-yellow-900"></div>
+                        <div className={`absolute h-full w-full ${isLight ? "bg-yellow-200" : "bg-yellow-900"}`}></div>
                         <div
                           style={{
                             width: `${
@@ -166,18 +169,18 @@ const Leetcode = () => {
                     </div>
                     <div class="space-y-2">
                       <div class="flex w-full items-end text-xs">
-                        <div class="w-[53px] text-zinc-400">Hard</div>
+                        <div className={`w-[53px] ${isLight ? "text-zinc-500" : "text-zinc-400"}`}>Hard</div>
                         <div class="flex flex-1 items-center">
                           <span class="mr-[5px] text-base font-medium leading-[20px]">
                             {stats.hardSolved}
                           </span>
-                          <span class="text-xs font-medium text-zinc-400">
+                          <span className={`text-xs font-medium ${isLight ? "text-zinc-500" : "text-zinc-400"}`}>
                             /{stats.totalHard}
                           </span>
                         </div>
                       </div>
                       <div class="relative h-2 w-full overflow-hidden rounded-full max-w-none">
-                        <div class="absolute h-full w-full bg-red-900"></div>
+                        <div className={`absolute h-full w-full ${isLight ? "bg-red-200" : "bg-red-900"}`}></div>
                         <div
                           style={{
                             width: `${
@@ -191,31 +194,32 @@ const Leetcode = () => {
                   </div>
                 </div>
               </div>
-              <div class="pt-3 hidden md:flex md:flex-col pr-9">
-                <div className="font-medium text-lg mb-1 pl-4">
-                  Contest Stats
+              <div className="pt-3 hidden md:flex md:flex-col pr-9 justify-center">
+                <div className={`font-medium text-sm tracking-widest mb-3 pl-1 ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
+                  CONTEST STATS
                 </div>
                 <div
-                  onClick={() =>
-                    handleLinkClick("https://leetcode.com/kronocodes2")
-                  }
-                  className="w-[210px] xl:w-[260px] px-4 justify-center flex flex-col gap-y-[8px] py-3 mt-4 text-zinc-400 text-sm font-semibold bg-zinc-800 shadow-zinc-950 shadow-md border-2 border-zinc-700 rounded-xl"
+                  onClick={() => handleLinkClick("https://leetcode.com/kronocodes2")}
+                  className={`w-[210px] xl:w-[240px] grid grid-cols-2 gap-[1px] rounded-2xl overflow-hidden cursor-pointer ${isLight ? "bg-zinc-100 border border-zinc-200" : "bg-zinc-700"}`}
                 >
-                  <div className="flex xl:text-[15px] leading-tight justify-between">
-                    CURRENT LEVEL :
-                    <div className="text-white font-bold">KNIGHT</div>
-                  </div>
-                  <div className="flex xl:text-[15px] leading-tight justify-between">
-                    MAX RATING :{" "}
-                    <div className="text-white font-bold">1954</div>
-                  </div>
-                  <div className="flex xl:text-[15px] leading-tight justify-between">
-                    NO OF CONTEST :{" "}
-                    <div className="text-white font-bold">17</div>
-                  </div>
-                  <div className="flex xl:text-[15px] leading-tight justify-between">
-                    TOP RANK : <div className="text-white font-bold">411</div>
-                  </div>
+                  {[
+                    { label: "LEVEL", value: "KNIGHT" },
+                    { label: "MAX RATING", value: "1954" },
+                    { label: "CONTESTS", value: "17" },
+                    { label: "TOP RANK", value: "#411" },
+                  ].map(({ label, value }) => (
+                    <div
+                      key={label}
+                      className={`flex flex-col items-center justify-center py-4 px-2 gap-y-1 ${isLight ? "bg-white hover:bg-zinc-50" : "bg-zinc-800 hover:bg-zinc-700"} transition-colors duration-200`}
+                    >
+                      <div className={`text-xl font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
+                        {value}
+                      </div>
+                      <div className={`text-[10px] font-semibold tracking-widest ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
+                        {label}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

@@ -66,7 +66,7 @@ const Hero = () => {
   return (
     <>
       <div className="flex items-center justify-center bg-black z-10">
-        <div class="w-full h-1/2 top-0 absolute bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 via-black to-black"></div>
+      <div className="w-full h-full top-0 left-0 absolute bg-[radial-gradient(ellipse_160%_120%_at_50%_50%,_var(--tw-gradient-stops))] from-[#2B2B2B] via-black to-black"></div>
         <div className="w-full h-[98vh] gradient-box flex flex-col justify-center items-center z-10">
           <div className="text-zinc-400 px-5 sm:px-10 mx-auto md:px-20 max-w-[1000px] text-[40px] leading-[54px] md:text-[64px] md:leading-[80px] lg:text-[74px] lg:leading-[90px] select-none">
             <div class="flex items-center justify-center customfont flex-wrap gap-x-2 md:gap-x-4 xl:gap-x-6">
@@ -78,7 +78,7 @@ const Hero = () => {
                   src="https://res.cloudinary.com/dw2fhd58a/image/upload/w_500/q_100/f_auto/v1/About/hero5_uypia5.jpg"
                 ></img>
               </div>
-              <div className="text-white relative shadow-lg gradhero">
+              <div className="text-white relative gradhero">
                 Abhishek,
               </div>
               <div className="sm:hidden flex">a</div>

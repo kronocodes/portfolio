@@ -3,7 +3,7 @@ import StackIcon from "tech-stack-icons";
 const Skills = () => {
   
   return (
-    <div className="text-white bg-zinc-900 md:rounded-xl flex pb-4">
+    <div className="text-white bg-zinc-900 md:rounded-2xl flex pb-4">
       <div className="max-w-[1300px] w-full">
         <div className="flex items-center px-6 pt-5">
           <div class="w-3 h-3 rounded-full bg-white glow"></div>
@@ -176,6 +176,7 @@ const Skills = () => {
                 <div className="flex flex-col items-center gap-y-1">
                   Github
                   <svg
+                    className="goto-arrow"
                     width="40"
                     height="40"
                     viewBox="0 0 100 100"

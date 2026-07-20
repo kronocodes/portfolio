@@ -121,6 +121,9 @@
 :root{
   background-color: #000000;
 }
+[data-theme="light"] :root, [data-theme="light"] {
+  background-color: #F4F3EF;
+}
 
 .grad {
   font-family: "Gloock", serif;
@@ -450,3 +453,223 @@ h1 > .magic > .magic-text {
 
 
 /*Work */
+
+/* ============================================================
+   LIGHT THEME OVERRIDES
+   Applied when <html data-theme="light"> is set by ThemeContext
+   ============================================================ */
+
+[data-theme="light"] {
+  background-color: #F4F3EF;
+}
+
+[data-theme="light"] .grader {
+  background: -webkit-linear-gradient(#00aa05, #00cc00, #00aa05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+[data-theme="light"] h1 > .magic > .magic-text {
+  background: linear-gradient(
+    to right,
+    rgb(120, 20, 180),
+    rgb(80, 40, 160),
+    rgb(200, 60, 120),
+    rgb(120, 20, 180)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Page backgrounds */
+[data-theme="light"] .bg-black {
+  background-color: #F4F3EF !important;
+}
+[data-theme="light"] .bg-zinc-950 {
+  background-color: #ECEAE4 !important;
+}
+[data-theme="light"] .bg-zinc-900 {
+  background-color: #FFFFFF !important;
+}
+[data-theme="light"] .bg-zinc-800 {
+  background-color: #EDECE8 !important;
+}
+[data-theme="light"] .bg-zinc-700 {
+  background-color: #D8D6D0 !important;
+}
+
+/* Text colours */
+[data-theme="light"] .text-white {
+  color: #111111 !important;
+}
+[data-theme="light"] .text-zinc-100 {
+  color: #222222 !important;
+}
+[data-theme="light"] .text-zinc-200 {
+  color: #333333 !important;
+}
+[data-theme="light"] .text-zinc-300 {
+  color: #555555 !important;
+}
+[data-theme="light"] .text-zinc-400 {
+  color: #777777 !important;
+}
+[data-theme="light"] .text-zinc-500 {
+  color: #999999 !important;
+}
+[data-theme="light"] .text-zinc-600 {
+  color: #AAAAAA !important;
+}
+
+/* Borders */
+[data-theme="light"] .border-zinc-800 {
+  border-color: #D8D6D0 !important;
+}
+[data-theme="light"] .border-zinc-700 {
+  border-color: #CCCAC4 !important;
+}
+[data-theme="light"] .border-zinc-600 {
+  border-color: #BBBBBB !important;
+}
+[data-theme="light"] .border-neutral-700 {
+  border-color: #CCCAC4 !important;
+}
+[data-theme="light"] .border-neutral-600 {
+  border-color: #BBBBBB !important;
+}
+[data-theme="light"] .border-t {
+  border-color: #D8D6D0 !important;
+}
+
+/* Dark radial gradient overlay — hide it in light mode */
+[data-theme="light"] .from-\[\#2B2B2B\] {
+  --tw-gradient-from: transparent !important;
+  --tw-gradient-stops: transparent, transparent !important;
+  opacity: 0 !important;
+}
+
+/* Project card gradient on hover */
+[data-theme="light"] .from-blue-900 {
+  --tw-gradient-from: #dbeafe !important;
+}
+[data-theme="light"] .from-red-800 {
+  --tw-gradient-from: #fee2e2 !important;
+}
+[data-theme="light"] .from-purple-800 {
+  --tw-gradient-from: #ede9fe !important;
+}
+[data-theme="light"] .from-zinc-700 {
+  --tw-gradient-from: #e4e4e7 !important;
+}
+[data-theme="light"] .from-green-700 {
+  --tw-gradient-from: #dcfce7 !important;
+}
+[data-theme="light"] .from-orange-600 {
+  --tw-gradient-from: #ffedd5 !important;
+}
+[data-theme="light"] .to-black {
+  --tw-gradient-to: #F4F3EF !important;
+}
+
+/* Divider lines in project cards */
+[data-theme="light"] .from-zinc-800.via-white.to-zinc-800 {
+  --tw-gradient-from: #EDECE8 !important;
+  --tw-gradient-via: #888888 !important;
+  --tw-gradient-to: #EDECE8 !important;
+}
+
+/* Work project card border */
+[data-theme="light"] .border-zinc-600 {
+  border-color: #C8C6C0 !important;
+}
+[data-theme="light"] .group-hover\:border-zinc-500:hover {
+  border-color: #AAAAAA !important;
+}
+[data-theme="light"] .group-hover\:border-zinc-300:hover {
+  border-color: #888888 !important;
+}
+
+/* Work project card hover links */
+[data-theme="light"] .hover\:bg-white:hover {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+/* Active nav pill */
+[data-theme="light"] .bg-neutral-400 {
+  background-color: rgba(0,0,0,0.10) !important;
+}
+[data-theme="light"] .hover\:bg-neutral-600:hover {
+  background-color: rgba(0,0,0,0.06) !important;
+}
+
+/* Scrollbar */
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #F4F3EF;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #AAAAAA;
+}
+
+/* .grad heading — white gradient → dark */
+[data-theme="light"] .grad {
+  background: -webkit-linear-gradient(#111111, #111111, #555555);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+/* .gradhero */
+[data-theme="light"] .gradhero {
+  background: -webkit-linear-gradient(#111111, #111111, #888888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+/* .glow dot — dark pulse in light mode */
+[data-theme="light"] .glow {
+  background-color: #111111 !important;
+  animation: pulse-dark 2s infinite alternate;
+}
+@keyframes pulse-dark {
+  from { box-shadow: 0 0 0 rgba(0,0,0,0.5); }
+  to   { box-shadow: 0 0 10px 4px rgba(0,0,0,0.18); }
+}
+
+/* Footer border */
+[data-theme="light"] .bg-zinc-950 {
+  background-color: #ECEAE4 !important;
+}
+
+/* Spotify / card secondary bg */
+[data-theme="light"] .bg-neutral-800 {
+  background-color: #EEEDE9 !important;
+}
+[data-theme="light"] .bg-neutral-900 {
+  background-color: #FFFFFF !important;
+}
+
+/* Scroller fade mask — works on light bg too, no change needed */
+
+/* Group hover text in project cards */
+[data-theme="light"] .group-hover\:text-white:hover {
+  color: #111111 !important;
+}
+
+/* Image shadow */
+[data-theme="light"] .shadow-black {
+  --tw-shadow-color: rgba(0,0,0,0.15) !important;
+}
+
+/* via-white divider gradient lines */
+[data-theme="light"] .via-white {
+  --tw-gradient-via: #888888 !important;
+}
+
+/* Footer goto arrows */
+[data-theme="light"] .goto-arrow {
+  filter: invert(1);
+}

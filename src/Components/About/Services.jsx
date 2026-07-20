@@ -44,7 +44,7 @@ const Services = () => {
   };
 
   return (
-    <div className='text-white md:rounded-xl bg-zinc-900 flex justify-center pb-8'>
+    <div className='text-white md:rounded-2xl bg-zinc-900 flex justify-center pb-8'>
       <div className='max-w-[1300px]'>
         <div className='flex items-center px-6 pt-5'>
           <div className="w-3 h-3 rounded-full bg-white glow"></div>
