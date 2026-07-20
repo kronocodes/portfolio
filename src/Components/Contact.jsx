@@ -28,12 +28,12 @@ const Contact = () => {
 
   return (
     <div className="w-full z-10">
-      <div className="flex items-center gap-x-3 pb-14">
+      <div className="flex items-center gap-x-3 pb-14 px-5 md:px-0">
         <div class="w-3 h-3 rounded-full bg-white glow"></div>
         <div className="text-white text-7xl md:text-8xl grad">Contact</div>
       </div>
       <div className="h-[1px] bg-gradient-to-r from-zinc-800 mx-auto via-white to-zinc-800 w-11/12 translate-y-[2px] z-40"></div>
-      <div className="rounded-3xl bg-zinc-900 px-4 py-2 border-[2px] border-zinc-800 mb-32">
+      <div className="md:rounded-3xl bg-zinc-900 px-4 py-2 mb-32">
           <form
             ref={form}
             onSubmit={sendEmail}
