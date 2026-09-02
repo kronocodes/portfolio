@@ -26,7 +26,7 @@ const SocialPill = ({ label, dot, href, isLight }) => {
         background: isLight ? '#ffffff' : '#18181b',
         transition: 'all 0.2s',
       }}
-      className="flex items-center gap-2.5 px-4 py-2 rounded-full text-sm border"
+      className="flex items-center gap-2 px-3 py-2 rounded-full text-sm border"
     >
       <span style={{ width: '6px', height: '6px', borderRadius: '50%', flexShrink: 0, background: dot }} />
       {label}
@@ -72,7 +72,7 @@ const Abouth = () => {
         </div>
 
         {/* Social links */}
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-1">
           {socials.map(({ label, dot, href }) => (
             <SocialPill key={label} label={label} dot={dot} href={href} isLight={isLight} />
           ))}

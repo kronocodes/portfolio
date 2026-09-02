@@ -8,7 +8,14 @@ export default defineConfig({
   server: {
     watch: {
       usePolling: true
-    }
+    },
+    proxy: {
+      '/api/leetcode': {
+        target: 'https://leetcode-api-faisalshohag.vercel.app',
+        changeOrigin: true,
+        rewrite: () => '/kronocodes',
+      },
+    },
   },
   plugins: _plugins
 });

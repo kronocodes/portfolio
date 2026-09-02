@@ -21,10 +21,8 @@ const Leetcode = () => {
   }, []);
 
   const getStats = async () => {
-    const data = await fetch(
-      "https://leetcode-api-faisalshohag.vercel.app/kronocodes"
-    );
-    const json = await data.json();
+    const res = await fetch('/api/leetcode');
+    const json = await res.json();
     setStats(json);
     setCal(json);
   };

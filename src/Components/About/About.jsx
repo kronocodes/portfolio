@@ -1,5 +1,4 @@
 import React from "react";
-import Services from "./Services";
 import Education from "./Education";
 import Experience from "./Experience";
 import Leetcode from "./Leetcode";
@@ -42,7 +41,6 @@ const About = () => {
         <Leetcode />
         <Experience />
         <Education />
-        <Services />
         <Skills />
         <Spotify />
         {/* <Card /> */}

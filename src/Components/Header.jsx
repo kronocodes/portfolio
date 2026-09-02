@@ -135,7 +135,7 @@ const Header = () => {
         <div className="fixed z-[999] text-[15px]" style={{ color: isLight ? '#111111' : '#ffffff' }}>
           <ThemeToggle extraClass="top-4 right-6" />
           <div
-            className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto px-2 py-[2px] w-[260px] justify-between items-center rounded-full backdrop-blur-[6px]"
+            className="flex gap-x-2 fixed left-0 right-0 my-4 mx-auto px-2 py-[2px] w-[220px] justify-between items-center rounded-full backdrop-blur-[6px]"
             style={{
               border: isLight ? '1px solid rgba(0,0,0,0.15)' : '1px solid rgba(64,64,64,1)',
               background: isLight ? 'rgba(255,255,255,0.75)' : 'rgba(38,38,38,0.4)',
@@ -148,7 +148,7 @@ const Header = () => {
               {({ isActive }) => <>{isActive && <TubeLight />}Work</>}
             </NavLink>
             <Link to="/">
-              <img className="w-8 mx-3" src="https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/About/memoji_udgkhu.png"/>
+              <img className="w-8 mx-2" src="https://res.cloudinary.com/dw2fhd58a/image/upload/f_auto,q_auto/v1/About/memoji_udgkhu.png"/>
             </Link>
             <NavLink
               to="/about"
